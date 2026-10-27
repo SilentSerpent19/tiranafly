@@ -1,5 +1,7 @@
 # TiranaFly: a drone delivery network for Tirana
 
+![Zones, depots and restricted airspace over Tirana](output/fig1_overview.png)
+
 Case study in geospatial optimisation: where to put drone depots, how to split
 a city into delivery zones, and how to route multi-parcel flights under battery
 and payload limits, on real OpenStreetMap data for Tirana, Albania.
@@ -21,6 +23,8 @@ and payload limits, on real OpenStreetMap data for Tirana, Albania.
 Result for 1,000 clients and a 16 km / 6 kg drone: 2 depots (certified optimal),
 241 trips, 1,285 km and 12 drones per day, versus 1,000 trips, 4,892 km and
 34 drones when every parcel flies alone; within 5% / 16% / 0% of the lower bounds.
+
+![All petals along exact shortest flight paths](output/fig2_petals.png)
 
 ## Run
 ```bash
