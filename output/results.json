@@ -1,0 +1,12361 @@
+{
+ "config": {
+  "n_clients": 1000,
+  "d_max_m": 16000,
+  "reserve": 0.1,
+  "d_use_m": 14400.0,
+  "w_max_kg": 6.0,
+  "payload_range": [
+   0.5,
+   2.3
+  ],
+  "speed_kmh": 50.0,
+  "service_min": 2.0,
+  "turnaround_min": 8.0,
+  "work_hours": 8.0,
+  "safety_margin_m": 40.0,
+  "seed": 40,
+  "sweep_starts": 12
+ },
+ "map": {
+  "coverage_km2": 36.49,
+  "n_obstacles": 19,
+  "n_obstacle_vertices": 206
+ },
+ "graph": {
+  "depot-client": 33397,
+  "depot-vertex": 3568,
+  "client-vertex": 63390,
+  "vertex-vertex": 3621,
+  "build_seconds": 2.4,
+  "n_vertices": 1266,
+  "n_edges": 103976
+ },
+ "oracle": {
+  "dijkstra_runs": 908,
+  "blocked_pairs": 69891,
+  "direct_pairs": 180933
+ },
+ "depots": {
+  "n_candidates": 60,
+  "greedy": 2,
+  "exact": 2,
+  "chosen": [
+   1029,
+   1054
+  ],
+  "unservable": 0,
+  "greedy_total_km": 3509.0,
+  "tiebreak_total_km": 2446.1,
+  "coverage_sizes": {
+   "1000": 543,
+   "1001": 527,
+   "1002": 475,
+   "1003": 582,
+   "1004": 648,
+   "1005": 780,
+   "1006": 848,
+   "1007": 941,
+   "1008": 967,
+   "1009": 989,
+   "1010": 994,
+   "1011": 998,
+   "1012": 986,
+   "1013": 932,
+   "1014": 865,
+   "1015": 824,
+   "1016": 695,
+   "1017": 642,
+   "1018": 748,
+   "1019": 773,
+   "1020": 701,
+   "1021": 721,
+   "1022": 737,
+   "1023": 747,
+   "1024": 658,
+   "1025": 608,
+   "1026": 682,
+   "1027": 749,
+   "1028": 815,
+   "1029": 891,
+   "1030": 875,
+   "1031": 900,
+   "1032": 914,
+   "1033": 852,
+   "1034": 751,
+   "1035": 694,
+   "1036": 824,
+   "1037": 938,
+   "1038": 925,
+   "1039": 928,
+   "1040": 940,
+   "1041": 960,
+   "1042": 960,
+   "1043": 961,
+   "1044": 937,
+   "1045": 888,
+   "1046": 820,
+   "1047": 749,
+   "1048": 691,
+   "1049": 703,
+   "1050": 721,
+   "1051": 722,
+   "1052": 789,
+   "1053": 860,
+   "1054": 876,
+   "1055": 931,
+   "1056": 919,
+   "1057": 802,
+   "1058": 683,
+   "1059": 607
+  }
+ },
+ "zones": [
+  {
+   "zone": 0,
+   "depot_node": 1029,
+   "depot_xy": [
+    404178.52802891185,
+    4574943.142011021
+   ],
+   "n_clients": 518,
+   "farthest_client_m": 5447.4,
+   "detour_factor_max": 2.221,
+   "detour_factor_mean": 1.0079,
+   "bounds": {
+    "trips": 118,
+    "km": 582.19
+   },
+   "chosen_method": "savings",
+   "methods": {
+    "sweep": {
+     "trips": 124,
+     "km": 781.13
+    },
+    "savings": {
+     "trips": 124,
+     "km": 674.42
+    }
+   },
+   "naive": {
+    "trips": 518,
+    "km": 2584.06,
+    "drones": 18,
+    "drones_lb": 18,
+    "fleet_minutes": 8280.9,
+    "utilisation": 0.958,
+    "max_clients_per_trip": 1,
+    "routes": [
+     {
+      "clients": [
+       1
+      ],
+      "length_m": 6694.8,
+      "load_kg": 1.89,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       2
+      ],
+      "length_m": 6345.2,
+      "load_kg": 1.66,
+      "battery_pct": 39.7
+     },
+     {
+      "clients": [
+       3
+      ],
+      "length_m": 4817.4,
+      "load_kg": 1.65,
+      "battery_pct": 30.1
+     },
+     {
+      "clients": [
+       4
+      ],
+      "length_m": 7090.3,
+      "load_kg": 2.04,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       5
+      ],
+      "length_m": 3777.7,
+      "load_kg": 1.32,
+      "battery_pct": 23.6
+     },
+     {
+      "clients": [
+       6
+      ],
+      "length_m": 4534.4,
+      "load_kg": 1.55,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       7
+      ],
+      "length_m": 4827.0,
+      "load_kg": 0.99,
+      "battery_pct": 30.2
+     },
+     {
+      "clients": [
+       8
+      ],
+      "length_m": 3953.0,
+      "load_kg": 1.99,
+      "battery_pct": 24.7
+     },
+     {
+      "clients": [
+       9
+      ],
+      "length_m": 960.9,
+      "load_kg": 2.26,
+      "battery_pct": 6.0
+     },
+     {
+      "clients": [
+       10
+      ],
+      "length_m": 7398.0,
+      "load_kg": 1.96,
+      "battery_pct": 46.2
+     },
+     {
+      "clients": [
+       11
+      ],
+      "length_m": 6766.2,
+      "load_kg": 1.06,
+      "battery_pct": 42.3
+     },
+     {
+      "clients": [
+       12
+      ],
+      "length_m": 6901.1,
+      "load_kg": 1.63,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       13
+      ],
+      "length_m": 6230.8,
+      "load_kg": 1.76,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       14
+      ],
+      "length_m": 6901.7,
+      "load_kg": 1.74,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       15
+      ],
+      "length_m": 1848.4,
+      "load_kg": 2.13,
+      "battery_pct": 11.6
+     },
+     {
+      "clients": [
+       16
+      ],
+      "length_m": 3340.0,
+      "load_kg": 2.0,
+      "battery_pct": 20.9
+     },
+     {
+      "clients": [
+       17
+      ],
+      "length_m": 4370.5,
+      "load_kg": 2.08,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       18
+      ],
+      "length_m": 4484.8,
+      "load_kg": 1.21,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       19
+      ],
+      "length_m": 4449.3,
+      "load_kg": 1.58,
+      "battery_pct": 27.8
+     },
+     {
+      "clients": [
+       20
+      ],
+      "length_m": 6455.3,
+      "load_kg": 1.49,
+      "battery_pct": 40.3
+     },
+     {
+      "clients": [
+       21
+      ],
+      "length_m": 7070.4,
+      "load_kg": 0.72,
+      "battery_pct": 44.2
+     },
+     {
+      "clients": [
+       22
+      ],
+      "length_m": 2499.0,
+      "load_kg": 1.1,
+      "battery_pct": 15.6
+     },
+     {
+      "clients": [
+       23
+      ],
+      "length_m": 2673.0,
+      "load_kg": 1.25,
+      "battery_pct": 16.7
+     },
+     {
+      "clients": [
+       24
+      ],
+      "length_m": 3514.9,
+      "load_kg": 1.97,
+      "battery_pct": 22.0
+     },
+     {
+      "clients": [
+       25
+      ],
+      "length_m": 2396.5,
+      "load_kg": 1.75,
+      "battery_pct": 15.0
+     },
+     {
+      "clients": [
+       26
+      ],
+      "length_m": 3217.2,
+      "load_kg": 1.23,
+      "battery_pct": 20.1
+     },
+     {
+      "clients": [
+       27
+      ],
+      "length_m": 6992.4,
+      "load_kg": 0.73,
+      "battery_pct": 43.7
+     },
+     {
+      "clients": [
+       28
+      ],
+      "length_m": 3285.3,
+      "load_kg": 1.73,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       29
+      ],
+      "length_m": 7650.0,
+      "load_kg": 1.89,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       30
+      ],
+      "length_m": 1857.4,
+      "load_kg": 1.74,
+      "battery_pct": 11.6
+     },
+     {
+      "clients": [
+       31
+      ],
+      "length_m": 2258.2,
+      "load_kg": 0.66,
+      "battery_pct": 14.1
+     },
+     {
+      "clients": [
+       32
+      ],
+      "length_m": 662.6,
+      "load_kg": 2.06,
+      "battery_pct": 4.1
+     },
+     {
+      "clients": [
+       33
+      ],
+      "length_m": 917.9,
+      "load_kg": 2.22,
+      "battery_pct": 5.7
+     },
+     {
+      "clients": [
+       34
+      ],
+      "length_m": 8014.6,
+      "load_kg": 0.56,
+      "battery_pct": 50.1
+     },
+     {
+      "clients": [
+       35
+      ],
+      "length_m": 3435.6,
+      "load_kg": 0.54,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       36
+      ],
+      "length_m": 926.5,
+      "load_kg": 0.5,
+      "battery_pct": 5.8
+     },
+     {
+      "clients": [
+       37
+      ],
+      "length_m": 8020.0,
+      "load_kg": 1.0,
+      "battery_pct": 50.1
+     },
+     {
+      "clients": [
+       38
+      ],
+      "length_m": 3145.9,
+      "load_kg": 1.14,
+      "battery_pct": 19.7
+     },
+     {
+      "clients": [
+       39
+      ],
+      "length_m": 7768.9,
+      "load_kg": 0.99,
+      "battery_pct": 48.6
+     },
+     {
+      "clients": [
+       40
+      ],
+      "length_m": 7813.9,
+      "load_kg": 1.16,
+      "battery_pct": 48.8
+     },
+     {
+      "clients": [
+       41
+      ],
+      "length_m": 1162.9,
+      "load_kg": 1.55,
+      "battery_pct": 7.3
+     },
+     {
+      "clients": [
+       42
+      ],
+      "length_m": 2444.5,
+      "load_kg": 0.98,
+      "battery_pct": 15.3
+     },
+     {
+      "clients": [
+       43
+      ],
+      "length_m": 7817.8,
+      "load_kg": 2.08,
+      "battery_pct": 48.9
+     },
+     {
+      "clients": [
+       44
+      ],
+      "length_m": 2044.5,
+      "load_kg": 0.62,
+      "battery_pct": 12.8
+     },
+     {
+      "clients": [
+       45
+      ],
+      "length_m": 7956.5,
+      "load_kg": 0.8,
+      "battery_pct": 49.7
+     },
+     {
+      "clients": [
+       46
+      ],
+      "length_m": 3364.2,
+      "load_kg": 1.31,
+      "battery_pct": 21.0
+     },
+     {
+      "clients": [
+       47
+      ],
+      "length_m": 2978.6,
+      "load_kg": 0.67,
+      "battery_pct": 18.6
+     },
+     {
+      "clients": [
+       48
+      ],
+      "length_m": 2385.8,
+      "load_kg": 0.59,
+      "battery_pct": 14.9
+     },
+     {
+      "clients": [
+       49
+      ],
+      "length_m": 3093.8,
+      "load_kg": 1.99,
+      "battery_pct": 19.3
+     },
+     {
+      "clients": [
+       50
+      ],
+      "length_m": 6193.0,
+      "load_kg": 0.63,
+      "battery_pct": 38.7
+     },
+     {
+      "clients": [
+       51
+      ],
+      "length_m": 3067.2,
+      "load_kg": 2.18,
+      "battery_pct": 19.2
+     },
+     {
+      "clients": [
+       52
+      ],
+      "length_m": 6754.9,
+      "load_kg": 0.91,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       53
+      ],
+      "length_m": 7622.0,
+      "load_kg": 1.39,
+      "battery_pct": 47.6
+     },
+     {
+      "clients": [
+       54
+      ],
+      "length_m": 6070.5,
+      "load_kg": 1.85,
+      "battery_pct": 37.9
+     },
+     {
+      "clients": [
+       55
+      ],
+      "length_m": 2718.8,
+      "load_kg": 0.85,
+      "battery_pct": 17.0
+     },
+     {
+      "clients": [
+       56
+      ],
+      "length_m": 2618.9,
+      "load_kg": 2.01,
+      "battery_pct": 16.4
+     },
+     {
+      "clients": [
+       57
+      ],
+      "length_m": 7484.6,
+      "load_kg": 2.19,
+      "battery_pct": 46.8
+     },
+     {
+      "clients": [
+       58
+      ],
+      "length_m": 3224.5,
+      "load_kg": 0.68,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       59
+      ],
+      "length_m": 6680.0,
+      "load_kg": 1.55,
+      "battery_pct": 41.7
+     },
+     {
+      "clients": [
+       60
+      ],
+      "length_m": 5748.6,
+      "load_kg": 1.51,
+      "battery_pct": 35.9
+     },
+     {
+      "clients": [
+       61
+      ],
+      "length_m": 7449.6,
+      "load_kg": 1.55,
+      "battery_pct": 46.6
+     },
+     {
+      "clients": [
+       62
+      ],
+      "length_m": 5827.8,
+      "load_kg": 1.5,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       63
+      ],
+      "length_m": 3164.1,
+      "load_kg": 1.86,
+      "battery_pct": 19.8
+     },
+     {
+      "clients": [
+       64
+      ],
+      "length_m": 6633.5,
+      "load_kg": 2.04,
+      "battery_pct": 41.5
+     },
+     {
+      "clients": [
+       65
+      ],
+      "length_m": 6587.0,
+      "load_kg": 2.08,
+      "battery_pct": 41.2
+     },
+     {
+      "clients": [
+       66
+      ],
+      "length_m": 7011.5,
+      "load_kg": 1.44,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       67
+      ],
+      "length_m": 5795.4,
+      "load_kg": 1.28,
+      "battery_pct": 36.2
+     },
+     {
+      "clients": [
+       68
+      ],
+      "length_m": 7015.5,
+      "load_kg": 0.63,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       69
+      ],
+      "length_m": 7015.0,
+      "load_kg": 0.61,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       70
+      ],
+      "length_m": 5296.8,
+      "load_kg": 1.92,
+      "battery_pct": 33.1
+     },
+     {
+      "clients": [
+       71
+      ],
+      "length_m": 5545.4,
+      "load_kg": 1.56,
+      "battery_pct": 34.7
+     },
+     {
+      "clients": [
+       72
+      ],
+      "length_m": 1347.1,
+      "load_kg": 1.64,
+      "battery_pct": 8.4
+     },
+     {
+      "clients": [
+       73
+      ],
+      "length_m": 1768.0,
+      "load_kg": 2.28,
+      "battery_pct": 11.0
+     },
+     {
+      "clients": [
+       74
+      ],
+      "length_m": 3045.3,
+      "load_kg": 2.29,
+      "battery_pct": 19.0
+     },
+     {
+      "clients": [
+       75
+      ],
+      "length_m": 5272.8,
+      "load_kg": 1.92,
+      "battery_pct": 33.0
+     },
+     {
+      "clients": [
+       76
+      ],
+      "length_m": 4099.6,
+      "load_kg": 0.68,
+      "battery_pct": 25.6
+     },
+     {
+      "clients": [
+       77
+      ],
+      "length_m": 5443.1,
+      "load_kg": 1.95,
+      "battery_pct": 34.0
+     },
+     {
+      "clients": [
+       78
+      ],
+      "length_m": 6985.5,
+      "load_kg": 0.61,
+      "battery_pct": 43.7
+     },
+     {
+      "clients": [
+       79
+      ],
+      "length_m": 6834.4,
+      "load_kg": 2.03,
+      "battery_pct": 42.7
+     },
+     {
+      "clients": [
+       80
+      ],
+      "length_m": 382.7,
+      "load_kg": 0.97,
+      "battery_pct": 2.4
+     },
+     {
+      "clients": [
+       81
+      ],
+      "length_m": 2740.0,
+      "load_kg": 1.82,
+      "battery_pct": 17.1
+     },
+     {
+      "clients": [
+       82
+      ],
+      "length_m": 1997.6,
+      "load_kg": 1.07,
+      "battery_pct": 12.5
+     },
+     {
+      "clients": [
+       83
+      ],
+      "length_m": 6180.7,
+      "load_kg": 0.66,
+      "battery_pct": 38.6
+     },
+     {
+      "clients": [
+       84
+      ],
+      "length_m": 4726.2,
+      "load_kg": 1.73,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       85
+      ],
+      "length_m": 4524.0,
+      "load_kg": 1.75,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       86
+      ],
+      "length_m": 4439.4,
+      "load_kg": 2.14,
+      "battery_pct": 27.7
+     },
+     {
+      "clients": [
+       87
+      ],
+      "length_m": 6380.7,
+      "load_kg": 0.96,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       88
+      ],
+      "length_m": 4994.9,
+      "load_kg": 1.42,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       89
+      ],
+      "length_m": 6912.6,
+      "load_kg": 1.71,
+      "battery_pct": 43.2
+     },
+     {
+      "clients": [
+       90
+      ],
+      "length_m": 5990.7,
+      "load_kg": 1.66,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       91
+      ],
+      "length_m": 5208.0,
+      "load_kg": 1.92,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       92
+      ],
+      "length_m": 4205.3,
+      "load_kg": 1.56,
+      "battery_pct": 26.3
+     },
+     {
+      "clients": [
+       93
+      ],
+      "length_m": 4010.6,
+      "load_kg": 1.47,
+      "battery_pct": 25.1
+     },
+     {
+      "clients": [
+       94
+      ],
+      "length_m": 4727.6,
+      "load_kg": 1.19,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       95
+      ],
+      "length_m": 2336.0,
+      "load_kg": 1.94,
+      "battery_pct": 14.6
+     },
+     {
+      "clients": [
+       96
+      ],
+      "length_m": 4107.8,
+      "load_kg": 1.02,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       97
+      ],
+      "length_m": 4412.3,
+      "load_kg": 1.23,
+      "battery_pct": 27.6
+     },
+     {
+      "clients": [
+       98
+      ],
+      "length_m": 1362.3,
+      "load_kg": 1.55,
+      "battery_pct": 8.5
+     },
+     {
+      "clients": [
+       99
+      ],
+      "length_m": 3928.3,
+      "load_kg": 2.27,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       100
+      ],
+      "length_m": 3983.3,
+      "load_kg": 1.53,
+      "battery_pct": 24.9
+     },
+     {
+      "clients": [
+       101
+      ],
+      "length_m": 4946.7,
+      "load_kg": 0.98,
+      "battery_pct": 30.9
+     },
+     {
+      "clients": [
+       102
+      ],
+      "length_m": 3130.6,
+      "load_kg": 0.6,
+      "battery_pct": 19.6
+     },
+     {
+      "clients": [
+       103
+      ],
+      "length_m": 5308.0,
+      "load_kg": 2.09,
+      "battery_pct": 33.2
+     },
+     {
+      "clients": [
+       104
+      ],
+      "length_m": 2855.4,
+      "load_kg": 1.17,
+      "battery_pct": 17.8
+     },
+     {
+      "clients": [
+       105
+      ],
+      "length_m": 3817.0,
+      "load_kg": 0.79,
+      "battery_pct": 23.9
+     },
+     {
+      "clients": [
+       106
+      ],
+      "length_m": 2326.0,
+      "load_kg": 1.99,
+      "battery_pct": 14.5
+     },
+     {
+      "clients": [
+       107
+      ],
+      "length_m": 4141.7,
+      "load_kg": 2.29,
+      "battery_pct": 25.9
+     },
+     {
+      "clients": [
+       108
+      ],
+      "length_m": 2912.1,
+      "load_kg": 1.57,
+      "battery_pct": 18.2
+     },
+     {
+      "clients": [
+       109
+      ],
+      "length_m": 3516.5,
+      "load_kg": 0.99,
+      "battery_pct": 22.0
+     },
+     {
+      "clients": [
+       110
+      ],
+      "length_m": 3467.1,
+      "load_kg": 0.52,
+      "battery_pct": 21.7
+     },
+     {
+      "clients": [
+       111
+      ],
+      "length_m": 2503.0,
+      "load_kg": 0.76,
+      "battery_pct": 15.6
+     },
+     {
+      "clients": [
+       112
+      ],
+      "length_m": 3807.1,
+      "load_kg": 1.36,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       113
+      ],
+      "length_m": 3781.9,
+      "load_kg": 1.67,
+      "battery_pct": 23.6
+     },
+     {
+      "clients": [
+       114
+      ],
+      "length_m": 3801.8,
+      "load_kg": 1.09,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       115
+      ],
+      "length_m": 2463.2,
+      "load_kg": 0.74,
+      "battery_pct": 15.4
+     },
+     {
+      "clients": [
+       116
+      ],
+      "length_m": 4555.3,
+      "load_kg": 1.51,
+      "battery_pct": 28.5
+     },
+     {
+      "clients": [
+       117
+      ],
+      "length_m": 4548.9,
+      "load_kg": 1.18,
+      "battery_pct": 28.4
+     },
+     {
+      "clients": [
+       118
+      ],
+      "length_m": 2436.8,
+      "load_kg": 1.7,
+      "battery_pct": 15.2
+     },
+     {
+      "clients": [
+       119
+      ],
+      "length_m": 2298.4,
+      "load_kg": 2.22,
+      "battery_pct": 14.4
+     },
+     {
+      "clients": [
+       120
+      ],
+      "length_m": 4153.3,
+      "load_kg": 0.81,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       121
+      ],
+      "length_m": 5365.3,
+      "load_kg": 0.55,
+      "battery_pct": 33.5
+     },
+     {
+      "clients": [
+       122
+      ],
+      "length_m": 4983.1,
+      "load_kg": 1.15,
+      "battery_pct": 31.1
+     },
+     {
+      "clients": [
+       123
+      ],
+      "length_m": 5486.7,
+      "load_kg": 1.53,
+      "battery_pct": 34.3
+     },
+     {
+      "clients": [
+       124
+      ],
+      "length_m": 4934.6,
+      "load_kg": 1.29,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       125
+      ],
+      "length_m": 444.9,
+      "load_kg": 1.03,
+      "battery_pct": 2.8
+     },
+     {
+      "clients": [
+       126
+      ],
+      "length_m": 4434.3,
+      "load_kg": 0.65,
+      "battery_pct": 27.7
+     },
+     {
+      "clients": [
+       127
+      ],
+      "length_m": 4233.9,
+      "load_kg": 1.17,
+      "battery_pct": 26.5
+     },
+     {
+      "clients": [
+       128
+      ],
+      "length_m": 5627.6,
+      "load_kg": 1.49,
+      "battery_pct": 35.2
+     },
+     {
+      "clients": [
+       129
+      ],
+      "length_m": 4880.6,
+      "load_kg": 2.04,
+      "battery_pct": 30.5
+     },
+     {
+      "clients": [
+       130
+      ],
+      "length_m": 5202.2,
+      "load_kg": 0.82,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       131
+      ],
+      "length_m": 5205.9,
+      "load_kg": 1.75,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       132
+      ],
+      "length_m": 5040.5,
+      "load_kg": 0.68,
+      "battery_pct": 31.5
+     },
+     {
+      "clients": [
+       133
+      ],
+      "length_m": 4817.8,
+      "load_kg": 1.21,
+      "battery_pct": 30.1
+     },
+     {
+      "clients": [
+       134
+      ],
+      "length_m": 5255.2,
+      "load_kg": 0.66,
+      "battery_pct": 32.8
+     },
+     {
+      "clients": [
+       135
+      ],
+      "length_m": 6330.3,
+      "load_kg": 1.63,
+      "battery_pct": 39.6
+     },
+     {
+      "clients": [
+       136
+      ],
+      "length_m": 7124.2,
+      "load_kg": 0.92,
+      "battery_pct": 44.5
+     },
+     {
+      "clients": [
+       137
+      ],
+      "length_m": 7095.8,
+      "load_kg": 2.19,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       138
+      ],
+      "length_m": 6279.5,
+      "load_kg": 2.22,
+      "battery_pct": 39.2
+     },
+     {
+      "clients": [
+       139
+      ],
+      "length_m": 6161.1,
+      "load_kg": 1.67,
+      "battery_pct": 38.5
+     },
+     {
+      "clients": [
+       140
+      ],
+      "length_m": 6663.4,
+      "load_kg": 2.04,
+      "battery_pct": 41.6
+     },
+     {
+      "clients": [
+       141
+      ],
+      "length_m": 373.7,
+      "load_kg": 1.16,
+      "battery_pct": 2.3
+     },
+     {
+      "clients": [
+       142
+      ],
+      "length_m": 739.1,
+      "load_kg": 1.92,
+      "battery_pct": 4.6
+     },
+     {
+      "clients": [
+       143
+      ],
+      "length_m": 361.9,
+      "load_kg": 0.64,
+      "battery_pct": 2.3
+     },
+     {
+      "clients": [
+       144
+      ],
+      "length_m": 325.3,
+      "load_kg": 1.64,
+      "battery_pct": 2.0
+     },
+     {
+      "clients": [
+       145
+      ],
+      "length_m": 5856.6,
+      "load_kg": 1.21,
+      "battery_pct": 36.6
+     },
+     {
+      "clients": [
+       146
+      ],
+      "length_m": 5464.5,
+      "load_kg": 1.86,
+      "battery_pct": 34.2
+     },
+     {
+      "clients": [
+       147
+      ],
+      "length_m": 5701.1,
+      "load_kg": 2.28,
+      "battery_pct": 35.6
+     },
+     {
+      "clients": [
+       148
+      ],
+      "length_m": 4533.2,
+      "load_kg": 1.36,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       149
+      ],
+      "length_m": 4473.4,
+      "load_kg": 2.21,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       150
+      ],
+      "length_m": 4348.8,
+      "load_kg": 2.22,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       151
+      ],
+      "length_m": 4970.6,
+      "load_kg": 2.2,
+      "battery_pct": 31.1
+     },
+     {
+      "clients": [
+       152
+      ],
+      "length_m": 4214.1,
+      "load_kg": 0.67,
+      "battery_pct": 26.3
+     },
+     {
+      "clients": [
+       153
+      ],
+      "length_m": 3927.6,
+      "load_kg": 2.17,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       154
+      ],
+      "length_m": 4459.9,
+      "load_kg": 1.49,
+      "battery_pct": 27.9
+     },
+     {
+      "clients": [
+       155
+      ],
+      "length_m": 4455.9,
+      "load_kg": 2.06,
+      "battery_pct": 27.8
+     },
+     {
+      "clients": [
+       156
+      ],
+      "length_m": 4441.4,
+      "load_kg": 1.57,
+      "battery_pct": 27.8
+     },
+     {
+      "clients": [
+       157
+      ],
+      "length_m": 766.9,
+      "load_kg": 1.2,
+      "battery_pct": 4.8
+     },
+     {
+      "clients": [
+       158
+      ],
+      "length_m": 4130.6,
+      "load_kg": 0.85,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       159
+      ],
+      "length_m": 920.2,
+      "load_kg": 1.4,
+      "battery_pct": 5.8
+     },
+     {
+      "clients": [
+       160
+      ],
+      "length_m": 4133.2,
+      "load_kg": 0.55,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       161
+      ],
+      "length_m": 879.1,
+      "load_kg": 1.28,
+      "battery_pct": 5.5
+     },
+     {
+      "clients": [
+       162
+      ],
+      "length_m": 2168.9,
+      "load_kg": 2.23,
+      "battery_pct": 13.6
+     },
+     {
+      "clients": [
+       163
+      ],
+      "length_m": 3761.1,
+      "load_kg": 0.79,
+      "battery_pct": 23.5
+     },
+     {
+      "clients": [
+       164
+      ],
+      "length_m": 2449.1,
+      "load_kg": 2.0,
+      "battery_pct": 15.3
+     },
+     {
+      "clients": [
+       165
+      ],
+      "length_m": 3857.2,
+      "load_kg": 1.96,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       166
+      ],
+      "length_m": 3992.6,
+      "load_kg": 2.25,
+      "battery_pct": 25.0
+     },
+     {
+      "clients": [
+       167
+      ],
+      "length_m": 4162.2,
+      "load_kg": 1.68,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       168
+      ],
+      "length_m": 4104.8,
+      "load_kg": 0.61,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       169
+      ],
+      "length_m": 3651.1,
+      "load_kg": 2.02,
+      "battery_pct": 22.8
+     },
+     {
+      "clients": [
+       170
+      ],
+      "length_m": 4236.2,
+      "load_kg": 0.74,
+      "battery_pct": 26.5
+     },
+     {
+      "clients": [
+       171
+      ],
+      "length_m": 5145.8,
+      "load_kg": 1.86,
+      "battery_pct": 32.2
+     },
+     {
+      "clients": [
+       172
+      ],
+      "length_m": 4709.7,
+      "load_kg": 0.59,
+      "battery_pct": 29.4
+     },
+     {
+      "clients": [
+       173
+      ],
+      "length_m": 3257.7,
+      "load_kg": 1.65,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       174
+      ],
+      "length_m": 5343.6,
+      "load_kg": 1.95,
+      "battery_pct": 33.4
+     },
+     {
+      "clients": [
+       175
+      ],
+      "length_m": 4058.0,
+      "load_kg": 0.53,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       176
+      ],
+      "length_m": 3227.8,
+      "load_kg": 1.09,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       177
+      ],
+      "length_m": 4705.3,
+      "load_kg": 2.21,
+      "battery_pct": 29.4
+     },
+     {
+      "clients": [
+       178
+      ],
+      "length_m": 3793.9,
+      "load_kg": 1.41,
+      "battery_pct": 23.7
+     },
+     {
+      "clients": [
+       179
+      ],
+      "length_m": 3979.2,
+      "load_kg": 2.15,
+      "battery_pct": 24.9
+     },
+     {
+      "clients": [
+       180
+      ],
+      "length_m": 3621.0,
+      "load_kg": 1.06,
+      "battery_pct": 22.6
+     },
+     {
+      "clients": [
+       181
+      ],
+      "length_m": 3716.5,
+      "load_kg": 1.06,
+      "battery_pct": 23.2
+     },
+     {
+      "clients": [
+       182
+      ],
+      "length_m": 3315.3,
+      "load_kg": 1.23,
+      "battery_pct": 20.7
+     },
+     {
+      "clients": [
+       183
+      ],
+      "length_m": 3981.2,
+      "load_kg": 0.53,
+      "battery_pct": 24.9
+     },
+     {
+      "clients": [
+       184
+      ],
+      "length_m": 7158.7,
+      "load_kg": 1.33,
+      "battery_pct": 44.7
+     },
+     {
+      "clients": [
+       185
+      ],
+      "length_m": 5064.5,
+      "load_kg": 1.39,
+      "battery_pct": 31.7
+     },
+     {
+      "clients": [
+       186
+      ],
+      "length_m": 4151.5,
+      "load_kg": 0.81,
+      "battery_pct": 25.9
+     },
+     {
+      "clients": [
+       187
+      ],
+      "length_m": 4100.6,
+      "load_kg": 0.67,
+      "battery_pct": 25.6
+     },
+     {
+      "clients": [
+       188
+      ],
+      "length_m": 4072.1,
+      "load_kg": 1.38,
+      "battery_pct": 25.5
+     },
+     {
+      "clients": [
+       189
+      ],
+      "length_m": 3556.0,
+      "load_kg": 1.53,
+      "battery_pct": 22.2
+     },
+     {
+      "clients": [
+       190
+      ],
+      "length_m": 4985.8,
+      "load_kg": 1.54,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       191
+      ],
+      "length_m": 4818.1,
+      "load_kg": 0.62,
+      "battery_pct": 30.1
+     },
+     {
+      "clients": [
+       192
+      ],
+      "length_m": 2859.5,
+      "load_kg": 1.9,
+      "battery_pct": 17.9
+     },
+     {
+      "clients": [
+       193
+      ],
+      "length_m": 5783.3,
+      "load_kg": 1.24,
+      "battery_pct": 36.1
+     },
+     {
+      "clients": [
+       194
+      ],
+      "length_m": 4631.0,
+      "load_kg": 0.95,
+      "battery_pct": 28.9
+     },
+     {
+      "clients": [
+       195
+      ],
+      "length_m": 4691.7,
+      "load_kg": 0.55,
+      "battery_pct": 29.3
+     },
+     {
+      "clients": [
+       196
+      ],
+      "length_m": 5106.8,
+      "load_kg": 0.56,
+      "battery_pct": 31.9
+     },
+     {
+      "clients": [
+       197
+      ],
+      "length_m": 4122.9,
+      "load_kg": 1.59,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       198
+      ],
+      "length_m": 6593.0,
+      "load_kg": 1.31,
+      "battery_pct": 41.2
+     },
+     {
+      "clients": [
+       199
+      ],
+      "length_m": 3972.0,
+      "load_kg": 1.66,
+      "battery_pct": 24.8
+     },
+     {
+      "clients": [
+       200
+      ],
+      "length_m": 3813.8,
+      "load_kg": 0.82,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       201
+      ],
+      "length_m": 5966.8,
+      "load_kg": 1.94,
+      "battery_pct": 37.3
+     },
+     {
+      "clients": [
+       202
+      ],
+      "length_m": 6431.6,
+      "load_kg": 1.93,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       203
+      ],
+      "length_m": 5614.7,
+      "load_kg": 0.76,
+      "battery_pct": 35.1
+     },
+     {
+      "clients": [
+       204
+      ],
+      "length_m": 5585.2,
+      "load_kg": 1.07,
+      "battery_pct": 34.9
+     },
+     {
+      "clients": [
+       205
+      ],
+      "length_m": 5567.8,
+      "load_kg": 2.04,
+      "battery_pct": 34.8
+     },
+     {
+      "clients": [
+       206
+      ],
+      "length_m": 3183.0,
+      "load_kg": 0.82,
+      "battery_pct": 19.9
+     },
+     {
+      "clients": [
+       207
+      ],
+      "length_m": 5982.4,
+      "load_kg": 0.93,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       208
+      ],
+      "length_m": 4121.1,
+      "load_kg": 1.05,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       209
+      ],
+      "length_m": 5060.4,
+      "load_kg": 1.58,
+      "battery_pct": 31.6
+     },
+     {
+      "clients": [
+       210
+      ],
+      "length_m": 4511.4,
+      "load_kg": 0.5,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       211
+      ],
+      "length_m": 6041.9,
+      "load_kg": 0.71,
+      "battery_pct": 37.8
+     },
+     {
+      "clients": [
+       212
+      ],
+      "length_m": 4363.9,
+      "load_kg": 1.68,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       213
+      ],
+      "length_m": 6433.7,
+      "load_kg": 0.55,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       214
+      ],
+      "length_m": 10111.1,
+      "load_kg": 2.17,
+      "battery_pct": 63.2
+     },
+     {
+      "clients": [
+       215
+      ],
+      "length_m": 4665.2,
+      "load_kg": 0.91,
+      "battery_pct": 29.2
+     },
+     {
+      "clients": [
+       216
+      ],
+      "length_m": 5175.9,
+      "load_kg": 1.73,
+      "battery_pct": 32.3
+     },
+     {
+      "clients": [
+       217
+      ],
+      "length_m": 6054.5,
+      "load_kg": 1.38,
+      "battery_pct": 37.8
+     },
+     {
+      "clients": [
+       218
+      ],
+      "length_m": 3377.2,
+      "load_kg": 1.86,
+      "battery_pct": 21.1
+     },
+     {
+      "clients": [
+       219
+      ],
+      "length_m": 9694.1,
+      "load_kg": 1.37,
+      "battery_pct": 60.6
+     },
+     {
+      "clients": [
+       220
+      ],
+      "length_m": 10077.7,
+      "load_kg": 1.86,
+      "battery_pct": 63.0
+     },
+     {
+      "clients": [
+       221
+      ],
+      "length_m": 5886.0,
+      "load_kg": 2.17,
+      "battery_pct": 36.8
+     },
+     {
+      "clients": [
+       222
+      ],
+      "length_m": 5913.0,
+      "load_kg": 1.9,
+      "battery_pct": 37.0
+     },
+     {
+      "clients": [
+       223
+      ],
+      "length_m": 8451.8,
+      "load_kg": 1.29,
+      "battery_pct": 52.8
+     },
+     {
+      "clients": [
+       224
+      ],
+      "length_m": 6105.4,
+      "load_kg": 0.7,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       225
+      ],
+      "length_m": 8471.9,
+      "load_kg": 1.18,
+      "battery_pct": 52.9
+     },
+     {
+      "clients": [
+       226
+      ],
+      "length_m": 5941.8,
+      "load_kg": 1.95,
+      "battery_pct": 37.1
+     },
+     {
+      "clients": [
+       227
+      ],
+      "length_m": 5197.5,
+      "load_kg": 0.63,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       228
+      ],
+      "length_m": 4258.8,
+      "load_kg": 1.32,
+      "battery_pct": 26.6
+     },
+     {
+      "clients": [
+       229
+      ],
+      "length_m": 9777.3,
+      "load_kg": 2.26,
+      "battery_pct": 61.1
+     },
+     {
+      "clients": [
+       230
+      ],
+      "length_m": 6364.3,
+      "load_kg": 0.62,
+      "battery_pct": 39.8
+     },
+     {
+      "clients": [
+       231
+      ],
+      "length_m": 8686.7,
+      "load_kg": 1.21,
+      "battery_pct": 54.3
+     },
+     {
+      "clients": [
+       232
+      ],
+      "length_m": 9730.1,
+      "load_kg": 0.95,
+      "battery_pct": 60.8
+     },
+     {
+      "clients": [
+       233
+      ],
+      "length_m": 3804.2,
+      "load_kg": 0.76,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       234
+      ],
+      "length_m": 6717.2,
+      "load_kg": 1.64,
+      "battery_pct": 42.0
+     },
+     {
+      "clients": [
+       235
+      ],
+      "length_m": 8823.6,
+      "load_kg": 1.29,
+      "battery_pct": 55.1
+     },
+     {
+      "clients": [
+       236
+      ],
+      "length_m": 8998.2,
+      "load_kg": 1.78,
+      "battery_pct": 56.2
+     },
+     {
+      "clients": [
+       237
+      ],
+      "length_m": 5720.2,
+      "load_kg": 0.6,
+      "battery_pct": 35.8
+     },
+     {
+      "clients": [
+       238
+      ],
+      "length_m": 6228.5,
+      "load_kg": 1.42,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       239
+      ],
+      "length_m": 6231.4,
+      "load_kg": 1.85,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       240
+      ],
+      "length_m": 9138.2,
+      "load_kg": 0.64,
+      "battery_pct": 57.1
+     },
+     {
+      "clients": [
+       241
+      ],
+      "length_m": 3486.4,
+      "load_kg": 1.55,
+      "battery_pct": 21.8
+     },
+     {
+      "clients": [
+       242
+      ],
+      "length_m": 10894.9,
+      "load_kg": 1.65,
+      "battery_pct": 68.1
+     },
+     {
+      "clients": [
+       243
+      ],
+      "length_m": 6307.9,
+      "load_kg": 1.4,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       244
+      ],
+      "length_m": 9330.1,
+      "load_kg": 2.17,
+      "battery_pct": 58.3
+     },
+     {
+      "clients": [
+       245
+      ],
+      "length_m": 3289.0,
+      "load_kg": 0.74,
+      "battery_pct": 20.6
+     },
+     {
+      "clients": [
+       246
+      ],
+      "length_m": 6397.4,
+      "load_kg": 1.54,
+      "battery_pct": 40.0
+     },
+     {
+      "clients": [
+       247
+      ],
+      "length_m": 2436.6,
+      "load_kg": 0.96,
+      "battery_pct": 15.2
+     },
+     {
+      "clients": [
+       248
+      ],
+      "length_m": 5775.2,
+      "load_kg": 0.86,
+      "battery_pct": 36.1
+     },
+     {
+      "clients": [
+       249
+      ],
+      "length_m": 6757.0,
+      "load_kg": 0.72,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       250
+      ],
+      "length_m": 9364.9,
+      "load_kg": 0.53,
+      "battery_pct": 58.5
+     },
+     {
+      "clients": [
+       251
+      ],
+      "length_m": 4057.5,
+      "load_kg": 1.63,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       252
+      ],
+      "length_m": 5975.0,
+      "load_kg": 0.6,
+      "battery_pct": 37.3
+     },
+     {
+      "clients": [
+       253
+      ],
+      "length_m": 6622.0,
+      "load_kg": 1.1,
+      "battery_pct": 41.4
+     },
+     {
+      "clients": [
+       254
+      ],
+      "length_m": 9964.2,
+      "load_kg": 0.76,
+      "battery_pct": 62.3
+     },
+     {
+      "clients": [
+       255
+      ],
+      "length_m": 3458.8,
+      "load_kg": 0.98,
+      "battery_pct": 21.6
+     },
+     {
+      "clients": [
+       256
+      ],
+      "length_m": 9352.7,
+      "load_kg": 1.81,
+      "battery_pct": 58.5
+     },
+     {
+      "clients": [
+       257
+      ],
+      "length_m": 5069.6,
+      "load_kg": 1.04,
+      "battery_pct": 31.7
+     },
+     {
+      "clients": [
+       258
+      ],
+      "length_m": 4215.7,
+      "load_kg": 0.64,
+      "battery_pct": 26.3
+     },
+     {
+      "clients": [
+       259
+      ],
+      "length_m": 623.5,
+      "load_kg": 1.06,
+      "battery_pct": 3.9
+     },
+     {
+      "clients": [
+       260
+      ],
+      "length_m": 7169.6,
+      "load_kg": 0.7,
+      "battery_pct": 44.8
+     },
+     {
+      "clients": [
+       261
+      ],
+      "length_m": 2319.0,
+      "load_kg": 0.53,
+      "battery_pct": 14.5
+     },
+     {
+      "clients": [
+       262
+      ],
+      "length_m": 7254.5,
+      "load_kg": 0.76,
+      "battery_pct": 45.3
+     },
+     {
+      "clients": [
+       263
+      ],
+      "length_m": 5186.4,
+      "load_kg": 1.63,
+      "battery_pct": 32.4
+     },
+     {
+      "clients": [
+       264
+      ],
+      "length_m": 2086.4,
+      "load_kg": 1.97,
+      "battery_pct": 13.0
+     },
+     {
+      "clients": [
+       265
+      ],
+      "length_m": 3712.4,
+      "load_kg": 0.94,
+      "battery_pct": 23.2
+     },
+     {
+      "clients": [
+       266
+      ],
+      "length_m": 6938.2,
+      "load_kg": 1.29,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       267
+      ],
+      "length_m": 8808.5,
+      "load_kg": 0.58,
+      "battery_pct": 55.1
+     },
+     {
+      "clients": [
+       268
+      ],
+      "length_m": 3980.0,
+      "load_kg": 0.84,
+      "battery_pct": 24.9
+     },
+     {
+      "clients": [
+       269
+      ],
+      "length_m": 4145.8,
+      "load_kg": 1.87,
+      "battery_pct": 25.9
+     },
+     {
+      "clients": [
+       270
+      ],
+      "length_m": 2383.1,
+      "load_kg": 1.2,
+      "battery_pct": 14.9
+     },
+     {
+      "clients": [
+       271
+      ],
+      "length_m": 3919.3,
+      "load_kg": 1.8,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       272
+      ],
+      "length_m": 6933.9,
+      "load_kg": 2.13,
+      "battery_pct": 43.3
+     },
+     {
+      "clients": [
+       273
+      ],
+      "length_m": 3345.5,
+      "load_kg": 0.53,
+      "battery_pct": 20.9
+     },
+     {
+      "clients": [
+       274
+      ],
+      "length_m": 4612.0,
+      "load_kg": 0.79,
+      "battery_pct": 28.8
+     },
+     {
+      "clients": [
+       275
+      ],
+      "length_m": 6448.5,
+      "load_kg": 1.31,
+      "battery_pct": 40.3
+     },
+     {
+      "clients": [
+       276
+      ],
+      "length_m": 7119.8,
+      "load_kg": 2.18,
+      "battery_pct": 44.5
+     },
+     {
+      "clients": [
+       277
+      ],
+      "length_m": 3414.7,
+      "load_kg": 1.61,
+      "battery_pct": 21.3
+     },
+     {
+      "clients": [
+       278
+      ],
+      "length_m": 4613.5,
+      "load_kg": 0.8,
+      "battery_pct": 28.8
+     },
+     {
+      "clients": [
+       279
+      ],
+      "length_m": 6531.4,
+      "load_kg": 1.49,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       280
+      ],
+      "length_m": 5868.4,
+      "load_kg": 0.88,
+      "battery_pct": 36.7
+     },
+     {
+      "clients": [
+       281
+      ],
+      "length_m": 7058.0,
+      "load_kg": 0.7,
+      "battery_pct": 44.1
+     },
+     {
+      "clients": [
+       282
+      ],
+      "length_m": 2252.3,
+      "load_kg": 1.66,
+      "battery_pct": 14.1
+     },
+     {
+      "clients": [
+       283
+      ],
+      "length_m": 4934.3,
+      "load_kg": 0.9,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       284
+      ],
+      "length_m": 3562.3,
+      "load_kg": 0.73,
+      "battery_pct": 22.3
+     },
+     {
+      "clients": [
+       285
+      ],
+      "length_m": 2690.2,
+      "load_kg": 2.05,
+      "battery_pct": 16.8
+     },
+     {
+      "clients": [
+       286
+      ],
+      "length_m": 7819.6,
+      "load_kg": 1.0,
+      "battery_pct": 48.9
+     },
+     {
+      "clients": [
+       287
+      ],
+      "length_m": 6660.8,
+      "load_kg": 1.34,
+      "battery_pct": 41.6
+     },
+     {
+      "clients": [
+       288
+      ],
+      "length_m": 3290.1,
+      "load_kg": 1.78,
+      "battery_pct": 20.6
+     },
+     {
+      "clients": [
+       289
+      ],
+      "length_m": 3442.6,
+      "load_kg": 1.8,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       290
+      ],
+      "length_m": 5398.9,
+      "load_kg": 1.81,
+      "battery_pct": 33.7
+     },
+     {
+      "clients": [
+       291
+      ],
+      "length_m": 6185.4,
+      "load_kg": 0.75,
+      "battery_pct": 38.7
+     },
+     {
+      "clients": [
+       292
+      ],
+      "length_m": 6474.0,
+      "load_kg": 1.12,
+      "battery_pct": 40.5
+     },
+     {
+      "clients": [
+       293
+      ],
+      "length_m": 2884.7,
+      "load_kg": 0.81,
+      "battery_pct": 18.0
+     },
+     {
+      "clients": [
+       294
+      ],
+      "length_m": 5128.5,
+      "load_kg": 1.45,
+      "battery_pct": 32.1
+     },
+     {
+      "clients": [
+       295
+      ],
+      "length_m": 863.6,
+      "load_kg": 1.81,
+      "battery_pct": 5.4
+     },
+     {
+      "clients": [
+       296
+      ],
+      "length_m": 4455.3,
+      "load_kg": 0.94,
+      "battery_pct": 27.8
+     },
+     {
+      "clients": [
+       297
+      ],
+      "length_m": 4931.1,
+      "load_kg": 1.7,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       298
+      ],
+      "length_m": 2722.2,
+      "load_kg": 0.69,
+      "battery_pct": 17.0
+     },
+     {
+      "clients": [
+       299
+      ],
+      "length_m": 1024.0,
+      "load_kg": 1.48,
+      "battery_pct": 6.4
+     },
+     {
+      "clients": [
+       300
+      ],
+      "length_m": 6690.4,
+      "load_kg": 2.3,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       301
+      ],
+      "length_m": 6300.9,
+      "load_kg": 2.04,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       302
+      ],
+      "length_m": 4218.4,
+      "load_kg": 2.15,
+      "battery_pct": 26.4
+     },
+     {
+      "clients": [
+       303
+      ],
+      "length_m": 6937.5,
+      "load_kg": 1.6,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       304
+      ],
+      "length_m": 6994.9,
+      "load_kg": 1.68,
+      "battery_pct": 43.7
+     },
+     {
+      "clients": [
+       305
+      ],
+      "length_m": 775.0,
+      "load_kg": 1.88,
+      "battery_pct": 4.8
+     },
+     {
+      "clients": [
+       306
+      ],
+      "length_m": 7403.9,
+      "load_kg": 0.84,
+      "battery_pct": 46.3
+     },
+     {
+      "clients": [
+       307
+      ],
+      "length_m": 7055.6,
+      "load_kg": 1.59,
+      "battery_pct": 44.1
+     },
+     {
+      "clients": [
+       308
+      ],
+      "length_m": 4265.9,
+      "load_kg": 1.85,
+      "battery_pct": 26.7
+     },
+     {
+      "clients": [
+       309
+      ],
+      "length_m": 7223.0,
+      "load_kg": 1.41,
+      "battery_pct": 45.1
+     },
+     {
+      "clients": [
+       310
+      ],
+      "length_m": 6738.5,
+      "load_kg": 1.8,
+      "battery_pct": 42.1
+     },
+     {
+      "clients": [
+       311
+      ],
+      "length_m": 7059.0,
+      "load_kg": 0.75,
+      "battery_pct": 44.1
+     },
+     {
+      "clients": [
+       312
+      ],
+      "length_m": 5568.4,
+      "load_kg": 0.8,
+      "battery_pct": 34.8
+     },
+     {
+      "clients": [
+       313
+      ],
+      "length_m": 3857.5,
+      "load_kg": 1.04,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       314
+      ],
+      "length_m": 3817.9,
+      "load_kg": 1.89,
+      "battery_pct": 23.9
+     },
+     {
+      "clients": [
+       315
+      ],
+      "length_m": 2339.3,
+      "load_kg": 1.73,
+      "battery_pct": 14.6
+     },
+     {
+      "clients": [
+       316
+      ],
+      "length_m": 5395.2,
+      "load_kg": 2.11,
+      "battery_pct": 33.7
+     },
+     {
+      "clients": [
+       317
+      ],
+      "length_m": 3814.7,
+      "load_kg": 0.7,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       318
+      ],
+      "length_m": 5511.6,
+      "load_kg": 1.21,
+      "battery_pct": 34.4
+     },
+     {
+      "clients": [
+       319
+      ],
+      "length_m": 6471.9,
+      "load_kg": 1.39,
+      "battery_pct": 40.4
+     },
+     {
+      "clients": [
+       320
+      ],
+      "length_m": 7306.5,
+      "load_kg": 0.57,
+      "battery_pct": 45.7
+     },
+     {
+      "clients": [
+       321
+      ],
+      "length_m": 7080.0,
+      "load_kg": 0.72,
+      "battery_pct": 44.2
+     },
+     {
+      "clients": [
+       322
+      ],
+      "length_m": 7389.8,
+      "load_kg": 0.86,
+      "battery_pct": 46.2
+     },
+     {
+      "clients": [
+       323
+      ],
+      "length_m": 6685.3,
+      "load_kg": 1.06,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       324
+      ],
+      "length_m": 7345.0,
+      "load_kg": 0.61,
+      "battery_pct": 45.9
+     },
+     {
+      "clients": [
+       325
+      ],
+      "length_m": 7495.5,
+      "load_kg": 1.07,
+      "battery_pct": 46.8
+     },
+     {
+      "clients": [
+       326
+      ],
+      "length_m": 2977.1,
+      "load_kg": 2.29,
+      "battery_pct": 18.6
+     },
+     {
+      "clients": [
+       327
+      ],
+      "length_m": 3928.4,
+      "load_kg": 1.74,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       328
+      ],
+      "length_m": 4981.3,
+      "load_kg": 1.43,
+      "battery_pct": 31.1
+     },
+     {
+      "clients": [
+       329
+      ],
+      "length_m": 4168.0,
+      "load_kg": 2.17,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       330
+      ],
+      "length_m": 2250.2,
+      "load_kg": 1.58,
+      "battery_pct": 14.1
+     },
+     {
+      "clients": [
+       331
+      ],
+      "length_m": 3543.4,
+      "load_kg": 0.84,
+      "battery_pct": 22.1
+     },
+     {
+      "clients": [
+       332
+      ],
+      "length_m": 7506.5,
+      "load_kg": 1.41,
+      "battery_pct": 46.9
+     },
+     {
+      "clients": [
+       333
+      ],
+      "length_m": 7991.8,
+      "load_kg": 0.78,
+      "battery_pct": 49.9
+     },
+     {
+      "clients": [
+       334
+      ],
+      "length_m": 2068.2,
+      "load_kg": 0.75,
+      "battery_pct": 12.9
+     },
+     {
+      "clients": [
+       335
+      ],
+      "length_m": 2379.3,
+      "load_kg": 1.01,
+      "battery_pct": 14.9
+     },
+     {
+      "clients": [
+       336
+      ],
+      "length_m": 6713.6,
+      "load_kg": 0.78,
+      "battery_pct": 42.0
+     },
+     {
+      "clients": [
+       337
+      ],
+      "length_m": 3293.3,
+      "load_kg": 1.7,
+      "battery_pct": 20.6
+     },
+     {
+      "clients": [
+       338
+      ],
+      "length_m": 2305.3,
+      "load_kg": 0.75,
+      "battery_pct": 14.4
+     },
+     {
+      "clients": [
+       339
+      ],
+      "length_m": 6771.8,
+      "load_kg": 1.63,
+      "battery_pct": 42.3
+     },
+     {
+      "clients": [
+       340
+      ],
+      "length_m": 7611.4,
+      "load_kg": 1.57,
+      "battery_pct": 47.6
+     },
+     {
+      "clients": [
+       341
+      ],
+      "length_m": 6283.3,
+      "load_kg": 1.25,
+      "battery_pct": 39.3
+     },
+     {
+      "clients": [
+       342
+      ],
+      "length_m": 5005.5,
+      "load_kg": 1.09,
+      "battery_pct": 31.3
+     },
+     {
+      "clients": [
+       343
+      ],
+      "length_m": 4844.8,
+      "load_kg": 2.3,
+      "battery_pct": 30.3
+     },
+     {
+      "clients": [
+       344
+      ],
+      "length_m": 5811.3,
+      "load_kg": 2.07,
+      "battery_pct": 36.3
+     },
+     {
+      "clients": [
+       345
+      ],
+      "length_m": 6514.1,
+      "load_kg": 1.27,
+      "battery_pct": 40.7
+     },
+     {
+      "clients": [
+       346
+      ],
+      "length_m": 2555.2,
+      "load_kg": 1.5,
+      "battery_pct": 16.0
+     },
+     {
+      "clients": [
+       347
+      ],
+      "length_m": 4003.8,
+      "load_kg": 1.14,
+      "battery_pct": 25.0
+     },
+     {
+      "clients": [
+       348
+      ],
+      "length_m": 2809.3,
+      "load_kg": 1.74,
+      "battery_pct": 17.6
+     },
+     {
+      "clients": [
+       349
+      ],
+      "length_m": 7993.4,
+      "load_kg": 0.77,
+      "battery_pct": 50.0
+     },
+     {
+      "clients": [
+       350
+      ],
+      "length_m": 8216.4,
+      "load_kg": 0.64,
+      "battery_pct": 51.4
+     },
+     {
+      "clients": [
+       351
+      ],
+      "length_m": 6372.7,
+      "load_kg": 2.12,
+      "battery_pct": 39.8
+     },
+     {
+      "clients": [
+       352
+      ],
+      "length_m": 8028.4,
+      "load_kg": 2.1,
+      "battery_pct": 50.2
+     },
+     {
+      "clients": [
+       353
+      ],
+      "length_m": 2158.3,
+      "load_kg": 0.81,
+      "battery_pct": 13.5
+     },
+     {
+      "clients": [
+       354
+      ],
+      "length_m": 4664.2,
+      "load_kg": 1.12,
+      "battery_pct": 29.2
+     },
+     {
+      "clients": [
+       355
+      ],
+      "length_m": 8569.4,
+      "load_kg": 1.4,
+      "battery_pct": 53.6
+     },
+     {
+      "clients": [
+       356
+      ],
+      "length_m": 7961.7,
+      "load_kg": 1.71,
+      "battery_pct": 49.8
+     },
+     {
+      "clients": [
+       357
+      ],
+      "length_m": 8445.6,
+      "load_kg": 1.24,
+      "battery_pct": 52.8
+     },
+     {
+      "clients": [
+       358
+      ],
+      "length_m": 8053.1,
+      "load_kg": 1.96,
+      "battery_pct": 50.3
+     },
+     {
+      "clients": [
+       359
+      ],
+      "length_m": 3224.7,
+      "load_kg": 0.55,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       360
+      ],
+      "length_m": 7510.6,
+      "load_kg": 0.86,
+      "battery_pct": 46.9
+     },
+     {
+      "clients": [
+       361
+      ],
+      "length_m": 4513.2,
+      "load_kg": 0.99,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       362
+      ],
+      "length_m": 7004.1,
+      "load_kg": 1.22,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       363
+      ],
+      "length_m": 4472.7,
+      "load_kg": 0.97,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       364
+      ],
+      "length_m": 4939.9,
+      "load_kg": 1.18,
+      "battery_pct": 30.9
+     },
+     {
+      "clients": [
+       365
+      ],
+      "length_m": 1685.6,
+      "load_kg": 2.21,
+      "battery_pct": 10.5
+     },
+     {
+      "clients": [
+       366
+      ],
+      "length_m": 8668.9,
+      "load_kg": 1.04,
+      "battery_pct": 54.2
+     },
+     {
+      "clients": [
+       367
+      ],
+      "length_m": 8767.1,
+      "load_kg": 2.07,
+      "battery_pct": 54.8
+     },
+     {
+      "clients": [
+       368
+      ],
+      "length_m": 7765.7,
+      "load_kg": 0.52,
+      "battery_pct": 48.5
+     },
+     {
+      "clients": [
+       369
+      ],
+      "length_m": 6695.1,
+      "load_kg": 0.95,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       370
+      ],
+      "length_m": 7179.3,
+      "load_kg": 0.59,
+      "battery_pct": 44.9
+     },
+     {
+      "clients": [
+       371
+      ],
+      "length_m": 7224.3,
+      "load_kg": 0.79,
+      "battery_pct": 45.2
+     },
+     {
+      "clients": [
+       372
+      ],
+      "length_m": 8298.0,
+      "load_kg": 1.67,
+      "battery_pct": 51.9
+     },
+     {
+      "clients": [
+       373
+      ],
+      "length_m": 6686.2,
+      "load_kg": 0.53,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       374
+      ],
+      "length_m": 8152.4,
+      "load_kg": 1.6,
+      "battery_pct": 51.0
+     },
+     {
+      "clients": [
+       375
+      ],
+      "length_m": 7701.7,
+      "load_kg": 0.71,
+      "battery_pct": 48.1
+     },
+     {
+      "clients": [
+       376
+      ],
+      "length_m": 285.0,
+      "load_kg": 0.88,
+      "battery_pct": 1.8
+     },
+     {
+      "clients": [
+       377
+      ],
+      "length_m": 8756.3,
+      "load_kg": 1.58,
+      "battery_pct": 54.7
+     },
+     {
+      "clients": [
+       378
+      ],
+      "length_m": 7261.3,
+      "load_kg": 1.53,
+      "battery_pct": 45.4
+     },
+     {
+      "clients": [
+       379
+      ],
+      "length_m": 7275.1,
+      "load_kg": 1.78,
+      "battery_pct": 45.5
+     },
+     {
+      "clients": [
+       380
+      ],
+      "length_m": 3591.9,
+      "load_kg": 0.72,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       381
+      ],
+      "length_m": 8533.6,
+      "load_kg": 1.53,
+      "battery_pct": 53.3
+     },
+     {
+      "clients": [
+       382
+      ],
+      "length_m": 3961.9,
+      "load_kg": 1.98,
+      "battery_pct": 24.8
+     },
+     {
+      "clients": [
+       383
+      ],
+      "length_m": 6659.5,
+      "load_kg": 1.41,
+      "battery_pct": 41.6
+     },
+     {
+      "clients": [
+       384
+      ],
+      "length_m": 4651.7,
+      "load_kg": 1.45,
+      "battery_pct": 29.1
+     },
+     {
+      "clients": [
+       385
+      ],
+      "length_m": 7778.8,
+      "load_kg": 1.14,
+      "battery_pct": 48.6
+     },
+     {
+      "clients": [
+       386
+      ],
+      "length_m": 8481.2,
+      "load_kg": 1.75,
+      "battery_pct": 53.0
+     },
+     {
+      "clients": [
+       387
+      ],
+      "length_m": 6363.2,
+      "load_kg": 2.03,
+      "battery_pct": 39.8
+     },
+     {
+      "clients": [
+       388
+      ],
+      "length_m": 2507.8,
+      "load_kg": 1.25,
+      "battery_pct": 15.7
+     },
+     {
+      "clients": [
+       389
+      ],
+      "length_m": 7541.4,
+      "load_kg": 1.66,
+      "battery_pct": 47.1
+     },
+     {
+      "clients": [
+       390
+      ],
+      "length_m": 3265.8,
+      "load_kg": 1.27,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       391
+      ],
+      "length_m": 6714.5,
+      "load_kg": 0.51,
+      "battery_pct": 42.0
+     },
+     {
+      "clients": [
+       392
+      ],
+      "length_m": 6409.9,
+      "load_kg": 0.83,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       393
+      ],
+      "length_m": 2998.8,
+      "load_kg": 1.78,
+      "battery_pct": 18.7
+     },
+     {
+      "clients": [
+       394
+      ],
+      "length_m": 5235.4,
+      "load_kg": 0.73,
+      "battery_pct": 32.7
+     },
+     {
+      "clients": [
+       395
+      ],
+      "length_m": 4827.9,
+      "load_kg": 1.3,
+      "battery_pct": 30.2
+     },
+     {
+      "clients": [
+       396
+      ],
+      "length_m": 7884.1,
+      "load_kg": 1.87,
+      "battery_pct": 49.3
+     },
+     {
+      "clients": [
+       397
+      ],
+      "length_m": 2636.3,
+      "load_kg": 0.68,
+      "battery_pct": 16.5
+     },
+     {
+      "clients": [
+       398
+      ],
+      "length_m": 8332.5,
+      "load_kg": 0.59,
+      "battery_pct": 52.1
+     },
+     {
+      "clients": [
+       399
+      ],
+      "length_m": 1393.9,
+      "load_kg": 1.82,
+      "battery_pct": 8.7
+     },
+     {
+      "clients": [
+       400
+      ],
+      "length_m": 7800.6,
+      "load_kg": 2.08,
+      "battery_pct": 48.8
+     },
+     {
+      "clients": [
+       401
+      ],
+      "length_m": 6286.1,
+      "load_kg": 0.53,
+      "battery_pct": 39.3
+     },
+     {
+      "clients": [
+       402
+      ],
+      "length_m": 1077.4,
+      "load_kg": 1.51,
+      "battery_pct": 6.7
+     },
+     {
+      "clients": [
+       403
+      ],
+      "length_m": 3534.1,
+      "load_kg": 1.45,
+      "battery_pct": 22.1
+     },
+     {
+      "clients": [
+       404
+      ],
+      "length_m": 4725.9,
+      "load_kg": 0.82,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       405
+      ],
+      "length_m": 1945.7,
+      "load_kg": 1.75,
+      "battery_pct": 12.2
+     },
+     {
+      "clients": [
+       406
+      ],
+      "length_m": 6890.4,
+      "load_kg": 1.22,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       407
+      ],
+      "length_m": 7423.4,
+      "load_kg": 1.43,
+      "battery_pct": 46.4
+     },
+     {
+      "clients": [
+       408
+      ],
+      "length_m": 4029.5,
+      "load_kg": 0.8,
+      "battery_pct": 25.2
+     },
+     {
+      "clients": [
+       409
+      ],
+      "length_m": 6181.6,
+      "load_kg": 1.15,
+      "battery_pct": 38.6
+     },
+     {
+      "clients": [
+       410
+      ],
+      "length_m": 4352.3,
+      "load_kg": 1.62,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       411
+      ],
+      "length_m": 6732.9,
+      "load_kg": 1.81,
+      "battery_pct": 42.1
+     },
+     {
+      "clients": [
+       412
+      ],
+      "length_m": 8065.3,
+      "load_kg": 1.69,
+      "battery_pct": 50.4
+     },
+     {
+      "clients": [
+       413
+      ],
+      "length_m": 7549.5,
+      "load_kg": 2.11,
+      "battery_pct": 47.2
+     },
+     {
+      "clients": [
+       414
+      ],
+      "length_m": 7691.1,
+      "load_kg": 0.86,
+      "battery_pct": 48.1
+     },
+     {
+      "clients": [
+       415
+      ],
+      "length_m": 6073.6,
+      "load_kg": 0.57,
+      "battery_pct": 38.0
+     },
+     {
+      "clients": [
+       416
+      ],
+      "length_m": 1034.2,
+      "load_kg": 2.04,
+      "battery_pct": 6.5
+     },
+     {
+      "clients": [
+       417
+      ],
+      "length_m": 3344.1,
+      "load_kg": 2.17,
+      "battery_pct": 20.9
+     },
+     {
+      "clients": [
+       418
+      ],
+      "length_m": 3262.4,
+      "load_kg": 1.29,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       419
+      ],
+      "length_m": 5615.7,
+      "load_kg": 2.18,
+      "battery_pct": 35.1
+     },
+     {
+      "clients": [
+       420
+      ],
+      "length_m": 7375.6,
+      "load_kg": 0.78,
+      "battery_pct": 46.1
+     },
+     {
+      "clients": [
+       421
+      ],
+      "length_m": 4523.8,
+      "load_kg": 1.72,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       422
+      ],
+      "length_m": 4284.5,
+      "load_kg": 0.55,
+      "battery_pct": 26.8
+     },
+     {
+      "clients": [
+       423
+      ],
+      "length_m": 5572.9,
+      "load_kg": 1.05,
+      "battery_pct": 34.8
+     },
+     {
+      "clients": [
+       424
+      ],
+      "length_m": 6739.2,
+      "load_kg": 1.79,
+      "battery_pct": 42.1
+     },
+     {
+      "clients": [
+       425
+      ],
+      "length_m": 5293.2,
+      "load_kg": 1.59,
+      "battery_pct": 33.1
+     },
+     {
+      "clients": [
+       426
+      ],
+      "length_m": 7444.0,
+      "load_kg": 1.35,
+      "battery_pct": 46.5
+     },
+     {
+      "clients": [
+       427
+      ],
+      "length_m": 5512.0,
+      "load_kg": 0.98,
+      "battery_pct": 34.5
+     },
+     {
+      "clients": [
+       428
+      ],
+      "length_m": 3623.1,
+      "load_kg": 1.06,
+      "battery_pct": 22.6
+     },
+     {
+      "clients": [
+       429
+      ],
+      "length_m": 3470.2,
+      "load_kg": 0.99,
+      "battery_pct": 21.7
+     },
+     {
+      "clients": [
+       430
+      ],
+      "length_m": 5684.6,
+      "load_kg": 1.85,
+      "battery_pct": 35.5
+     },
+     {
+      "clients": [
+       431
+      ],
+      "length_m": 6783.0,
+      "load_kg": 0.88,
+      "battery_pct": 42.4
+     },
+     {
+      "clients": [
+       432
+      ],
+      "length_m": 7570.0,
+      "load_kg": 1.51,
+      "battery_pct": 47.3
+     },
+     {
+      "clients": [
+       433
+      ],
+      "length_m": 5662.9,
+      "load_kg": 1.15,
+      "battery_pct": 35.4
+     },
+     {
+      "clients": [
+       434
+      ],
+      "length_m": 7137.3,
+      "load_kg": 1.2,
+      "battery_pct": 44.6
+     },
+     {
+      "clients": [
+       435
+      ],
+      "length_m": 6417.1,
+      "load_kg": 0.92,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       436
+      ],
+      "length_m": 7225.0,
+      "load_kg": 1.12,
+      "battery_pct": 45.2
+     },
+     {
+      "clients": [
+       437
+      ],
+      "length_m": 5044.0,
+      "load_kg": 1.11,
+      "battery_pct": 31.5
+     },
+     {
+      "clients": [
+       438
+      ],
+      "length_m": 7005.0,
+      "load_kg": 0.91,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       439
+      ],
+      "length_m": 6390.1,
+      "load_kg": 1.71,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       440
+      ],
+      "length_m": 3681.1,
+      "load_kg": 0.85,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       441
+      ],
+      "length_m": 1146.7,
+      "load_kg": 2.04,
+      "battery_pct": 7.2
+     },
+     {
+      "clients": [
+       442
+      ],
+      "length_m": 3419.5,
+      "load_kg": 1.73,
+      "battery_pct": 21.4
+     },
+     {
+      "clients": [
+       443
+      ],
+      "length_m": 4266.1,
+      "load_kg": 1.8,
+      "battery_pct": 26.7
+     },
+     {
+      "clients": [
+       444
+      ],
+      "length_m": 6751.1,
+      "load_kg": 2.2,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       445
+      ],
+      "length_m": 3233.1,
+      "load_kg": 1.92,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       446
+      ],
+      "length_m": 6903.5,
+      "load_kg": 0.99,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       447
+      ],
+      "length_m": 3930.8,
+      "load_kg": 2.27,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       448
+      ],
+      "length_m": 7447.7,
+      "load_kg": 1.11,
+      "battery_pct": 46.5
+     },
+     {
+      "clients": [
+       449
+      ],
+      "length_m": 6501.8,
+      "load_kg": 1.49,
+      "battery_pct": 40.6
+     },
+     {
+      "clients": [
+       450
+      ],
+      "length_m": 7350.3,
+      "load_kg": 1.06,
+      "battery_pct": 45.9
+     },
+     {
+      "clients": [
+       451
+      ],
+      "length_m": 1931.3,
+      "load_kg": 2.09,
+      "battery_pct": 12.1
+     },
+     {
+      "clients": [
+       452
+      ],
+      "length_m": 6221.3,
+      "load_kg": 2.19,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       453
+      ],
+      "length_m": 3681.9,
+      "load_kg": 0.86,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       454
+      ],
+      "length_m": 6918.0,
+      "load_kg": 1.87,
+      "battery_pct": 43.2
+     },
+     {
+      "clients": [
+       455
+      ],
+      "length_m": 355.0,
+      "load_kg": 1.83,
+      "battery_pct": 2.2
+     },
+     {
+      "clients": [
+       456
+      ],
+      "length_m": 6416.4,
+      "load_kg": 0.77,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       457
+      ],
+      "length_m": 3853.1,
+      "load_kg": 1.03,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       458
+      ],
+      "length_m": 4118.8,
+      "load_kg": 0.91,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       459
+      ],
+      "length_m": 2946.8,
+      "load_kg": 1.37,
+      "battery_pct": 18.4
+     },
+     {
+      "clients": [
+       460
+      ],
+      "length_m": 6353.9,
+      "load_kg": 1.34,
+      "battery_pct": 39.7
+     },
+     {
+      "clients": [
+       461
+      ],
+      "length_m": 3805.1,
+      "load_kg": 1.01,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       462
+      ],
+      "length_m": 2751.9,
+      "load_kg": 1.01,
+      "battery_pct": 17.2
+     },
+     {
+      "clients": [
+       463
+      ],
+      "length_m": 4119.3,
+      "load_kg": 1.36,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       464
+      ],
+      "length_m": 6048.1,
+      "load_kg": 1.58,
+      "battery_pct": 37.8
+     },
+     {
+      "clients": [
+       465
+      ],
+      "length_m": 4653.1,
+      "load_kg": 1.73,
+      "battery_pct": 29.1
+     },
+     {
+      "clients": [
+       466
+      ],
+      "length_m": 1133.4,
+      "load_kg": 2.04,
+      "battery_pct": 7.1
+     },
+     {
+      "clients": [
+       467
+      ],
+      "length_m": 6082.2,
+      "load_kg": 0.86,
+      "battery_pct": 38.0
+     },
+     {
+      "clients": [
+       468
+      ],
+      "length_m": 3823.9,
+      "load_kg": 1.39,
+      "battery_pct": 23.9
+     },
+     {
+      "clients": [
+       469
+      ],
+      "length_m": 4733.2,
+      "load_kg": 0.71,
+      "battery_pct": 29.6
+     },
+     {
+      "clients": [
+       470
+      ],
+      "length_m": 3668.6,
+      "load_kg": 0.56,
+      "battery_pct": 22.9
+     },
+     {
+      "clients": [
+       471
+      ],
+      "length_m": 7134.4,
+      "load_kg": 2.24,
+      "battery_pct": 44.6
+     },
+     {
+      "clients": [
+       472
+      ],
+      "length_m": 3892.0,
+      "load_kg": 1.71,
+      "battery_pct": 24.3
+     },
+     {
+      "clients": [
+       473
+      ],
+      "length_m": 4135.8,
+      "load_kg": 1.17,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       474
+      ],
+      "length_m": 880.5,
+      "load_kg": 0.71,
+      "battery_pct": 5.5
+     },
+     {
+      "clients": [
+       475
+      ],
+      "length_m": 5596.0,
+      "load_kg": 1.55,
+      "battery_pct": 35.0
+     },
+     {
+      "clients": [
+       476
+      ],
+      "length_m": 4260.1,
+      "load_kg": 1.45,
+      "battery_pct": 26.6
+     },
+     {
+      "clients": [
+       477
+      ],
+      "length_m": 4487.0,
+      "load_kg": 0.89,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       478
+      ],
+      "length_m": 2749.7,
+      "load_kg": 0.65,
+      "battery_pct": 17.2
+     },
+     {
+      "clients": [
+       479
+      ],
+      "length_m": 3725.2,
+      "load_kg": 1.67,
+      "battery_pct": 23.3
+     },
+     {
+      "clients": [
+       480
+      ],
+      "length_m": 2372.8,
+      "load_kg": 0.65,
+      "battery_pct": 14.8
+     },
+     {
+      "clients": [
+       481
+      ],
+      "length_m": 4524.9,
+      "load_kg": 0.61,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       482
+      ],
+      "length_m": 5353.4,
+      "load_kg": 1.83,
+      "battery_pct": 33.5
+     },
+     {
+      "clients": [
+       483
+      ],
+      "length_m": 5310.6,
+      "load_kg": 1.81,
+      "battery_pct": 33.2
+     },
+     {
+      "clients": [
+       484
+      ],
+      "length_m": 2310.1,
+      "load_kg": 1.5,
+      "battery_pct": 14.4
+     },
+     {
+      "clients": [
+       485
+      ],
+      "length_m": 6774.1,
+      "load_kg": 2.15,
+      "battery_pct": 42.3
+     },
+     {
+      "clients": [
+       486
+      ],
+      "length_m": 3737.5,
+      "load_kg": 1.45,
+      "battery_pct": 23.4
+     },
+     {
+      "clients": [
+       487
+      ],
+      "length_m": 4136.0,
+      "load_kg": 1.93,
+      "battery_pct": 25.8
+     },
+     {
+      "clients": [
+       488
+      ],
+      "length_m": 4814.2,
+      "load_kg": 1.79,
+      "battery_pct": 30.1
+     },
+     {
+      "clients": [
+       489
+      ],
+      "length_m": 1971.4,
+      "load_kg": 1.65,
+      "battery_pct": 12.3
+     },
+     {
+      "clients": [
+       490
+      ],
+      "length_m": 6790.4,
+      "load_kg": 1.35,
+      "battery_pct": 42.4
+     },
+     {
+      "clients": [
+       491
+      ],
+      "length_m": 2653.0,
+      "load_kg": 1.47,
+      "battery_pct": 16.6
+     },
+     {
+      "clients": [
+       492
+      ],
+      "length_m": 1595.8,
+      "load_kg": 2.11,
+      "battery_pct": 10.0
+     },
+     {
+      "clients": [
+       493
+      ],
+      "length_m": 5078.4,
+      "load_kg": 1.2,
+      "battery_pct": 31.7
+     },
+     {
+      "clients": [
+       494
+      ],
+      "length_m": 5100.9,
+      "load_kg": 1.46,
+      "battery_pct": 31.9
+     },
+     {
+      "clients": [
+       495
+      ],
+      "length_m": 2225.0,
+      "load_kg": 0.71,
+      "battery_pct": 13.9
+     },
+     {
+      "clients": [
+       496
+      ],
+      "length_m": 5408.0,
+      "load_kg": 1.86,
+      "battery_pct": 33.8
+     },
+     {
+      "clients": [
+       497
+      ],
+      "length_m": 3859.6,
+      "load_kg": 1.17,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       498
+      ],
+      "length_m": 7100.2,
+      "load_kg": 1.19,
+      "battery_pct": 44.4
+     },
+     {
+      "clients": [
+       499
+      ],
+      "length_m": 6877.2,
+      "load_kg": 1.57,
+      "battery_pct": 43.0
+     },
+     {
+      "clients": [
+       500
+      ],
+      "length_m": 3400.5,
+      "load_kg": 0.63,
+      "battery_pct": 21.3
+     },
+     {
+      "clients": [
+       501
+      ],
+      "length_m": 5282.4,
+      "load_kg": 1.96,
+      "battery_pct": 33.0
+     },
+     {
+      "clients": [
+       502
+      ],
+      "length_m": 1642.6,
+      "load_kg": 2.11,
+      "battery_pct": 10.3
+     },
+     {
+      "clients": [
+       503
+      ],
+      "length_m": 6277.6,
+      "load_kg": 1.28,
+      "battery_pct": 39.2
+     },
+     {
+      "clients": [
+       504
+      ],
+      "length_m": 4989.6,
+      "load_kg": 1.55,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       505
+      ],
+      "length_m": 4217.4,
+      "load_kg": 1.99,
+      "battery_pct": 26.4
+     },
+     {
+      "clients": [
+       506
+      ],
+      "length_m": 3650.6,
+      "load_kg": 0.85,
+      "battery_pct": 22.8
+     },
+     {
+      "clients": [
+       507
+      ],
+      "length_m": 6715.8,
+      "load_kg": 1.49,
+      "battery_pct": 42.0
+     },
+     {
+      "clients": [
+       508
+      ],
+      "length_m": 4490.0,
+      "load_kg": 1.54,
+      "battery_pct": 28.1
+     },
+     {
+      "clients": [
+       509
+      ],
+      "length_m": 6434.3,
+      "load_kg": 0.61,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       510
+      ],
+      "length_m": 3934.8,
+      "load_kg": 0.52,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       511
+      ],
+      "length_m": 1832.2,
+      "load_kg": 0.94,
+      "battery_pct": 11.5
+     },
+     {
+      "clients": [
+       512
+      ],
+      "length_m": 7006.8,
+      "load_kg": 0.78,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       513
+      ],
+      "length_m": 3888.3,
+      "load_kg": 1.42,
+      "battery_pct": 24.3
+     },
+     {
+      "clients": [
+       514
+      ],
+      "length_m": 2205.3,
+      "load_kg": 0.61,
+      "battery_pct": 13.8
+     },
+     {
+      "clients": [
+       515
+      ],
+      "length_m": 4192.2,
+      "load_kg": 1.89,
+      "battery_pct": 26.2
+     },
+     {
+      "clients": [
+       516
+      ],
+      "length_m": 4364.2,
+      "load_kg": 1.48,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       517
+      ],
+      "length_m": 6683.9,
+      "load_kg": 1.55,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       518
+      ],
+      "length_m": 6682.9,
+      "load_kg": 1.41,
+      "battery_pct": 41.8
+     }
+    ],
+    "schedule": [
+     [
+      241,
+      213,
+      219,
+      253,
+      228,
+      231,
+      218,
+      249,
+      255,
+      243,
+      239,
+      235,
+      234,
+      266,
+      366,
+      376,
+      230,
+      365,
+      354,
+      380,
+      385,
+      224,
+      482
+     ],
+     [
+      222,
+      356,
+      397,
+      371,
+      349,
+      373,
+      411,
+      357,
+      351,
+      36,
+      33,
+      348,
+      332,
+      355,
+      44,
+      395,
+      285,
+      42,
+      39,
+      399,
+      384,
+      38,
+      367,
+      374
+     ],
+     [
+      413,
+      28,
+      52,
+      339,
+      431,
+      412,
+      388,
+      359,
+      331,
+      324,
+      56,
+      60,
+      447,
+      425,
+      406,
+      305,
+      9,
+      321,
+      419,
+      449,
+      323,
+      319,
+      378,
+      377,
+      261
+     ],
+     [
+      435,
+      370,
+      308,
+      369,
+      259,
+      183,
+      433,
+      470,
+      135,
+      275,
+      497,
+      136,
+      3,
+      320,
+      20,
+      310,
+      280,
+      306,
+      67,
+      68,
+      65,
+      511,
+      437,
+      361,
+      303,
+      251
+     ],
+     [
+      26,
+      77,
+      265,
+      302,
+      271,
+      453,
+      88,
+      445,
+      13,
+      11,
+      405,
+      498,
+      78,
+      489,
+      430,
+      484,
+      338,
+      10,
+      248,
+      51,
+      443,
+      423,
+      309,
+      410,
+      233,
+      506
+     ],
+     [
+      390,
+      335,
+      368,
+      0,
+      299,
+      372,
+      322,
+      516,
+      517,
+      58,
+      139,
+      286,
+      382,
+      63,
+      252,
+      197,
+      64,
+      278,
+      344,
+      448,
+      291,
+      318,
+      19,
+      274,
+      508,
+      212,
+      217
+     ],
+     [
+      201,
+      434,
+      455,
+      391,
+      245,
+      438,
+      86,
+      350,
+      229,
+      386,
+      459,
+      1,
+      134,
+      242,
+      300,
+      400,
+      340,
+      137,
+      502,
+      238,
+      12,
+      237,
+      451,
+      49,
+      290,
+      408,
+      82
+     ],
+     [
+      138,
+      223,
+      466,
+      414,
+      53,
+      216,
+      463,
+      210,
+      89,
+      206,
+      200,
+      225,
+      221,
+      220,
+      279,
+      144,
+      61,
+      343,
+      66,
+      192,
+      247,
+      59,
+      236,
+      146,
+      429,
+      432,
+      127,
+      418
+     ],
+     [
+      202,
+      474,
+      203,
+      422,
+      311,
+      204,
+      70,
+      426,
+      317,
+      122,
+      145,
+      76,
+      495,
+      289,
+      315,
+      120,
+      481,
+      173,
+      102,
+      69,
+      424,
+      500,
+      74,
+      133,
+      393,
+      90,
+      130,
+      129,
+      226
+     ],
+     [
+      262,
+      215,
+      170,
+      293,
+      195,
+      493,
+      492,
+      256,
+      184,
+      208,
+      436,
+      131,
+      341,
+      87,
+      503,
+      189,
+      121,
+      327,
+      150,
+      100,
+      363,
+      123,
+      282,
+      296,
+      128,
+      342,
+      394,
+      6,
+      190,
+      132
+     ],
+     [
+      2,
+      487,
+      468,
+      93,
+      83,
+      403,
+      171,
+      176,
+      194,
+      214,
+      353,
+      464,
+      383,
+      193,
+      277,
+      273,
+      115,
+      116,
+      5,
+      147,
+      480,
+      84,
+      420,
+      360,
+      209,
+      507,
+      476,
+      17,
+      148,
+      362,
+      272
+     ],
+     [
+      153,
+      154,
+      295,
+      18,
+      155,
+      85,
+      125,
+      96,
+      16,
+      515,
+      211,
+      409,
+      149,
+      421,
+      442,
+      307,
+      475,
+      227,
+      169,
+      126,
+      301,
+      504,
+      257,
+      151,
+      91,
+      514,
+      328,
+      166,
+      119,
+      185,
+      268
+     ],
+     [
+      106,
+      486,
+      472,
+      159,
+      157,
+      196,
+      207,
+      462,
+      457,
+      95,
+      167,
+      186,
+      75,
+      187,
+      174,
+      250,
+      407,
+      92,
+      346,
+      165,
+      99,
+      182,
+      267,
+      178,
+      198,
+      381,
+      7,
+      509,
+      446,
+      326,
+      98,
+      152
+     ],
+     [
+      270,
+      471,
+      512,
+      496,
+      312,
+      164,
+      456,
+      467,
+      313,
+      104,
+      316,
+      199,
+      111,
+      460,
+      232,
+      113,
+      177,
+      112,
+      4,
+      162,
+      485,
+      478,
+      180,
+      264,
+      452,
+      439,
+      469,
+      168,
+      505,
+      427,
+      179,
+      379,
+      283
+     ],
+     [
+      188,
+      330,
+      402,
+      108,
+      23,
+      240,
+      428,
+      109,
+      254,
+      288,
+      34,
+      441,
+      276,
+      499,
+      45,
+      416,
+      15,
+      181,
+      336,
+      287,
+      244,
+      27,
+      389,
+      417,
+      172,
+      444,
+      175,
+      358,
+      57,
+      25,
+      205,
+      62,
+      37,
+      101
+     ],
+     [
+      48,
+      50,
+      73,
+      392,
+      46,
+      325,
+      458,
+      107,
+      292,
+      191,
+      103,
+      347,
+      461,
+      477,
+      80,
+      297,
+      54,
+      284,
+      22,
+      490,
+      396,
+      55,
+      345,
+      387,
+      110,
+      21,
+      114,
+      163,
+      41,
+      117,
+      246,
+      24,
+      47,
+      269,
+      334,
+      479
+     ],
+     [
+      314,
+      94,
+      105,
+      260,
+      483,
+      337,
+      118,
+      30,
+      281,
+      329,
+      494,
+      513,
+      161,
+      352,
+      263,
+      333,
+      43,
+      81,
+      488,
+      404,
+      450,
+      29,
+      14,
+      510,
+      72,
+      364,
+      501,
+      491,
+      398,
+      97,
+      71,
+      40,
+      440,
+      465,
+      401,
+      415,
+      298,
+      8,
+      35
+     ],
+     [
+      158,
+      32,
+      473,
+      160,
+      294,
+      304,
+      156,
+      141,
+      31,
+      258,
+      124,
+      79,
+      140,
+      142,
+      454,
+      143,
+      375
+     ]
+    ]
+   },
+   "best": {
+    "trips": 124,
+    "km": 674.41,
+    "drones": 6,
+    "drones_lb": 6,
+    "fleet_minutes": 2837.3,
+    "utilisation": 0.985,
+    "max_clients_per_trip": 6,
+    "routes": [
+     {
+      "clients": [
+       517,
+       518,
+       1,
+       38
+      ],
+      "length_m": 7019.5,
+      "load_kg": 6.0,
+      "battery_pct": 43.9
+     },
+     {
+      "clients": [
+       13,
+       20,
+       2,
+       478
+      ],
+      "length_m": 6951.2,
+      "load_kg": 5.55,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       512,
+       4,
+       10,
+       21
+      ],
+      "length_m": 7773.6,
+      "load_kg": 5.51,
+      "battery_pct": 48.6
+     },
+     {
+      "clients": [
+       486,
+       487,
+       497,
+       5
+      ],
+      "length_m": 4563.2,
+      "load_kg": 5.87,
+      "battery_pct": 28.5
+     },
+     {
+      "clients": [
+       504,
+       3,
+       7,
+       6
+      ],
+      "length_m": 5261.6,
+      "load_kg": 5.74,
+      "battery_pct": 32.9
+     },
+     {
+      "clients": [
+       514,
+       513,
+       515,
+       8
+      ],
+      "length_m": 4283.8,
+      "load_kg": 5.91,
+      "battery_pct": 26.8
+     },
+     {
+      "clients": [
+       9,
+       33
+      ],
+      "length_m": 1076.2,
+      "load_kg": 4.48,
+      "battery_pct": 6.7
+     },
+     {
+      "clients": [
+       11,
+       12,
+       14,
+       27,
+       48
+      ],
+      "length_m": 7466.6,
+      "load_kg": 5.76,
+      "battery_pct": 46.7
+     },
+     {
+      "clients": [
+       30,
+       15,
+       511
+      ],
+      "length_m": 2149.5,
+      "load_kg": 4.81,
+      "battery_pct": 13.4
+     },
+     {
+      "clients": [
+       16,
+       24,
+       28
+      ],
+      "length_m": 3631.9,
+      "load_kg": 5.7,
+      "battery_pct": 22.7
+     },
+     {
+      "clients": [
+       17,
+       18,
+       19,
+       22
+      ],
+      "length_m": 4491.9,
+      "load_kg": 5.96,
+      "battery_pct": 28.1
+     },
+     {
+      "clients": [
+       44,
+       31,
+       26,
+       23,
+       25
+      ],
+      "length_m": 3348.5,
+      "load_kg": 5.51,
+      "battery_pct": 20.9
+     },
+     {
+      "clients": [
+       29,
+       34,
+       37,
+       40,
+       39
+      ],
+      "length_m": 8402.6,
+      "load_kg": 5.61,
+      "battery_pct": 52.5
+     },
+     {
+      "clients": [
+       259,
+       416,
+       32
+      ],
+      "length_m": 1458.1,
+      "load_kg": 5.16,
+      "battery_pct": 9.1
+     },
+     {
+      "clients": [
+       35,
+       53,
+       57,
+       61
+      ],
+      "length_m": 7733.4,
+      "load_kg": 5.66,
+      "battery_pct": 48.3
+     },
+     {
+      "clients": [
+       36,
+       41,
+       72,
+       98
+      ],
+      "length_m": 1635.7,
+      "load_kg": 5.24,
+      "battery_pct": 10.2
+     },
+     {
+      "clients": [
+       42,
+       50,
+       52,
+       59,
+       54
+      ],
+      "length_m": 6936.1,
+      "load_kg": 5.93,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       43,
+       45,
+       66,
+       68,
+       69
+      ],
+      "length_m": 8439.4,
+      "load_kg": 5.56,
+      "battery_pct": 52.7
+     },
+     {
+      "clients": [
+       49,
+       46,
+       58,
+       63
+      ],
+      "length_m": 3504.5,
+      "load_kg": 5.84,
+      "battery_pct": 21.9
+     },
+     {
+      "clients": [
+       47,
+       51,
+       55,
+       56
+      ],
+      "length_m": 3131.1,
+      "load_kg": 5.71,
+      "battery_pct": 19.6
+     },
+     {
+      "clients": [
+       60,
+       62,
+       71,
+       76
+      ],
+      "length_m": 5977.6,
+      "load_kg": 5.25,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       67,
+       64,
+       65
+      ],
+      "length_m": 6637.7,
+      "load_kg": 5.4,
+      "battery_pct": 41.5
+     },
+     {
+      "clients": [
+       88,
+       91,
+       70
+      ],
+      "length_m": 5736.0,
+      "load_kg": 5.26,
+      "battery_pct": 35.8
+     },
+     {
+      "clients": [
+       73,
+       119,
+       125
+      ],
+      "length_m": 2587.8,
+      "load_kg": 5.53,
+      "battery_pct": 16.2
+     },
+     {
+      "clients": [
+       74,
+       99,
+       104
+      ],
+      "length_m": 4066.2,
+      "load_kg": 5.72,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       75,
+       77,
+       90
+      ],
+      "length_m": 6084.0,
+      "load_kg": 5.52,
+      "battery_pct": 38.0
+     },
+     {
+      "clients": [
+       80,
+       82,
+       95,
+       106
+      ],
+      "length_m": 2534.5,
+      "load_kg": 5.98,
+      "battery_pct": 15.8
+     },
+     {
+      "clients": [
+       81,
+       108,
+       115,
+       118
+      ],
+      "length_m": 3280.3,
+      "load_kg": 5.83,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       101,
+       103,
+       94,
+       84
+      ],
+      "length_m": 5614.6,
+      "load_kg": 6.0,
+      "battery_pct": 35.1
+     },
+     {
+      "clients": [
+       97,
+       85,
+       86
+      ],
+      "length_m": 4721.7,
+      "load_kg": 5.12,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       87,
+       89,
+       78,
+       79,
+       83
+      ],
+      "length_m": 7118.7,
+      "load_kg": 5.96,
+      "battery_pct": 44.5
+     },
+     {
+      "clients": [
+       93,
+       92,
+       96,
+       100
+      ],
+      "length_m": 4311.2,
+      "load_kg": 5.58,
+      "battery_pct": 26.9
+     },
+     {
+      "clients": [
+       102,
+       105,
+       107,
+       120,
+       114
+      ],
+      "length_m": 4474.1,
+      "load_kg": 5.58,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       109,
+       112,
+       113,
+       110,
+       111
+      ],
+      "length_m": 3848.9,
+      "load_kg": 5.3,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       117,
+       116,
+       121,
+       122,
+       124
+      ],
+      "length_m": 5480.6,
+      "load_kg": 5.68,
+      "battery_pct": 34.3
+     },
+     {
+      "clients": [
+       123,
+       128,
+       130,
+       131
+      ],
+      "length_m": 5771.9,
+      "load_kg": 5.6,
+      "battery_pct": 36.1
+     },
+     {
+      "clients": [
+       127,
+       126,
+       129,
+       132,
+       133
+      ],
+      "length_m": 5123.9,
+      "load_kg": 5.74,
+      "battery_pct": 32.0
+     },
+     {
+      "clients": [
+       134,
+       136,
+       137,
+       140
+      ],
+      "length_m": 7192.7,
+      "load_kg": 5.81,
+      "battery_pct": 45.0
+     },
+     {
+      "clients": [
+       135,
+       138,
+       139
+      ],
+      "length_m": 6397.1,
+      "load_kg": 5.51,
+      "battery_pct": 40.0
+     },
+     {
+      "clients": [
+       141,
+       142,
+       143,
+       144
+      ],
+      "length_m": 907.5,
+      "load_kg": 5.35,
+      "battery_pct": 5.7
+     },
+     {
+      "clients": [
+       145,
+       147,
+       146
+      ],
+      "length_m": 6004.6,
+      "load_kg": 5.35,
+      "battery_pct": 37.5
+     },
+     {
+      "clients": [
+       148,
+       149,
+       151
+      ],
+      "length_m": 5165.1,
+      "load_kg": 5.77,
+      "battery_pct": 32.3
+     },
+     {
+      "clients": [
+       150,
+       153,
+       157
+      ],
+      "length_m": 4511.3,
+      "load_kg": 5.59,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       152,
+       154,
+       155,
+       156
+      ],
+      "length_m": 4562.4,
+      "load_kg": 5.78,
+      "battery_pct": 28.5
+     },
+     {
+      "clients": [
+       158,
+       160,
+       167,
+       166
+      ],
+      "length_m": 4465.0,
+      "load_kg": 5.33,
+      "battery_pct": 27.9
+     },
+     {
+      "clients": [
+       159,
+       162,
+       164
+      ],
+      "length_m": 2465.0,
+      "load_kg": 5.63,
+      "battery_pct": 15.4
+     },
+     {
+      "clients": [
+       161,
+       163,
+       165,
+       173
+      ],
+      "length_m": 4064.0,
+      "load_kg": 5.68,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       168,
+       170,
+       171,
+       174,
+       172
+      ],
+      "length_m": 5388.6,
+      "load_kg": 5.75,
+      "battery_pct": 33.7
+     },
+     {
+      "clients": [
+       175,
+       177,
+       179,
+       181
+      ],
+      "length_m": 4794.8,
+      "load_kg": 5.96,
+      "battery_pct": 30.0
+     },
+     {
+      "clients": [
+       169,
+       178,
+       180,
+       176
+      ],
+      "length_m": 3934.1,
+      "load_kg": 5.58,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       192,
+       182,
+       189,
+       206
+      ],
+      "length_m": 3712.2,
+      "load_kg": 5.47,
+      "battery_pct": 23.2
+     },
+     {
+      "clients": [
+       183,
+       195,
+       196,
+       193,
+       204,
+       205
+      ],
+      "length_m": 5970.8,
+      "load_kg": 5.99,
+      "battery_pct": 37.3
+     },
+     {
+      "clients": [
+       187,
+       186,
+       185,
+       190,
+       191,
+       194
+      ],
+      "length_m": 5119.1,
+      "load_kg": 5.98,
+      "battery_pct": 32.0
+     },
+     {
+      "clients": [
+       188,
+       197,
+       199,
+       200
+      ],
+      "length_m": 4186.5,
+      "load_kg": 5.45,
+      "battery_pct": 26.2
+     },
+     {
+      "clients": [
+       203,
+       201,
+       202,
+       207
+      ],
+      "length_m": 6533.3,
+      "load_kg": 5.56,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       208,
+       210,
+       209,
+       216,
+       215
+      ],
+      "length_m": 5290.4,
+      "load_kg": 5.77,
+      "battery_pct": 33.1
+     },
+     {
+      "clients": [
+       211,
+       223,
+       225,
+       184,
+       198
+      ],
+      "length_m": 9050.7,
+      "load_kg": 5.83,
+      "battery_pct": 56.6
+     },
+     {
+      "clients": [
+       233,
+       212,
+       228,
+       251,
+       261
+      ],
+      "length_m": 4725.0,
+      "load_kg": 5.92,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       214,
+       220,
+       219,
+       213
+      ],
+      "length_m": 10198.5,
+      "load_kg": 5.96,
+      "battery_pct": 63.7
+     },
+     {
+      "clients": [
+       217,
+       222,
+       226,
+       227
+      ],
+      "length_m": 6160.5,
+      "load_kg": 5.86,
+      "battery_pct": 38.5
+     },
+     {
+      "clients": [
+       245,
+       255,
+       241,
+       218
+      ],
+      "length_m": 3779.4,
+      "load_kg": 5.13,
+      "battery_pct": 23.6
+     },
+     {
+      "clients": [
+       221,
+       238,
+       239
+      ],
+      "length_m": 6389.5,
+      "load_kg": 5.43,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       224,
+       230,
+       234,
+       246,
+       243
+      ],
+      "length_m": 6871.6,
+      "load_kg": 5.89,
+      "battery_pct": 42.9
+     },
+     {
+      "clients": [
+       232,
+       229,
+       242,
+       254
+      ],
+      "length_m": 11010.8,
+      "load_kg": 5.62,
+      "battery_pct": 68.8
+     },
+     {
+      "clients": [
+       231,
+       235,
+       236,
+       240,
+       286
+      ],
+      "length_m": 9422.7,
+      "load_kg": 5.91,
+      "battery_pct": 58.9
+     },
+     {
+      "clients": [
+       237,
+       248,
+       275,
+       287,
+       292,
+       291
+      ],
+      "length_m": 7071.0,
+      "load_kg": 5.99,
+      "battery_pct": 44.2
+     },
+     {
+      "clients": [
+       247,
+       270,
+       285,
+       293,
+       298
+      ],
+      "length_m": 3107.6,
+      "load_kg": 5.72,
+      "battery_pct": 19.4
+     },
+     {
+      "clients": [
+       252,
+       253,
+       249,
+       260,
+       266,
+       279
+      ],
+      "length_m": 7417.1,
+      "load_kg": 5.91,
+      "battery_pct": 46.4
+     },
+     {
+      "clients": [
+       257,
+       263,
+       290,
+       294
+      ],
+      "length_m": 5671.6,
+      "load_kg": 5.93,
+      "battery_pct": 35.4
+     },
+     {
+      "clients": [
+       258,
+       301,
+       310,
+       319
+      ],
+      "length_m": 7043.1,
+      "load_kg": 5.87,
+      "battery_pct": 44.0
+     },
+     {
+      "clients": [
+       244,
+       250,
+       256,
+       267,
+       262
+      ],
+      "length_m": 9815.5,
+      "load_kg": 5.85,
+      "battery_pct": 61.3
+     },
+     {
+      "clients": [
+       264,
+       282,
+       315
+      ],
+      "length_m": 2566.2,
+      "load_kg": 5.36,
+      "battery_pct": 16.0
+     },
+     {
+      "clients": [
+       265,
+       268,
+       269,
+       271,
+       273
+      ],
+      "length_m": 4154.7,
+      "load_kg": 5.98,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       302,
+       296,
+       283,
+       278,
+       274
+      ],
+      "length_m": 5055.8,
+      "load_kg": 5.58,
+      "battery_pct": 31.6
+     },
+     {
+      "clients": [
+       272,
+       276,
+       281,
+       280
+      ],
+      "length_m": 7132.9,
+      "load_kg": 5.89,
+      "battery_pct": 44.6
+     },
+     {
+      "clients": [
+       277,
+       284,
+       289,
+       288
+      ],
+      "length_m": 3598.8,
+      "load_kg": 5.92,
+      "battery_pct": 22.5
+     },
+     {
+      "clients": [
+       295,
+       299,
+       305
+      ],
+      "length_m": 1026.5,
+      "load_kg": 5.16,
+      "battery_pct": 6.4
+     },
+     {
+      "clients": [
+       297,
+       312,
+       318,
+       316
+      ],
+      "length_m": 5756.6,
+      "load_kg": 5.82,
+      "battery_pct": 36.0
+     },
+     {
+      "clients": [
+       300,
+       303,
+       304
+      ],
+      "length_m": 7011.2,
+      "load_kg": 5.58,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       321,
+       320,
+       306,
+       309,
+       307,
+       311
+      ],
+      "length_m": 7707.8,
+      "load_kg": 5.88,
+      "battery_pct": 48.2
+     },
+     {
+      "clients": [
+       327,
+       329,
+       308
+      ],
+      "length_m": 4531.0,
+      "load_kg": 5.76,
+      "battery_pct": 28.3
+     },
+     {
+      "clients": [
+       313,
+       314,
+       317,
+       337
+      ],
+      "length_m": 3995.0,
+      "load_kg": 5.34,
+      "battery_pct": 25.0
+     },
+     {
+      "clients": [
+       333,
+       349,
+       352,
+       356
+      ],
+      "length_m": 8509.1,
+      "load_kg": 5.36,
+      "battery_pct": 53.2
+     },
+     {
+      "clients": [
+       324,
+       322,
+       325,
+       332,
+       340
+      ],
+      "length_m": 7953.7,
+      "load_kg": 5.52,
+      "battery_pct": 49.7
+     },
+     {
+      "clients": [
+       326,
+       348,
+       393
+      ],
+      "length_m": 3438.5,
+      "load_kg": 5.82,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       364,
+       342,
+       344,
+       328
+      ],
+      "length_m": 6123.5,
+      "load_kg": 5.76,
+      "battery_pct": 38.3
+     },
+     {
+      "clients": [
+       330,
+       335,
+       346,
+       455
+      ],
+      "length_m": 2623.1,
+      "load_kg": 5.93,
+      "battery_pct": 16.4
+     },
+     {
+      "clients": [
+       331,
+       347,
+       382,
+       380,
+       390
+      ],
+      "length_m": 4304.4,
+      "load_kg": 5.94,
+      "battery_pct": 26.9
+     },
+     {
+      "clients": [
+       334,
+       353,
+       405,
+       451
+      ],
+      "length_m": 2548.2,
+      "load_kg": 5.4,
+      "battery_pct": 15.9
+     },
+     {
+      "clients": [
+       350,
+       355,
+       357,
+       358,
+       338
+      ],
+      "length_m": 8590.9,
+      "load_kg": 6.0,
+      "battery_pct": 53.7
+     },
+     {
+      "clients": [
+       323,
+       336,
+       339,
+       345,
+       341
+      ],
+      "length_m": 7104.9,
+      "load_kg": 5.99,
+      "battery_pct": 44.4
+     },
+     {
+      "clients": [
+       351,
+       369,
+       373,
+       383,
+       392
+      ],
+      "length_m": 6926.5,
+      "load_kg": 5.83,
+      "battery_pct": 43.3
+     },
+     {
+      "clients": [
+       343,
+       354,
+       361,
+       363,
+       359
+      ],
+      "length_m": 4934.5,
+      "load_kg": 5.92,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       360,
+       368,
+       374,
+       375,
+       389,
+       391
+      ],
+      "length_m": 8322.7,
+      "load_kg": 5.87,
+      "battery_pct": 52.0
+     },
+     {
+      "clients": [
+       362,
+       370,
+       371,
+       378,
+       379
+      ],
+      "length_m": 7369.6,
+      "load_kg": 5.91,
+      "battery_pct": 46.1
+     },
+     {
+      "clients": [
+       365,
+       399,
+       402
+      ],
+      "length_m": 1710.2,
+      "load_kg": 5.55,
+      "battery_pct": 10.7
+     },
+     {
+      "clients": [
+       366,
+       367,
+       377,
+       385
+      ],
+      "length_m": 8866.2,
+      "load_kg": 5.84,
+      "battery_pct": 55.4
+     },
+     {
+      "clients": [
+       372,
+       381,
+       386,
+       398
+      ],
+      "length_m": 8725.3,
+      "load_kg": 5.55,
+      "battery_pct": 54.5
+     },
+     {
+      "clients": [
+       376,
+       441,
+       466,
+       474
+      ],
+      "length_m": 1244.4,
+      "load_kg": 5.67,
+      "battery_pct": 7.8
+     },
+     {
+      "clients": [
+       384,
+       395,
+       404,
+       437,
+       453
+      ],
+      "length_m": 5479.3,
+      "load_kg": 5.55,
+      "battery_pct": 34.2
+     },
+     {
+      "clients": [
+       394,
+       387,
+       419,
+       423
+      ],
+      "length_m": 6481.5,
+      "load_kg": 6.0,
+      "battery_pct": 40.5
+     },
+     {
+      "clients": [
+       412,
+       396,
+       400
+      ],
+      "length_m": 8220.2,
+      "load_kg": 5.63,
+      "battery_pct": 51.4
+     },
+     {
+      "clients": [
+       397,
+       403,
+       417,
+       418
+      ],
+      "length_m": 3568.8,
+      "load_kg": 5.58,
+      "battery_pct": 22.3
+     },
+     {
+      "clients": [
+       420,
+       414,
+       413,
+       407,
+       401
+      ],
+      "length_m": 7778.1,
+      "load_kg": 5.71,
+      "battery_pct": 48.6
+     },
+     {
+      "clients": [
+       424,
+       406,
+       411,
+       409
+      ],
+      "length_m": 7153.0,
+      "load_kg": 5.97,
+      "battery_pct": 44.7
+     },
+     {
+      "clients": [
+       408,
+       410,
+       421,
+       443
+      ],
+      "length_m": 4726.0,
+      "load_kg": 5.94,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       415,
+       426,
+       432,
+       436,
+       434
+      ],
+      "length_m": 7673.0,
+      "load_kg": 5.76,
+      "battery_pct": 48.0
+     },
+     {
+      "clients": [
+       425,
+       427,
+       430,
+       433
+      ],
+      "length_m": 5703.2,
+      "load_kg": 5.57,
+      "battery_pct": 35.6
+     },
+     {
+      "clients": [
+       435,
+       431,
+       438,
+       448,
+       450,
+       446
+      ],
+      "length_m": 7605.9,
+      "load_kg": 5.86,
+      "battery_pct": 47.5
+     },
+     {
+      "clients": [
+       422,
+       439,
+       444,
+       449
+      ],
+      "length_m": 6833.1,
+      "load_kg": 5.96,
+      "battery_pct": 42.7
+     },
+     {
+      "clients": [
+       388,
+       429,
+       428,
+       440,
+       442
+      ],
+      "length_m": 3806.5,
+      "load_kg": 5.88,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       447,
+       457,
+       461,
+       468
+      ],
+      "length_m": 4191.7,
+      "load_kg": 5.71,
+      "battery_pct": 26.2
+     },
+     {
+      "clients": [
+       452,
+       460,
+       464,
+       469
+      ],
+      "length_m": 6557.5,
+      "load_kg": 5.83,
+      "battery_pct": 41.0
+     },
+     {
+      "clients": [
+       445,
+       479,
+       459,
+       462
+      ],
+      "length_m": 4060.3,
+      "load_kg": 5.97,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       456,
+       454,
+       471,
+       467
+      ],
+      "length_m": 7495.3,
+      "load_kg": 5.74,
+      "battery_pct": 46.8
+     },
+     {
+      "clients": [
+       458,
+       463,
+       473,
+       472,
+       470
+      ],
+      "length_m": 4303.4,
+      "load_kg": 5.71,
+      "battery_pct": 26.9
+     },
+     {
+      "clients": [
+       465,
+       488,
+       477,
+       476
+      ],
+      "length_m": 5310.6,
+      "load_kg": 5.85,
+      "battery_pct": 33.2
+     },
+     {
+      "clients": [
+       475,
+       482,
+       483,
+       481
+      ],
+      "length_m": 5661.4,
+      "load_kg": 5.8,
+      "battery_pct": 35.4
+     },
+     {
+      "clients": [
+       493,
+       485,
+       490,
+       503
+      ],
+      "length_m": 7200.8,
+      "load_kg": 5.97,
+      "battery_pct": 45.0
+     },
+     {
+      "clients": [
+       495,
+       491,
+       480,
+       484,
+       489
+      ],
+      "length_m": 2735.9,
+      "load_kg": 5.98,
+      "battery_pct": 17.1
+     },
+     {
+      "clients": [
+       492,
+       502
+      ],
+      "length_m": 1727.6,
+      "load_kg": 4.23,
+      "battery_pct": 10.8
+     },
+     {
+      "clients": [
+       510,
+       509,
+       507,
+       498,
+       499
+      ],
+      "length_m": 7261.4,
+      "load_kg": 5.38,
+      "battery_pct": 45.4
+     },
+     {
+      "clients": [
+       494,
+       496,
+       501,
+       500
+      ],
+      "length_m": 5459.8,
+      "load_kg": 5.9,
+      "battery_pct": 34.1
+     },
+     {
+      "clients": [
+       506,
+       505,
+       508,
+       516
+      ],
+      "length_m": 4561.2,
+      "load_kg": 5.86,
+      "battery_pct": 28.5
+     }
+    ],
+    "schedule": [
+     [
+      93,
+      70,
+      64,
+      79,
+      63,
+      108,
+      67,
+      56,
+      65,
+      89,
+      58,
+      17,
+      12,
+      83,
+      103,
+      106,
+      11
+     ],
+     [
+      51,
+      7,
+      94,
+      121,
+      96,
+      30,
+      90,
+      97,
+      16,
+      91,
+      62,
+      82,
+      52,
+      2,
+      14,
+      114,
+      118,
+      37
+     ],
+     [
+      104,
+      34,
+      99,
+      74,
+      47,
+      69,
+      0,
+      55,
+      1,
+      109,
+      36,
+      73,
+      92,
+      112,
+      101,
+      54,
+      100,
+      57,
+      59,
+      22
+     ],
+     [
+      32,
+      85,
+      20,
+      87,
+      115,
+      72,
+      35,
+      77,
+      107,
+      68,
+      117,
+      28,
+      33,
+      110,
+      122,
+      78,
+      116,
+      4,
+      21,
+      48,
+      66
+     ],
+     [
+      38,
+      105,
+      61,
+      3,
+      43,
+      123,
+      10,
+      44,
+      25,
+      119,
+      40,
+      31,
+      5,
+      111,
+      53,
+      46,
+      113,
+      81,
+      49,
+      60,
+      50,
+      75,
+      120
+     ],
+     [
+      102,
+      18,
+      41,
+      27,
+      19,
+      29,
+      80,
+      42,
+      86,
+      88,
+      26,
+      24,
+      9,
+      84,
+      15,
+      98,
+      23,
+      39,
+      71,
+      45,
+      8,
+      95,
+      13,
+      76,
+      6
+     ]
+    ]
+   },
+   "sweep_trials": [
+    [
+     126,
+     803.15
+    ],
+    [
+     126,
+     781.68
+    ],
+    [
+     125,
+     780.66
+    ],
+    [
+     124,
+     781.13
+    ],
+    [
+     125,
+     780.66
+    ],
+    [
+     125,
+     780.66
+    ],
+    [
+     125,
+     789.82
+    ],
+    [
+     125,
+     789.93
+    ],
+    [
+     125,
+     780.66
+    ],
+    [
+     125,
+     785.3
+    ],
+    [
+     124,
+     784.35
+    ],
+    [
+     125,
+     787.24
+    ]
+   ]
+  },
+  {
+   "zone": 1,
+   "depot_node": 1054,
+   "depot_xy": [
+    397229.08207865525,
+    4576679.275379461
+   ],
+   "n_clients": 482,
+   "farthest_client_m": 4163.7,
+   "detour_factor_max": 1.437,
+   "detour_factor_mean": 1.0007,
+   "bounds": {
+    "trips": 111,
+    "km": 527.76
+   },
+   "chosen_method": "savings",
+   "methods": {
+    "sweep": {
+     "trips": 118,
+     "km": 698.91
+    },
+    "savings": {
+     "trips": 117,
+     "km": 610.17
+    }
+   },
+   "naive": {
+    "trips": 482,
+    "km": 2308.21,
+    "drones": 16,
+    "drones_lb": 16,
+    "fleet_minutes": 7589.9,
+    "utilisation": 0.988,
+    "max_clients_per_trip": 1,
+    "routes": [
+     {
+      "clients": [
+       1
+      ],
+      "length_m": 3522.2,
+      "load_kg": 1.18,
+      "battery_pct": 22.0
+     },
+     {
+      "clients": [
+       2
+      ],
+      "length_m": 3277.6,
+      "load_kg": 2.02,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       3
+      ],
+      "length_m": 5372.4,
+      "load_kg": 1.57,
+      "battery_pct": 33.6
+     },
+     {
+      "clients": [
+       4
+      ],
+      "length_m": 6212.7,
+      "load_kg": 1.27,
+      "battery_pct": 38.8
+     },
+     {
+      "clients": [
+       5
+      ],
+      "length_m": 6217.8,
+      "load_kg": 1.97,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       6
+      ],
+      "length_m": 4256.9,
+      "load_kg": 0.58,
+      "battery_pct": 26.6
+     },
+     {
+      "clients": [
+       7
+      ],
+      "length_m": 6305.1,
+      "load_kg": 0.67,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       8
+      ],
+      "length_m": 3959.5,
+      "load_kg": 1.81,
+      "battery_pct": 24.7
+     },
+     {
+      "clients": [
+       9
+      ],
+      "length_m": 5696.3,
+      "load_kg": 1.29,
+      "battery_pct": 35.6
+     },
+     {
+      "clients": [
+       10
+      ],
+      "length_m": 3358.9,
+      "load_kg": 2.27,
+      "battery_pct": 21.0
+     },
+     {
+      "clients": [
+       11
+      ],
+      "length_m": 6267.5,
+      "load_kg": 1.82,
+      "battery_pct": 39.2
+     },
+     {
+      "clients": [
+       12
+      ],
+      "length_m": 4959.8,
+      "load_kg": 1.46,
+      "battery_pct": 31.0
+     },
+     {
+      "clients": [
+       13
+      ],
+      "length_m": 6182.4,
+      "load_kg": 0.62,
+      "battery_pct": 38.6
+     },
+     {
+      "clients": [
+       14
+      ],
+      "length_m": 4065.5,
+      "load_kg": 1.73,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       15
+      ],
+      "length_m": 3448.1,
+      "load_kg": 1.87,
+      "battery_pct": 21.6
+     },
+     {
+      "clients": [
+       16
+      ],
+      "length_m": 5577.8,
+      "load_kg": 2.1,
+      "battery_pct": 34.9
+     },
+     {
+      "clients": [
+       17
+      ],
+      "length_m": 3994.3,
+      "load_kg": 2.15,
+      "battery_pct": 25.0
+     },
+     {
+      "clients": [
+       18
+      ],
+      "length_m": 6175.4,
+      "load_kg": 1.98,
+      "battery_pct": 38.6
+     },
+     {
+      "clients": [
+       19
+      ],
+      "length_m": 4360.8,
+      "load_kg": 2.29,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       20
+      ],
+      "length_m": 3837.5,
+      "load_kg": 1.43,
+      "battery_pct": 24.0
+     },
+     {
+      "clients": [
+       21
+      ],
+      "length_m": 4005.1,
+      "load_kg": 1.08,
+      "battery_pct": 25.0
+     },
+     {
+      "clients": [
+       22
+      ],
+      "length_m": 4582.4,
+      "load_kg": 0.68,
+      "battery_pct": 28.6
+     },
+     {
+      "clients": [
+       23
+      ],
+      "length_m": 6584.3,
+      "load_kg": 1.48,
+      "battery_pct": 41.2
+     },
+     {
+      "clients": [
+       24
+      ],
+      "length_m": 4378.5,
+      "load_kg": 1.32,
+      "battery_pct": 27.4
+     },
+     {
+      "clients": [
+       25
+      ],
+      "length_m": 5386.6,
+      "load_kg": 1.58,
+      "battery_pct": 33.7
+     },
+     {
+      "clients": [
+       26
+      ],
+      "length_m": 3788.2,
+      "load_kg": 2.02,
+      "battery_pct": 23.7
+     },
+     {
+      "clients": [
+       27
+      ],
+      "length_m": 3029.4,
+      "load_kg": 2.02,
+      "battery_pct": 18.9
+     },
+     {
+      "clients": [
+       28
+      ],
+      "length_m": 3275.9,
+      "load_kg": 1.6,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       29
+      ],
+      "length_m": 5978.0,
+      "load_kg": 1.82,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       30
+      ],
+      "length_m": 2978.7,
+      "load_kg": 1.1,
+      "battery_pct": 18.6
+     },
+     {
+      "clients": [
+       31
+      ],
+      "length_m": 3068.6,
+      "load_kg": 2.25,
+      "battery_pct": 19.2
+     },
+     {
+      "clients": [
+       32
+      ],
+      "length_m": 4984.2,
+      "load_kg": 1.22,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       33
+      ],
+      "length_m": 4563.2,
+      "load_kg": 1.11,
+      "battery_pct": 28.5
+     },
+     {
+      "clients": [
+       34
+      ],
+      "length_m": 2759.8,
+      "load_kg": 1.39,
+      "battery_pct": 17.2
+     },
+     {
+      "clients": [
+       35
+      ],
+      "length_m": 2967.7,
+      "load_kg": 1.84,
+      "battery_pct": 18.5
+     },
+     {
+      "clients": [
+       36
+      ],
+      "length_m": 3581.8,
+      "load_kg": 1.29,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       37
+      ],
+      "length_m": 5215.5,
+      "load_kg": 0.57,
+      "battery_pct": 32.6
+     },
+     {
+      "clients": [
+       38
+      ],
+      "length_m": 5324.9,
+      "load_kg": 0.73,
+      "battery_pct": 33.3
+     },
+     {
+      "clients": [
+       39
+      ],
+      "length_m": 3717.6,
+      "load_kg": 2.21,
+      "battery_pct": 23.2
+     },
+     {
+      "clients": [
+       40
+      ],
+      "length_m": 6377.1,
+      "load_kg": 0.57,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       41
+      ],
+      "length_m": 5504.3,
+      "load_kg": 1.86,
+      "battery_pct": 34.4
+     },
+     {
+      "clients": [
+       42
+      ],
+      "length_m": 1464.5,
+      "load_kg": 0.76,
+      "battery_pct": 9.2
+     },
+     {
+      "clients": [
+       43
+      ],
+      "length_m": 1349.2,
+      "load_kg": 1.76,
+      "battery_pct": 8.4
+     },
+     {
+      "clients": [
+       44
+      ],
+      "length_m": 2364.7,
+      "load_kg": 1.47,
+      "battery_pct": 14.8
+     },
+     {
+      "clients": [
+       45
+      ],
+      "length_m": 4973.7,
+      "load_kg": 2.15,
+      "battery_pct": 31.1
+     },
+     {
+      "clients": [
+       46
+      ],
+      "length_m": 3814.6,
+      "load_kg": 0.71,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       47
+      ],
+      "length_m": 5412.2,
+      "load_kg": 1.28,
+      "battery_pct": 33.8
+     },
+     {
+      "clients": [
+       48
+      ],
+      "length_m": 7218.9,
+      "load_kg": 1.37,
+      "battery_pct": 45.1
+     },
+     {
+      "clients": [
+       49
+      ],
+      "length_m": 3078.2,
+      "load_kg": 0.62,
+      "battery_pct": 19.2
+     },
+     {
+      "clients": [
+       50
+      ],
+      "length_m": 5691.7,
+      "load_kg": 0.89,
+      "battery_pct": 35.6
+     },
+     {
+      "clients": [
+       51
+      ],
+      "length_m": 5338.7,
+      "load_kg": 1.88,
+      "battery_pct": 33.4
+     },
+     {
+      "clients": [
+       52
+      ],
+      "length_m": 5263.4,
+      "load_kg": 0.76,
+      "battery_pct": 32.9
+     },
+     {
+      "clients": [
+       53
+      ],
+      "length_m": 4542.9,
+      "load_kg": 1.36,
+      "battery_pct": 28.4
+     },
+     {
+      "clients": [
+       54
+      ],
+      "length_m": 2183.9,
+      "load_kg": 1.43,
+      "battery_pct": 13.6
+     },
+     {
+      "clients": [
+       55
+      ],
+      "length_m": 3854.0,
+      "load_kg": 1.64,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       56
+      ],
+      "length_m": 2726.7,
+      "load_kg": 2.11,
+      "battery_pct": 17.0
+     },
+     {
+      "clients": [
+       57
+      ],
+      "length_m": 2762.3,
+      "load_kg": 1.88,
+      "battery_pct": 17.3
+     },
+     {
+      "clients": [
+       58
+      ],
+      "length_m": 4937.8,
+      "load_kg": 1.01,
+      "battery_pct": 30.9
+     },
+     {
+      "clients": [
+       59
+      ],
+      "length_m": 4156.7,
+      "load_kg": 1.45,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       60
+      ],
+      "length_m": 4280.9,
+      "load_kg": 1.75,
+      "battery_pct": 26.8
+     },
+     {
+      "clients": [
+       61
+      ],
+      "length_m": 6432.3,
+      "load_kg": 2.1,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       62
+      ],
+      "length_m": 2244.4,
+      "load_kg": 0.54,
+      "battery_pct": 14.0
+     },
+     {
+      "clients": [
+       63
+      ],
+      "length_m": 5349.2,
+      "load_kg": 1.26,
+      "battery_pct": 33.4
+     },
+     {
+      "clients": [
+       64
+      ],
+      "length_m": 4417.6,
+      "load_kg": 1.25,
+      "battery_pct": 27.6
+     },
+     {
+      "clients": [
+       65
+      ],
+      "length_m": 5325.4,
+      "load_kg": 1.36,
+      "battery_pct": 33.3
+     },
+     {
+      "clients": [
+       66
+      ],
+      "length_m": 2319.5,
+      "load_kg": 1.0,
+      "battery_pct": 14.5
+     },
+     {
+      "clients": [
+       67
+      ],
+      "length_m": 3920.0,
+      "load_kg": 1.62,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       68
+      ],
+      "length_m": 3152.8,
+      "load_kg": 2.06,
+      "battery_pct": 19.7
+     },
+     {
+      "clients": [
+       69
+      ],
+      "length_m": 6026.1,
+      "load_kg": 0.66,
+      "battery_pct": 37.7
+     },
+     {
+      "clients": [
+       70
+      ],
+      "length_m": 3223.4,
+      "load_kg": 1.69,
+      "battery_pct": 20.1
+     },
+     {
+      "clients": [
+       71
+      ],
+      "length_m": 5264.8,
+      "load_kg": 0.73,
+      "battery_pct": 32.9
+     },
+     {
+      "clients": [
+       72
+      ],
+      "length_m": 5001.5,
+      "load_kg": 0.7,
+      "battery_pct": 31.3
+     },
+     {
+      "clients": [
+       73
+      ],
+      "length_m": 1532.8,
+      "load_kg": 1.46,
+      "battery_pct": 9.6
+     },
+     {
+      "clients": [
+       74
+      ],
+      "length_m": 3948.2,
+      "load_kg": 0.59,
+      "battery_pct": 24.7
+     },
+     {
+      "clients": [
+       75
+      ],
+      "length_m": 2459.9,
+      "load_kg": 1.12,
+      "battery_pct": 15.4
+     },
+     {
+      "clients": [
+       76
+      ],
+      "length_m": 5504.3,
+      "load_kg": 2.19,
+      "battery_pct": 34.4
+     },
+     {
+      "clients": [
+       77
+      ],
+      "length_m": 4505.3,
+      "load_kg": 1.04,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       78
+      ],
+      "length_m": 5583.8,
+      "load_kg": 1.83,
+      "battery_pct": 34.9
+     },
+     {
+      "clients": [
+       79
+      ],
+      "length_m": 4855.9,
+      "load_kg": 1.46,
+      "battery_pct": 30.3
+     },
+     {
+      "clients": [
+       80
+      ],
+      "length_m": 2303.4,
+      "load_kg": 1.83,
+      "battery_pct": 14.4
+     },
+     {
+      "clients": [
+       81
+      ],
+      "length_m": 3182.9,
+      "load_kg": 2.03,
+      "battery_pct": 19.9
+     },
+     {
+      "clients": [
+       82
+      ],
+      "length_m": 4724.7,
+      "load_kg": 0.89,
+      "battery_pct": 29.5
+     },
+     {
+      "clients": [
+       83
+      ],
+      "length_m": 5910.7,
+      "load_kg": 2.0,
+      "battery_pct": 36.9
+     },
+     {
+      "clients": [
+       84
+      ],
+      "length_m": 2625.3,
+      "load_kg": 0.74,
+      "battery_pct": 16.4
+     },
+     {
+      "clients": [
+       85
+      ],
+      "length_m": 4653.2,
+      "load_kg": 1.77,
+      "battery_pct": 29.1
+     },
+     {
+      "clients": [
+       86
+      ],
+      "length_m": 5654.3,
+      "load_kg": 1.27,
+      "battery_pct": 35.3
+     },
+     {
+      "clients": [
+       87
+      ],
+      "length_m": 5483.2,
+      "load_kg": 1.45,
+      "battery_pct": 34.3
+     },
+     {
+      "clients": [
+       88
+      ],
+      "length_m": 4305.0,
+      "load_kg": 0.87,
+      "battery_pct": 26.9
+     },
+     {
+      "clients": [
+       89
+      ],
+      "length_m": 3771.7,
+      "load_kg": 0.83,
+      "battery_pct": 23.6
+     },
+     {
+      "clients": [
+       90
+      ],
+      "length_m": 5553.7,
+      "load_kg": 0.54,
+      "battery_pct": 34.7
+     },
+     {
+      "clients": [
+       91
+      ],
+      "length_m": 2864.0,
+      "load_kg": 2.28,
+      "battery_pct": 17.9
+     },
+     {
+      "clients": [
+       92
+      ],
+      "length_m": 2962.5,
+      "load_kg": 2.29,
+      "battery_pct": 18.5
+     },
+     {
+      "clients": [
+       93
+      ],
+      "length_m": 5847.6,
+      "load_kg": 1.47,
+      "battery_pct": 36.5
+     },
+     {
+      "clients": [
+       94
+      ],
+      "length_m": 5764.1,
+      "load_kg": 2.02,
+      "battery_pct": 36.0
+     },
+     {
+      "clients": [
+       95
+      ],
+      "length_m": 2666.8,
+      "load_kg": 1.03,
+      "battery_pct": 16.7
+     },
+     {
+      "clients": [
+       96
+      ],
+      "length_m": 1861.1,
+      "load_kg": 1.57,
+      "battery_pct": 11.6
+     },
+     {
+      "clients": [
+       97
+      ],
+      "length_m": 5497.2,
+      "load_kg": 1.39,
+      "battery_pct": 34.4
+     },
+     {
+      "clients": [
+       98
+      ],
+      "length_m": 3301.7,
+      "load_kg": 1.03,
+      "battery_pct": 20.6
+     },
+     {
+      "clients": [
+       99
+      ],
+      "length_m": 2636.4,
+      "load_kg": 1.7,
+      "battery_pct": 16.5
+     },
+     {
+      "clients": [
+       100
+      ],
+      "length_m": 4833.3,
+      "load_kg": 0.62,
+      "battery_pct": 30.2
+     },
+     {
+      "clients": [
+       101
+      ],
+      "length_m": 4312.6,
+      "load_kg": 0.86,
+      "battery_pct": 27.0
+     },
+     {
+      "clients": [
+       102
+      ],
+      "length_m": 4844.9,
+      "load_kg": 1.35,
+      "battery_pct": 30.3
+     },
+     {
+      "clients": [
+       103
+      ],
+      "length_m": 4345.7,
+      "load_kg": 1.65,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       104
+      ],
+      "length_m": 3941.6,
+      "load_kg": 1.36,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       105
+      ],
+      "length_m": 2131.6,
+      "load_kg": 0.7,
+      "battery_pct": 13.3
+     },
+     {
+      "clients": [
+       106
+      ],
+      "length_m": 3028.0,
+      "load_kg": 1.17,
+      "battery_pct": 18.9
+     },
+     {
+      "clients": [
+       107
+      ],
+      "length_m": 4820.4,
+      "load_kg": 1.6,
+      "battery_pct": 30.1
+     },
+     {
+      "clients": [
+       108
+      ],
+      "length_m": 3178.8,
+      "load_kg": 2.25,
+      "battery_pct": 19.9
+     },
+     {
+      "clients": [
+       109
+      ],
+      "length_m": 3490.3,
+      "load_kg": 0.6,
+      "battery_pct": 21.8
+     },
+     {
+      "clients": [
+       110
+      ],
+      "length_m": 3077.6,
+      "load_kg": 1.33,
+      "battery_pct": 19.2
+     },
+     {
+      "clients": [
+       111
+      ],
+      "length_m": 3004.7,
+      "load_kg": 1.63,
+      "battery_pct": 18.8
+     },
+     {
+      "clients": [
+       112
+      ],
+      "length_m": 2839.8,
+      "load_kg": 1.65,
+      "battery_pct": 17.7
+     },
+     {
+      "clients": [
+       113
+      ],
+      "length_m": 3849.2,
+      "load_kg": 1.71,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       114
+      ],
+      "length_m": 3880.9,
+      "load_kg": 1.21,
+      "battery_pct": 24.3
+     },
+     {
+      "clients": [
+       115
+      ],
+      "length_m": 3583.2,
+      "load_kg": 1.97,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       116
+      ],
+      "length_m": 2788.2,
+      "load_kg": 1.38,
+      "battery_pct": 17.4
+     },
+     {
+      "clients": [
+       117
+      ],
+      "length_m": 4079.8,
+      "load_kg": 0.84,
+      "battery_pct": 25.5
+     },
+     {
+      "clients": [
+       118
+      ],
+      "length_m": 3049.1,
+      "load_kg": 1.45,
+      "battery_pct": 19.1
+     },
+     {
+      "clients": [
+       119
+      ],
+      "length_m": 4388.9,
+      "load_kg": 1.03,
+      "battery_pct": 27.4
+     },
+     {
+      "clients": [
+       120
+      ],
+      "length_m": 4580.3,
+      "load_kg": 0.57,
+      "battery_pct": 28.6
+     },
+     {
+      "clients": [
+       121
+      ],
+      "length_m": 6162.8,
+      "load_kg": 2.03,
+      "battery_pct": 38.5
+     },
+     {
+      "clients": [
+       122
+      ],
+      "length_m": 6205.5,
+      "load_kg": 0.72,
+      "battery_pct": 38.8
+     },
+     {
+      "clients": [
+       123
+      ],
+      "length_m": 5796.0,
+      "load_kg": 1.15,
+      "battery_pct": 36.2
+     },
+     {
+      "clients": [
+       124
+      ],
+      "length_m": 5988.5,
+      "load_kg": 2.17,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       125
+      ],
+      "length_m": 4482.8,
+      "load_kg": 1.27,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       126
+      ],
+      "length_m": 3535.2,
+      "load_kg": 1.07,
+      "battery_pct": 22.1
+     },
+     {
+      "clients": [
+       127
+      ],
+      "length_m": 4796.5,
+      "load_kg": 0.71,
+      "battery_pct": 30.0
+     },
+     {
+      "clients": [
+       128
+      ],
+      "length_m": 5096.0,
+      "load_kg": 0.63,
+      "battery_pct": 31.8
+     },
+     {
+      "clients": [
+       129
+      ],
+      "length_m": 6436.2,
+      "load_kg": 1.85,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       130
+      ],
+      "length_m": 4112.1,
+      "load_kg": 1.85,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       131
+      ],
+      "length_m": 6157.4,
+      "load_kg": 1.82,
+      "battery_pct": 38.5
+     },
+     {
+      "clients": [
+       132
+      ],
+      "length_m": 4197.3,
+      "load_kg": 1.33,
+      "battery_pct": 26.2
+     },
+     {
+      "clients": [
+       133
+      ],
+      "length_m": 4994.1,
+      "load_kg": 1.25,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       134
+      ],
+      "length_m": 4705.4,
+      "load_kg": 1.61,
+      "battery_pct": 29.4
+     },
+     {
+      "clients": [
+       135
+      ],
+      "length_m": 3920.6,
+      "load_kg": 0.86,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       136
+      ],
+      "length_m": 4894.2,
+      "load_kg": 1.51,
+      "battery_pct": 30.6
+     },
+     {
+      "clients": [
+       137
+      ],
+      "length_m": 6585.9,
+      "load_kg": 1.62,
+      "battery_pct": 41.2
+     },
+     {
+      "clients": [
+       138
+      ],
+      "length_m": 1934.6,
+      "load_kg": 0.69,
+      "battery_pct": 12.1
+     },
+     {
+      "clients": [
+       139
+      ],
+      "length_m": 4375.1,
+      "load_kg": 1.22,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       140
+      ],
+      "length_m": 5193.6,
+      "load_kg": 1.56,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       141
+      ],
+      "length_m": 2549.4,
+      "load_kg": 0.68,
+      "battery_pct": 15.9
+     },
+     {
+      "clients": [
+       142
+      ],
+      "length_m": 1706.8,
+      "load_kg": 0.74,
+      "battery_pct": 10.7
+     },
+     {
+      "clients": [
+       143
+      ],
+      "length_m": 1916.4,
+      "load_kg": 1.71,
+      "battery_pct": 12.0
+     },
+     {
+      "clients": [
+       144
+      ],
+      "length_m": 2727.4,
+      "load_kg": 1.48,
+      "battery_pct": 17.0
+     },
+     {
+      "clients": [
+       145
+      ],
+      "length_m": 5981.2,
+      "load_kg": 1.64,
+      "battery_pct": 37.4
+     },
+     {
+      "clients": [
+       146
+      ],
+      "length_m": 4581.6,
+      "load_kg": 2.11,
+      "battery_pct": 28.6
+     },
+     {
+      "clients": [
+       147
+      ],
+      "length_m": 6689.8,
+      "load_kg": 0.93,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       148
+      ],
+      "length_m": 6209.4,
+      "load_kg": 2.01,
+      "battery_pct": 38.8
+     },
+     {
+      "clients": [
+       149
+      ],
+      "length_m": 3963.8,
+      "load_kg": 1.65,
+      "battery_pct": 24.8
+     },
+     {
+      "clients": [
+       150
+      ],
+      "length_m": 5948.5,
+      "load_kg": 0.9,
+      "battery_pct": 37.2
+     },
+     {
+      "clients": [
+       151
+      ],
+      "length_m": 2012.8,
+      "load_kg": 1.56,
+      "battery_pct": 12.6
+     },
+     {
+      "clients": [
+       152
+      ],
+      "length_m": 2536.0,
+      "load_kg": 0.54,
+      "battery_pct": 15.9
+     },
+     {
+      "clients": [
+       153
+      ],
+      "length_m": 4494.2,
+      "load_kg": 1.44,
+      "battery_pct": 28.1
+     },
+     {
+      "clients": [
+       154
+      ],
+      "length_m": 3561.8,
+      "load_kg": 0.65,
+      "battery_pct": 22.3
+     },
+     {
+      "clients": [
+       155
+      ],
+      "length_m": 3755.4,
+      "load_kg": 1.86,
+      "battery_pct": 23.5
+     },
+     {
+      "clients": [
+       156
+      ],
+      "length_m": 1899.8,
+      "load_kg": 2.0,
+      "battery_pct": 11.9
+     },
+     {
+      "clients": [
+       157
+      ],
+      "length_m": 7522.8,
+      "load_kg": 1.19,
+      "battery_pct": 47.0
+     },
+     {
+      "clients": [
+       158
+      ],
+      "length_m": 4989.4,
+      "load_kg": 2.28,
+      "battery_pct": 31.2
+     },
+     {
+      "clients": [
+       159
+      ],
+      "length_m": 5198.4,
+      "load_kg": 1.43,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       160
+      ],
+      "length_m": 5202.6,
+      "load_kg": 1.25,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       161
+      ],
+      "length_m": 7548.9,
+      "load_kg": 0.52,
+      "battery_pct": 47.2
+     },
+     {
+      "clients": [
+       162
+      ],
+      "length_m": 2181.1,
+      "load_kg": 1.26,
+      "battery_pct": 13.6
+     },
+     {
+      "clients": [
+       163
+      ],
+      "length_m": 6192.5,
+      "load_kg": 0.93,
+      "battery_pct": 38.7
+     },
+     {
+      "clients": [
+       164
+      ],
+      "length_m": 6500.2,
+      "load_kg": 0.53,
+      "battery_pct": 40.6
+     },
+     {
+      "clients": [
+       165
+      ],
+      "length_m": 7553.5,
+      "load_kg": 1.53,
+      "battery_pct": 47.2
+     },
+     {
+      "clients": [
+       166
+      ],
+      "length_m": 7217.7,
+      "load_kg": 1.51,
+      "battery_pct": 45.1
+     },
+     {
+      "clients": [
+       167
+      ],
+      "length_m": 7183.7,
+      "load_kg": 0.7,
+      "battery_pct": 44.9
+     },
+     {
+      "clients": [
+       168
+      ],
+      "length_m": 5530.3,
+      "load_kg": 0.95,
+      "battery_pct": 34.6
+     },
+     {
+      "clients": [
+       169
+      ],
+      "length_m": 4943.3,
+      "load_kg": 1.5,
+      "battery_pct": 30.9
+     },
+     {
+      "clients": [
+       170
+      ],
+      "length_m": 3020.4,
+      "load_kg": 1.08,
+      "battery_pct": 18.9
+     },
+     {
+      "clients": [
+       171
+      ],
+      "length_m": 5943.6,
+      "load_kg": 1.43,
+      "battery_pct": 37.1
+     },
+     {
+      "clients": [
+       172
+      ],
+      "length_m": 5853.5,
+      "load_kg": 0.8,
+      "battery_pct": 36.6
+     },
+     {
+      "clients": [
+       173
+      ],
+      "length_m": 4671.3,
+      "load_kg": 0.56,
+      "battery_pct": 29.2
+     },
+     {
+      "clients": [
+       174
+      ],
+      "length_m": 1584.3,
+      "load_kg": 1.93,
+      "battery_pct": 9.9
+     },
+     {
+      "clients": [
+       175
+      ],
+      "length_m": 6987.4,
+      "load_kg": 1.46,
+      "battery_pct": 43.7
+     },
+     {
+      "clients": [
+       176
+      ],
+      "length_m": 7181.8,
+      "load_kg": 1.55,
+      "battery_pct": 44.9
+     },
+     {
+      "clients": [
+       177
+      ],
+      "length_m": 7648.9,
+      "load_kg": 1.95,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       178
+      ],
+      "length_m": 5732.0,
+      "load_kg": 2.08,
+      "battery_pct": 35.8
+     },
+     {
+      "clients": [
+       179
+      ],
+      "length_m": 5826.1,
+      "load_kg": 1.1,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       180
+      ],
+      "length_m": 798.7,
+      "load_kg": 1.11,
+      "battery_pct": 5.0
+     },
+     {
+      "clients": [
+       181
+      ],
+      "length_m": 3445.8,
+      "load_kg": 1.53,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       182
+      ],
+      "length_m": 7751.9,
+      "load_kg": 1.52,
+      "battery_pct": 48.4
+     },
+     {
+      "clients": [
+       183
+      ],
+      "length_m": 4105.9,
+      "load_kg": 0.6,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       184
+      ],
+      "length_m": 6712.4,
+      "load_kg": 1.32,
+      "battery_pct": 42.0
+     },
+     {
+      "clients": [
+       185
+      ],
+      "length_m": 7394.7,
+      "load_kg": 1.24,
+      "battery_pct": 46.2
+     },
+     {
+      "clients": [
+       186
+      ],
+      "length_m": 7051.6,
+      "load_kg": 1.25,
+      "battery_pct": 44.1
+     },
+     {
+      "clients": [
+       187
+      ],
+      "length_m": 3423.8,
+      "load_kg": 1.91,
+      "battery_pct": 21.4
+     },
+     {
+      "clients": [
+       188
+      ],
+      "length_m": 7321.0,
+      "load_kg": 1.69,
+      "battery_pct": 45.8
+     },
+     {
+      "clients": [
+       189
+      ],
+      "length_m": 6731.5,
+      "load_kg": 0.6,
+      "battery_pct": 42.1
+     },
+     {
+      "clients": [
+       190
+      ],
+      "length_m": 3215.6,
+      "load_kg": 1.19,
+      "battery_pct": 20.1
+     },
+     {
+      "clients": [
+       191
+      ],
+      "length_m": 2379.1,
+      "load_kg": 0.91,
+      "battery_pct": 14.9
+     },
+     {
+      "clients": [
+       192
+      ],
+      "length_m": 3662.7,
+      "load_kg": 2.14,
+      "battery_pct": 22.9
+     },
+     {
+      "clients": [
+       193
+      ],
+      "length_m": 6302.5,
+      "load_kg": 1.7,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       194
+      ],
+      "length_m": 4206.9,
+      "load_kg": 0.74,
+      "battery_pct": 26.3
+     },
+     {
+      "clients": [
+       195
+      ],
+      "length_m": 7142.1,
+      "load_kg": 1.13,
+      "battery_pct": 44.6
+     },
+     {
+      "clients": [
+       196
+      ],
+      "length_m": 5889.4,
+      "load_kg": 1.82,
+      "battery_pct": 36.8
+     },
+     {
+      "clients": [
+       197
+      ],
+      "length_m": 3315.2,
+      "load_kg": 2.1,
+      "battery_pct": 20.7
+     },
+     {
+      "clients": [
+       198
+      ],
+      "length_m": 6872.5,
+      "load_kg": 0.63,
+      "battery_pct": 43.0
+     },
+     {
+      "clients": [
+       199
+      ],
+      "length_m": 7410.7,
+      "load_kg": 0.87,
+      "battery_pct": 46.3
+     },
+     {
+      "clients": [
+       200
+      ],
+      "length_m": 7591.6,
+      "load_kg": 1.24,
+      "battery_pct": 47.4
+     },
+     {
+      "clients": [
+       201
+      ],
+      "length_m": 6104.9,
+      "load_kg": 0.54,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       202
+      ],
+      "length_m": 4486.2,
+      "load_kg": 1.04,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       203
+      ],
+      "length_m": 7391.0,
+      "load_kg": 1.15,
+      "battery_pct": 46.2
+     },
+     {
+      "clients": [
+       204
+      ],
+      "length_m": 902.9,
+      "load_kg": 1.21,
+      "battery_pct": 5.6
+     },
+     {
+      "clients": [
+       205
+      ],
+      "length_m": 729.5,
+      "load_kg": 0.78,
+      "battery_pct": 4.6
+     },
+     {
+      "clients": [
+       206
+      ],
+      "length_m": 4388.5,
+      "load_kg": 2.0,
+      "battery_pct": 27.4
+     },
+     {
+      "clients": [
+       207
+      ],
+      "length_m": 6946.5,
+      "load_kg": 0.54,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       208
+      ],
+      "length_m": 7253.2,
+      "load_kg": 0.52,
+      "battery_pct": 45.3
+     },
+     {
+      "clients": [
+       209
+      ],
+      "length_m": 1346.6,
+      "load_kg": 1.62,
+      "battery_pct": 8.4
+     },
+     {
+      "clients": [
+       210
+      ],
+      "length_m": 5471.0,
+      "load_kg": 1.64,
+      "battery_pct": 34.2
+     },
+     {
+      "clients": [
+       211
+      ],
+      "length_m": 7294.2,
+      "load_kg": 2.02,
+      "battery_pct": 45.6
+     },
+     {
+      "clients": [
+       212
+      ],
+      "length_m": 2689.9,
+      "load_kg": 1.26,
+      "battery_pct": 16.8
+     },
+     {
+      "clients": [
+       213
+      ],
+      "length_m": 3259.1,
+      "load_kg": 0.87,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       214
+      ],
+      "length_m": 6088.5,
+      "load_kg": 0.77,
+      "battery_pct": 38.1
+     },
+     {
+      "clients": [
+       215
+      ],
+      "length_m": 5943.2,
+      "load_kg": 1.97,
+      "battery_pct": 37.1
+     },
+     {
+      "clients": [
+       216
+      ],
+      "length_m": 5818.1,
+      "load_kg": 1.4,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       217
+      ],
+      "length_m": 3072.8,
+      "load_kg": 0.78,
+      "battery_pct": 19.2
+     },
+     {
+      "clients": [
+       218
+      ],
+      "length_m": 6803.7,
+      "load_kg": 2.05,
+      "battery_pct": 42.5
+     },
+     {
+      "clients": [
+       219
+      ],
+      "length_m": 5807.4,
+      "load_kg": 1.87,
+      "battery_pct": 36.3
+     },
+     {
+      "clients": [
+       220
+      ],
+      "length_m": 6839.9,
+      "load_kg": 2.23,
+      "battery_pct": 42.7
+     },
+     {
+      "clients": [
+       221
+      ],
+      "length_m": 3116.4,
+      "load_kg": 1.15,
+      "battery_pct": 19.5
+     },
+     {
+      "clients": [
+       222
+      ],
+      "length_m": 3762.8,
+      "load_kg": 1.55,
+      "battery_pct": 23.5
+     },
+     {
+      "clients": [
+       223
+      ],
+      "length_m": 6630.2,
+      "load_kg": 1.7,
+      "battery_pct": 41.4
+     },
+     {
+      "clients": [
+       224
+      ],
+      "length_m": 4162.8,
+      "load_kg": 1.8,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       225
+      ],
+      "length_m": 4619.9,
+      "load_kg": 0.76,
+      "battery_pct": 28.9
+     },
+     {
+      "clients": [
+       226
+      ],
+      "length_m": 4058.8,
+      "load_kg": 0.91,
+      "battery_pct": 25.4
+     },
+     {
+      "clients": [
+       227
+      ],
+      "length_m": 2085.2,
+      "load_kg": 1.66,
+      "battery_pct": 13.0
+     },
+     {
+      "clients": [
+       228
+      ],
+      "length_m": 6248.2,
+      "load_kg": 2.11,
+      "battery_pct": 39.1
+     },
+     {
+      "clients": [
+       229
+      ],
+      "length_m": 4211.6,
+      "load_kg": 1.82,
+      "battery_pct": 26.3
+     },
+     {
+      "clients": [
+       230
+      ],
+      "length_m": 785.3,
+      "load_kg": 1.37,
+      "battery_pct": 4.9
+     },
+     {
+      "clients": [
+       231
+      ],
+      "length_m": 4350.0,
+      "load_kg": 0.96,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       232
+      ],
+      "length_m": 4969.6,
+      "load_kg": 2.06,
+      "battery_pct": 31.1
+     },
+     {
+      "clients": [
+       233
+      ],
+      "length_m": 4276.1,
+      "load_kg": 0.95,
+      "battery_pct": 26.7
+     },
+     {
+      "clients": [
+       234
+      ],
+      "length_m": 4473.0,
+      "load_kg": 2.19,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       235
+      ],
+      "length_m": 3421.7,
+      "load_kg": 1.19,
+      "battery_pct": 21.4
+     },
+     {
+      "clients": [
+       236
+      ],
+      "length_m": 6526.0,
+      "load_kg": 1.58,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       237
+      ],
+      "length_m": 6402.2,
+      "load_kg": 1.51,
+      "battery_pct": 40.0
+     },
+     {
+      "clients": [
+       238
+      ],
+      "length_m": 6401.6,
+      "load_kg": 2.09,
+      "battery_pct": 40.0
+     },
+     {
+      "clients": [
+       239
+      ],
+      "length_m": 7007.9,
+      "load_kg": 0.59,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       240
+      ],
+      "length_m": 2570.0,
+      "load_kg": 1.8,
+      "battery_pct": 16.1
+     },
+     {
+      "clients": [
+       241
+      ],
+      "length_m": 5867.7,
+      "load_kg": 1.38,
+      "battery_pct": 36.7
+     },
+     {
+      "clients": [
+       242
+      ],
+      "length_m": 2609.9,
+      "load_kg": 1.94,
+      "battery_pct": 16.3
+     },
+     {
+      "clients": [
+       243
+      ],
+      "length_m": 5281.6,
+      "load_kg": 0.64,
+      "battery_pct": 33.0
+     },
+     {
+      "clients": [
+       244
+      ],
+      "length_m": 5355.8,
+      "load_kg": 1.48,
+      "battery_pct": 33.5
+     },
+     {
+      "clients": [
+       245
+      ],
+      "length_m": 6618.8,
+      "load_kg": 1.11,
+      "battery_pct": 41.4
+     },
+     {
+      "clients": [
+       246
+      ],
+      "length_m": 3724.5,
+      "load_kg": 1.86,
+      "battery_pct": 23.3
+     },
+     {
+      "clients": [
+       247
+      ],
+      "length_m": 3577.1,
+      "load_kg": 1.58,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       248
+      ],
+      "length_m": 7165.5,
+      "load_kg": 1.21,
+      "battery_pct": 44.8
+     },
+     {
+      "clients": [
+       249
+      ],
+      "length_m": 7093.0,
+      "load_kg": 0.57,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       250
+      ],
+      "length_m": 5621.1,
+      "load_kg": 1.22,
+      "battery_pct": 35.1
+     },
+     {
+      "clients": [
+       251
+      ],
+      "length_m": 5516.1,
+      "load_kg": 0.94,
+      "battery_pct": 34.5
+     },
+     {
+      "clients": [
+       252
+      ],
+      "length_m": 4460.0,
+      "load_kg": 0.92,
+      "battery_pct": 27.9
+     },
+     {
+      "clients": [
+       253
+      ],
+      "length_m": 6532.3,
+      "load_kg": 1.42,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       254
+      ],
+      "length_m": 4763.2,
+      "load_kg": 1.43,
+      "battery_pct": 29.8
+     },
+     {
+      "clients": [
+       255
+      ],
+      "length_m": 3922.3,
+      "load_kg": 1.4,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       256
+      ],
+      "length_m": 6054.1,
+      "load_kg": 0.74,
+      "battery_pct": 37.8
+     },
+     {
+      "clients": [
+       257
+      ],
+      "length_m": 7083.1,
+      "load_kg": 0.59,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       258
+      ],
+      "length_m": 2522.3,
+      "load_kg": 2.08,
+      "battery_pct": 15.8
+     },
+     {
+      "clients": [
+       259
+      ],
+      "length_m": 4260.4,
+      "load_kg": 0.73,
+      "battery_pct": 26.6
+     },
+     {
+      "clients": [
+       260
+      ],
+      "length_m": 6512.9,
+      "load_kg": 0.69,
+      "battery_pct": 40.7
+     },
+     {
+      "clients": [
+       261
+      ],
+      "length_m": 7150.7,
+      "load_kg": 0.79,
+      "battery_pct": 44.7
+     },
+     {
+      "clients": [
+       262
+      ],
+      "length_m": 5905.8,
+      "load_kg": 0.65,
+      "battery_pct": 36.9
+     },
+     {
+      "clients": [
+       263
+      ],
+      "length_m": 7081.4,
+      "load_kg": 1.54,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       264
+      ],
+      "length_m": 6097.3,
+      "load_kg": 1.89,
+      "battery_pct": 38.1
+     },
+     {
+      "clients": [
+       265
+      ],
+      "length_m": 4354.8,
+      "load_kg": 1.27,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       266
+      ],
+      "length_m": 6697.0,
+      "load_kg": 1.16,
+      "battery_pct": 41.9
+     },
+     {
+      "clients": [
+       267
+      ],
+      "length_m": 6552.3,
+      "load_kg": 1.29,
+      "battery_pct": 41.0
+     },
+     {
+      "clients": [
+       268
+      ],
+      "length_m": 1697.9,
+      "load_kg": 1.34,
+      "battery_pct": 10.6
+     },
+     {
+      "clients": [
+       269
+      ],
+      "length_m": 2877.7,
+      "load_kg": 2.2,
+      "battery_pct": 18.0
+     },
+     {
+      "clients": [
+       270
+      ],
+      "length_m": 1605.6,
+      "load_kg": 1.19,
+      "battery_pct": 10.0
+     },
+     {
+      "clients": [
+       271
+      ],
+      "length_m": 3440.8,
+      "load_kg": 1.53,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       272
+      ],
+      "length_m": 4599.0,
+      "load_kg": 0.73,
+      "battery_pct": 28.7
+     },
+     {
+      "clients": [
+       273
+      ],
+      "length_m": 3586.1,
+      "load_kg": 1.26,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       274
+      ],
+      "length_m": 1158.3,
+      "load_kg": 2.01,
+      "battery_pct": 7.2
+     },
+     {
+      "clients": [
+       275
+      ],
+      "length_m": 4078.1,
+      "load_kg": 2.3,
+      "battery_pct": 25.5
+     },
+     {
+      "clients": [
+       276
+      ],
+      "length_m": 6493.6,
+      "load_kg": 1.89,
+      "battery_pct": 40.6
+     },
+     {
+      "clients": [
+       277
+      ],
+      "length_m": 6237.0,
+      "load_kg": 2.23,
+      "battery_pct": 39.0
+     },
+     {
+      "clients": [
+       278
+      ],
+      "length_m": 5961.1,
+      "load_kg": 1.8,
+      "battery_pct": 37.3
+     },
+     {
+      "clients": [
+       279
+      ],
+      "length_m": 3218.9,
+      "load_kg": 1.95,
+      "battery_pct": 20.1
+     },
+     {
+      "clients": [
+       280
+      ],
+      "length_m": 3540.6,
+      "load_kg": 1.58,
+      "battery_pct": 22.1
+     },
+     {
+      "clients": [
+       281
+      ],
+      "length_m": 6110.4,
+      "load_kg": 0.72,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       282
+      ],
+      "length_m": 6061.9,
+      "load_kg": 1.16,
+      "battery_pct": 37.9
+     },
+     {
+      "clients": [
+       283
+      ],
+      "length_m": 2577.4,
+      "load_kg": 1.77,
+      "battery_pct": 16.1
+     },
+     {
+      "clients": [
+       284
+      ],
+      "length_m": 4625.4,
+      "load_kg": 0.63,
+      "battery_pct": 28.9
+     },
+     {
+      "clients": [
+       285
+      ],
+      "length_m": 5904.0,
+      "load_kg": 1.33,
+      "battery_pct": 36.9
+     },
+     {
+      "clients": [
+       286
+      ],
+      "length_m": 6390.4,
+      "load_kg": 1.84,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       287
+      ],
+      "length_m": 3497.7,
+      "load_kg": 1.76,
+      "battery_pct": 21.9
+     },
+     {
+      "clients": [
+       288
+      ],
+      "length_m": 6164.5,
+      "load_kg": 1.11,
+      "battery_pct": 38.5
+     },
+     {
+      "clients": [
+       289
+      ],
+      "length_m": 6190.3,
+      "load_kg": 1.25,
+      "battery_pct": 38.7
+     },
+     {
+      "clients": [
+       290
+      ],
+      "length_m": 5819.4,
+      "load_kg": 0.62,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       291
+      ],
+      "length_m": 5802.1,
+      "load_kg": 1.69,
+      "battery_pct": 36.3
+     },
+     {
+      "clients": [
+       292
+      ],
+      "length_m": 5913.6,
+      "load_kg": 1.21,
+      "battery_pct": 37.0
+     },
+     {
+      "clients": [
+       293
+      ],
+      "length_m": 3125.4,
+      "load_kg": 0.59,
+      "battery_pct": 19.5
+     },
+     {
+      "clients": [
+       294
+      ],
+      "length_m": 4889.6,
+      "load_kg": 0.55,
+      "battery_pct": 30.6
+     },
+     {
+      "clients": [
+       295
+      ],
+      "length_m": 4626.9,
+      "load_kg": 1.85,
+      "battery_pct": 28.9
+     },
+     {
+      "clients": [
+       296
+      ],
+      "length_m": 7144.5,
+      "load_kg": 0.81,
+      "battery_pct": 44.7
+     },
+     {
+      "clients": [
+       297
+      ],
+      "length_m": 6969.8,
+      "load_kg": 0.69,
+      "battery_pct": 43.6
+     },
+     {
+      "clients": [
+       298
+      ],
+      "length_m": 5718.4,
+      "load_kg": 0.94,
+      "battery_pct": 35.7
+     },
+     {
+      "clients": [
+       299
+      ],
+      "length_m": 5928.5,
+      "load_kg": 1.6,
+      "battery_pct": 37.1
+     },
+     {
+      "clients": [
+       300
+      ],
+      "length_m": 3056.1,
+      "load_kg": 0.79,
+      "battery_pct": 19.1
+     },
+     {
+      "clients": [
+       301
+      ],
+      "length_m": 2237.6,
+      "load_kg": 0.82,
+      "battery_pct": 14.0
+     },
+     {
+      "clients": [
+       302
+      ],
+      "length_m": 5890.7,
+      "load_kg": 1.24,
+      "battery_pct": 36.8
+     },
+     {
+      "clients": [
+       303
+      ],
+      "length_m": 3410.6,
+      "load_kg": 0.66,
+      "battery_pct": 21.3
+     },
+     {
+      "clients": [
+       304
+      ],
+      "length_m": 6399.2,
+      "load_kg": 0.85,
+      "battery_pct": 40.0
+     },
+     {
+      "clients": [
+       305
+      ],
+      "length_m": 6216.4,
+      "load_kg": 2.24,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       306
+      ],
+      "length_m": 5662.1,
+      "load_kg": 0.63,
+      "battery_pct": 35.4
+     },
+     {
+      "clients": [
+       307
+      ],
+      "length_m": 1758.0,
+      "load_kg": 2.17,
+      "battery_pct": 11.0
+     },
+     {
+      "clients": [
+       308
+      ],
+      "length_m": 5956.4,
+      "load_kg": 1.21,
+      "battery_pct": 37.2
+     },
+     {
+      "clients": [
+       309
+      ],
+      "length_m": 2505.9,
+      "load_kg": 1.4,
+      "battery_pct": 15.7
+     },
+     {
+      "clients": [
+       310
+      ],
+      "length_m": 5630.1,
+      "load_kg": 1.24,
+      "battery_pct": 35.2
+     },
+     {
+      "clients": [
+       311
+      ],
+      "length_m": 5360.7,
+      "load_kg": 1.67,
+      "battery_pct": 33.5
+     },
+     {
+      "clients": [
+       312
+      ],
+      "length_m": 5948.6,
+      "load_kg": 1.14,
+      "battery_pct": 37.2
+     },
+     {
+      "clients": [
+       313
+      ],
+      "length_m": 2259.7,
+      "load_kg": 1.55,
+      "battery_pct": 14.1
+     },
+     {
+      "clients": [
+       314
+      ],
+      "length_m": 6373.3,
+      "load_kg": 1.53,
+      "battery_pct": 39.8
+     },
+     {
+      "clients": [
+       315
+      ],
+      "length_m": 6529.1,
+      "load_kg": 1.71,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       316
+      ],
+      "length_m": 2941.7,
+      "load_kg": 1.29,
+      "battery_pct": 18.4
+     },
+     {
+      "clients": [
+       317
+      ],
+      "length_m": 3202.9,
+      "load_kg": 1.03,
+      "battery_pct": 20.0
+     },
+     {
+      "clients": [
+       318
+      ],
+      "length_m": 5377.3,
+      "load_kg": 2.11,
+      "battery_pct": 33.6
+     },
+     {
+      "clients": [
+       319
+      ],
+      "length_m": 6564.1,
+      "load_kg": 2.04,
+      "battery_pct": 41.0
+     },
+     {
+      "clients": [
+       320
+      ],
+      "length_m": 6557.8,
+      "load_kg": 0.99,
+      "battery_pct": 41.0
+     },
+     {
+      "clients": [
+       321
+      ],
+      "length_m": 5454.5,
+      "load_kg": 1.33,
+      "battery_pct": 34.1
+     },
+     {
+      "clients": [
+       322
+      ],
+      "length_m": 4759.8,
+      "load_kg": 0.77,
+      "battery_pct": 29.7
+     },
+     {
+      "clients": [
+       323
+      ],
+      "length_m": 6408.4,
+      "load_kg": 1.62,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       324
+      ],
+      "length_m": 1547.2,
+      "load_kg": 0.56,
+      "battery_pct": 9.7
+     },
+     {
+      "clients": [
+       325
+      ],
+      "length_m": 7649.5,
+      "load_kg": 0.81,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       326
+      ],
+      "length_m": 880.3,
+      "load_kg": 0.7,
+      "battery_pct": 5.5
+     },
+     {
+      "clients": [
+       327
+      ],
+      "length_m": 3608.3,
+      "load_kg": 1.92,
+      "battery_pct": 22.6
+     },
+     {
+      "clients": [
+       328
+      ],
+      "length_m": 3722.5,
+      "load_kg": 2.24,
+      "battery_pct": 23.3
+     },
+     {
+      "clients": [
+       329
+      ],
+      "length_m": 4661.6,
+      "load_kg": 1.08,
+      "battery_pct": 29.1
+     },
+     {
+      "clients": [
+       330
+      ],
+      "length_m": 842.6,
+      "load_kg": 1.01,
+      "battery_pct": 5.3
+     },
+     {
+      "clients": [
+       331
+      ],
+      "length_m": 6242.5,
+      "load_kg": 1.92,
+      "battery_pct": 39.0
+     },
+     {
+      "clients": [
+       332
+      ],
+      "length_m": 6106.3,
+      "load_kg": 1.54,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       333
+      ],
+      "length_m": 5316.1,
+      "load_kg": 1.23,
+      "battery_pct": 33.2
+     },
+     {
+      "clients": [
+       334
+      ],
+      "length_m": 7882.0,
+      "load_kg": 1.41,
+      "battery_pct": 49.3
+     },
+     {
+      "clients": [
+       335
+      ],
+      "length_m": 5525.1,
+      "load_kg": 1.65,
+      "battery_pct": 34.5
+     },
+     {
+      "clients": [
+       336
+      ],
+      "length_m": 2505.9,
+      "load_kg": 1.2,
+      "battery_pct": 15.7
+     },
+     {
+      "clients": [
+       337
+      ],
+      "length_m": 5372.7,
+      "load_kg": 1.92,
+      "battery_pct": 33.6
+     },
+     {
+      "clients": [
+       338
+      ],
+      "length_m": 3848.4,
+      "load_kg": 1.5,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       339
+      ],
+      "length_m": 1849.1,
+      "load_kg": 2.07,
+      "battery_pct": 11.6
+     },
+     {
+      "clients": [
+       340
+      ],
+      "length_m": 2411.8,
+      "load_kg": 1.18,
+      "battery_pct": 15.1
+     },
+     {
+      "clients": [
+       341
+      ],
+      "length_m": 2561.2,
+      "load_kg": 1.16,
+      "battery_pct": 16.0
+     },
+     {
+      "clients": [
+       342
+      ],
+      "length_m": 5569.1,
+      "load_kg": 1.94,
+      "battery_pct": 34.8
+     },
+     {
+      "clients": [
+       343
+      ],
+      "length_m": 6423.7,
+      "load_kg": 1.32,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       344
+      ],
+      "length_m": 5888.7,
+      "load_kg": 0.96,
+      "battery_pct": 36.8
+     },
+     {
+      "clients": [
+       345
+      ],
+      "length_m": 3184.5,
+      "load_kg": 1.68,
+      "battery_pct": 19.9
+     },
+     {
+      "clients": [
+       346
+      ],
+      "length_m": 5605.0,
+      "load_kg": 1.04,
+      "battery_pct": 35.0
+     },
+     {
+      "clients": [
+       347
+      ],
+      "length_m": 3591.3,
+      "load_kg": 1.05,
+      "battery_pct": 22.4
+     },
+     {
+      "clients": [
+       348
+      ],
+      "length_m": 5297.5,
+      "load_kg": 1.33,
+      "battery_pct": 33.1
+     },
+     {
+      "clients": [
+       349
+      ],
+      "length_m": 7876.7,
+      "load_kg": 2.15,
+      "battery_pct": 49.2
+     },
+     {
+      "clients": [
+       350
+      ],
+      "length_m": 3439.7,
+      "load_kg": 1.93,
+      "battery_pct": 21.5
+     },
+     {
+      "clients": [
+       351
+      ],
+      "length_m": 7556.6,
+      "load_kg": 0.76,
+      "battery_pct": 47.2
+     },
+     {
+      "clients": [
+       352
+      ],
+      "length_m": 5918.6,
+      "load_kg": 1.25,
+      "battery_pct": 37.0
+     },
+     {
+      "clients": [
+       353
+      ],
+      "length_m": 6297.7,
+      "load_kg": 0.98,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       354
+      ],
+      "length_m": 3785.7,
+      "load_kg": 1.22,
+      "battery_pct": 23.7
+     },
+     {
+      "clients": [
+       355
+      ],
+      "length_m": 3831.6,
+      "load_kg": 2.0,
+      "battery_pct": 23.9
+     },
+     {
+      "clients": [
+       356
+      ],
+      "length_m": 3680.8,
+      "load_kg": 1.76,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       357
+      ],
+      "length_m": 6294.6,
+      "load_kg": 1.46,
+      "battery_pct": 39.3
+     },
+     {
+      "clients": [
+       358
+      ],
+      "length_m": 4143.7,
+      "load_kg": 1.79,
+      "battery_pct": 25.9
+     },
+     {
+      "clients": [
+       359
+      ],
+      "length_m": 7674.6,
+      "load_kg": 1.43,
+      "battery_pct": 48.0
+     },
+     {
+      "clients": [
+       360
+      ],
+      "length_m": 5527.3,
+      "load_kg": 2.18,
+      "battery_pct": 34.5
+     },
+     {
+      "clients": [
+       361
+      ],
+      "length_m": 8022.0,
+      "load_kg": 1.31,
+      "battery_pct": 50.1
+     },
+     {
+      "clients": [
+       362
+      ],
+      "length_m": 5490.6,
+      "load_kg": 1.93,
+      "battery_pct": 34.3
+     },
+     {
+      "clients": [
+       363
+      ],
+      "length_m": 7596.2,
+      "load_kg": 1.46,
+      "battery_pct": 47.5
+     },
+     {
+      "clients": [
+       364
+      ],
+      "length_m": 5420.6,
+      "load_kg": 1.61,
+      "battery_pct": 33.9
+     },
+     {
+      "clients": [
+       365
+      ],
+      "length_m": 4966.4,
+      "load_kg": 0.91,
+      "battery_pct": 31.0
+     },
+     {
+      "clients": [
+       366
+      ],
+      "length_m": 5711.9,
+      "load_kg": 1.9,
+      "battery_pct": 35.7
+     },
+     {
+      "clients": [
+       367
+      ],
+      "length_m": 5448.2,
+      "load_kg": 0.92,
+      "battery_pct": 34.1
+     },
+     {
+      "clients": [
+       368
+      ],
+      "length_m": 6590.3,
+      "load_kg": 1.34,
+      "battery_pct": 41.2
+     },
+     {
+      "clients": [
+       369
+      ],
+      "length_m": 8171.9,
+      "load_kg": 1.67,
+      "battery_pct": 51.1
+     },
+     {
+      "clients": [
+       370
+      ],
+      "length_m": 8327.3,
+      "load_kg": 0.87,
+      "battery_pct": 52.0
+     },
+     {
+      "clients": [
+       371
+      ],
+      "length_m": 7914.7,
+      "load_kg": 1.23,
+      "battery_pct": 49.5
+     },
+     {
+      "clients": [
+       372
+      ],
+      "length_m": 5839.4,
+      "load_kg": 2.28,
+      "battery_pct": 36.5
+     },
+     {
+      "clients": [
+       373
+      ],
+      "length_m": 1504.1,
+      "load_kg": 2.03,
+      "battery_pct": 9.4
+     },
+     {
+      "clients": [
+       374
+      ],
+      "length_m": 5168.0,
+      "load_kg": 1.7,
+      "battery_pct": 32.3
+     },
+     {
+      "clients": [
+       375
+      ],
+      "length_m": 6383.5,
+      "load_kg": 2.29,
+      "battery_pct": 39.9
+     },
+     {
+      "clients": [
+       376
+      ],
+      "length_m": 1744.0,
+      "load_kg": 2.18,
+      "battery_pct": 10.9
+     },
+     {
+      "clients": [
+       377
+      ],
+      "length_m": 569.8,
+      "load_kg": 0.52,
+      "battery_pct": 3.6
+     },
+     {
+      "clients": [
+       378
+      ],
+      "length_m": 5846.3,
+      "load_kg": 1.33,
+      "battery_pct": 36.5
+     },
+     {
+      "clients": [
+       379
+      ],
+      "length_m": 5293.3,
+      "load_kg": 2.13,
+      "battery_pct": 33.1
+     },
+     {
+      "clients": [
+       380
+      ],
+      "length_m": 5856.1,
+      "load_kg": 1.27,
+      "battery_pct": 36.6
+     },
+     {
+      "clients": [
+       381
+      ],
+      "length_m": 3683.1,
+      "load_kg": 0.96,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       382
+      ],
+      "length_m": 3304.7,
+      "load_kg": 0.94,
+      "battery_pct": 20.7
+     },
+     {
+      "clients": [
+       383
+      ],
+      "length_m": 7734.8,
+      "load_kg": 1.32,
+      "battery_pct": 48.3
+     },
+     {
+      "clients": [
+       384
+      ],
+      "length_m": 5510.9,
+      "load_kg": 2.0,
+      "battery_pct": 34.4
+     },
+     {
+      "clients": [
+       385
+      ],
+      "length_m": 7915.7,
+      "load_kg": 1.24,
+      "battery_pct": 49.5
+     },
+     {
+      "clients": [
+       386
+      ],
+      "length_m": 7621.3,
+      "load_kg": 1.56,
+      "battery_pct": 47.6
+     },
+     {
+      "clients": [
+       387
+      ],
+      "length_m": 7921.1,
+      "load_kg": 2.08,
+      "battery_pct": 49.5
+     },
+     {
+      "clients": [
+       388
+      ],
+      "length_m": 6468.6,
+      "load_kg": 1.09,
+      "battery_pct": 40.4
+     },
+     {
+      "clients": [
+       389
+      ],
+      "length_m": 3899.9,
+      "load_kg": 0.86,
+      "battery_pct": 24.4
+     },
+     {
+      "clients": [
+       390
+      ],
+      "length_m": 6542.2,
+      "load_kg": 1.48,
+      "battery_pct": 40.9
+     },
+     {
+      "clients": [
+       391
+      ],
+      "length_m": 5204.9,
+      "load_kg": 1.56,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       392
+      ],
+      "length_m": 6930.9,
+      "load_kg": 1.42,
+      "battery_pct": 43.3
+     },
+     {
+      "clients": [
+       393
+      ],
+      "length_m": 6944.4,
+      "load_kg": 1.86,
+      "battery_pct": 43.4
+     },
+     {
+      "clients": [
+       394
+      ],
+      "length_m": 2131.6,
+      "load_kg": 2.18,
+      "battery_pct": 13.3
+     },
+     {
+      "clients": [
+       395
+      ],
+      "length_m": 4903.8,
+      "load_kg": 0.73,
+      "battery_pct": 30.6
+     },
+     {
+      "clients": [
+       396
+      ],
+      "length_m": 4682.5,
+      "load_kg": 0.82,
+      "battery_pct": 29.3
+     },
+     {
+      "clients": [
+       397
+      ],
+      "length_m": 5464.6,
+      "load_kg": 1.45,
+      "battery_pct": 34.2
+     },
+     {
+      "clients": [
+       398
+      ],
+      "length_m": 4596.4,
+      "load_kg": 0.54,
+      "battery_pct": 28.7
+     },
+     {
+      "clients": [
+       399
+      ],
+      "length_m": 4897.3,
+      "load_kg": 1.3,
+      "battery_pct": 30.6
+     },
+     {
+      "clients": [
+       400
+      ],
+      "length_m": 1657.6,
+      "load_kg": 0.54,
+      "battery_pct": 10.4
+     },
+     {
+      "clients": [
+       401
+      ],
+      "length_m": 4504.3,
+      "load_kg": 1.81,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       402
+      ],
+      "length_m": 3703.6,
+      "load_kg": 2.06,
+      "battery_pct": 23.1
+     },
+     {
+      "clients": [
+       403
+      ],
+      "length_m": 3137.1,
+      "load_kg": 0.82,
+      "battery_pct": 19.6
+     },
+     {
+      "clients": [
+       404
+      ],
+      "length_m": 3907.3,
+      "load_kg": 0.68,
+      "battery_pct": 24.4
+     },
+     {
+      "clients": [
+       405
+      ],
+      "length_m": 4114.1,
+      "load_kg": 0.72,
+      "battery_pct": 25.7
+     },
+     {
+      "clients": [
+       406
+      ],
+      "length_m": 803.4,
+      "load_kg": 2.02,
+      "battery_pct": 5.0
+     },
+     {
+      "clients": [
+       407
+      ],
+      "length_m": 3036.2,
+      "load_kg": 2.2,
+      "battery_pct": 19.0
+     },
+     {
+      "clients": [
+       408
+      ],
+      "length_m": 1748.9,
+      "load_kg": 0.66,
+      "battery_pct": 10.9
+     },
+     {
+      "clients": [
+       409
+      ],
+      "length_m": 1848.3,
+      "load_kg": 1.59,
+      "battery_pct": 11.6
+     },
+     {
+      "clients": [
+       410
+      ],
+      "length_m": 1517.7,
+      "load_kg": 2.2,
+      "battery_pct": 9.5
+     },
+     {
+      "clients": [
+       411
+      ],
+      "length_m": 3966.9,
+      "load_kg": 1.75,
+      "battery_pct": 24.8
+     },
+     {
+      "clients": [
+       412
+      ],
+      "length_m": 3053.2,
+      "load_kg": 1.82,
+      "battery_pct": 19.1
+     },
+     {
+      "clients": [
+       413
+      ],
+      "length_m": 786.4,
+      "load_kg": 1.28,
+      "battery_pct": 4.9
+     },
+     {
+      "clients": [
+       414
+      ],
+      "length_m": 2144.0,
+      "load_kg": 1.2,
+      "battery_pct": 13.4
+     },
+     {
+      "clients": [
+       415
+      ],
+      "length_m": 754.9,
+      "load_kg": 0.91,
+      "battery_pct": 4.7
+     },
+     {
+      "clients": [
+       416
+      ],
+      "length_m": 3509.5,
+      "load_kg": 1.66,
+      "battery_pct": 21.9
+     },
+     {
+      "clients": [
+       417
+      ],
+      "length_m": 3223.6,
+      "load_kg": 1.06,
+      "battery_pct": 20.1
+     },
+     {
+      "clients": [
+       418
+      ],
+      "length_m": 2836.2,
+      "load_kg": 1.69,
+      "battery_pct": 17.7
+     },
+     {
+      "clients": [
+       419
+      ],
+      "length_m": 3376.6,
+      "load_kg": 0.67,
+      "battery_pct": 21.1
+     },
+     {
+      "clients": [
+       420
+      ],
+      "length_m": 3471.5,
+      "load_kg": 2.17,
+      "battery_pct": 21.7
+     },
+     {
+      "clients": [
+       421
+      ],
+      "length_m": 3294.9,
+      "load_kg": 1.64,
+      "battery_pct": 20.6
+     },
+     {
+      "clients": [
+       422
+      ],
+      "length_m": 3270.7,
+      "load_kg": 0.54,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       423
+      ],
+      "length_m": 693.5,
+      "load_kg": 1.34,
+      "battery_pct": 4.3
+     },
+     {
+      "clients": [
+       424
+      ],
+      "length_m": 2905.3,
+      "load_kg": 2.26,
+      "battery_pct": 18.2
+     },
+     {
+      "clients": [
+       425
+      ],
+      "length_m": 642.9,
+      "load_kg": 0.81,
+      "battery_pct": 4.0
+     },
+     {
+      "clients": [
+       426
+      ],
+      "length_m": 2997.8,
+      "load_kg": 1.98,
+      "battery_pct": 18.7
+     },
+     {
+      "clients": [
+       427
+      ],
+      "length_m": 3402.0,
+      "load_kg": 1.57,
+      "battery_pct": 21.3
+     },
+     {
+      "clients": [
+       428
+      ],
+      "length_m": 2955.0,
+      "load_kg": 1.88,
+      "battery_pct": 18.5
+     },
+     {
+      "clients": [
+       429
+      ],
+      "length_m": 3257.6,
+      "load_kg": 1.78,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       430
+      ],
+      "length_m": 3054.5,
+      "load_kg": 1.29,
+      "battery_pct": 19.1
+     },
+     {
+      "clients": [
+       431
+      ],
+      "length_m": 3348.6,
+      "load_kg": 1.8,
+      "battery_pct": 20.9
+     },
+     {
+      "clients": [
+       432
+      ],
+      "length_m": 3371.4,
+      "load_kg": 0.58,
+      "battery_pct": 21.1
+     },
+     {
+      "clients": [
+       433
+      ],
+      "length_m": 3716.4,
+      "load_kg": 1.51,
+      "battery_pct": 23.2
+     },
+     {
+      "clients": [
+       434
+      ],
+      "length_m": 3937.9,
+      "load_kg": 1.37,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       435
+      ],
+      "length_m": 3703.0,
+      "load_kg": 0.92,
+      "battery_pct": 23.1
+     },
+     {
+      "clients": [
+       436
+      ],
+      "length_m": 4010.3,
+      "load_kg": 1.55,
+      "battery_pct": 25.1
+     },
+     {
+      "clients": [
+       437
+      ],
+      "length_m": 3922.8,
+      "load_kg": 1.75,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       438
+      ],
+      "length_m": 4030.6,
+      "load_kg": 0.67,
+      "battery_pct": 25.2
+     },
+     {
+      "clients": [
+       439
+      ],
+      "length_m": 7162.5,
+      "load_kg": 1.93,
+      "battery_pct": 44.8
+     },
+     {
+      "clients": [
+       440
+      ],
+      "length_m": 4432.1,
+      "load_kg": 1.35,
+      "battery_pct": 27.7
+     },
+     {
+      "clients": [
+       441
+      ],
+      "length_m": 7258.2,
+      "load_kg": 0.88,
+      "battery_pct": 45.4
+     },
+     {
+      "clients": [
+       442
+      ],
+      "length_m": 5830.0,
+      "load_kg": 1.08,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       443
+      ],
+      "length_m": 5383.8,
+      "load_kg": 0.79,
+      "battery_pct": 33.6
+     },
+     {
+      "clients": [
+       444
+      ],
+      "length_m": 5407.1,
+      "load_kg": 1.13,
+      "battery_pct": 33.8
+     },
+     {
+      "clients": [
+       445
+      ],
+      "length_m": 5176.3,
+      "load_kg": 0.74,
+      "battery_pct": 32.4
+     },
+     {
+      "clients": [
+       446
+      ],
+      "length_m": 6754.1,
+      "load_kg": 1.04,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       447
+      ],
+      "length_m": 6354.0,
+      "load_kg": 1.63,
+      "battery_pct": 39.7
+     },
+     {
+      "clients": [
+       448
+      ],
+      "length_m": 7874.2,
+      "load_kg": 0.76,
+      "battery_pct": 49.2
+     },
+     {
+      "clients": [
+       449
+      ],
+      "length_m": 7251.0,
+      "load_kg": 2.26,
+      "battery_pct": 45.3
+     },
+     {
+      "clients": [
+       450
+      ],
+      "length_m": 5131.0,
+      "load_kg": 0.85,
+      "battery_pct": 32.1
+     },
+     {
+      "clients": [
+       451
+      ],
+      "length_m": 4346.7,
+      "load_kg": 1.07,
+      "battery_pct": 27.2
+     },
+     {
+      "clients": [
+       452
+      ],
+      "length_m": 6640.0,
+      "load_kg": 1.78,
+      "battery_pct": 41.5
+     },
+     {
+      "clients": [
+       453
+      ],
+      "length_m": 3929.0,
+      "load_kg": 1.71,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       454
+      ],
+      "length_m": 7253.5,
+      "load_kg": 1.29,
+      "battery_pct": 45.3
+     },
+     {
+      "clients": [
+       455
+      ],
+      "length_m": 6711.2,
+      "load_kg": 2.21,
+      "battery_pct": 41.9
+     },
+     {
+      "clients": [
+       456
+      ],
+      "length_m": 7071.6,
+      "load_kg": 0.73,
+      "battery_pct": 44.2
+     },
+     {
+      "clients": [
+       457
+      ],
+      "length_m": 7607.3,
+      "load_kg": 1.77,
+      "battery_pct": 47.5
+     },
+     {
+      "clients": [
+       458
+      ],
+      "length_m": 4301.1,
+      "load_kg": 1.59,
+      "battery_pct": 26.9
+     },
+     {
+      "clients": [
+       459
+      ],
+      "length_m": 3754.5,
+      "load_kg": 1.94,
+      "battery_pct": 23.5
+     },
+     {
+      "clients": [
+       460
+      ],
+      "length_m": 8306.9,
+      "load_kg": 0.99,
+      "battery_pct": 51.9
+     },
+     {
+      "clients": [
+       461
+      ],
+      "length_m": 3809.9,
+      "load_kg": 1.88,
+      "battery_pct": 23.8
+     },
+     {
+      "clients": [
+       462
+      ],
+      "length_m": 7891.9,
+      "load_kg": 1.27,
+      "battery_pct": 49.3
+     },
+     {
+      "clients": [
+       463
+      ],
+      "length_m": 6756.9,
+      "load_kg": 1.16,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       464
+      ],
+      "length_m": 6902.0,
+      "load_kg": 0.88,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       465
+      ],
+      "length_m": 8098.3,
+      "load_kg": 1.34,
+      "battery_pct": 50.6
+     },
+     {
+      "clients": [
+       466
+      ],
+      "length_m": 6575.6,
+      "load_kg": 1.95,
+      "battery_pct": 41.1
+     },
+     {
+      "clients": [
+       467
+      ],
+      "length_m": 7410.7,
+      "load_kg": 1.22,
+      "battery_pct": 46.3
+     },
+     {
+      "clients": [
+       468
+      ],
+      "length_m": 7504.4,
+      "load_kg": 0.93,
+      "battery_pct": 46.9
+     },
+     {
+      "clients": [
+       469
+      ],
+      "length_m": 6874.4,
+      "load_kg": 0.93,
+      "battery_pct": 43.0
+     },
+     {
+      "clients": [
+       470
+      ],
+      "length_m": 7354.4,
+      "load_kg": 0.72,
+      "battery_pct": 46.0
+     },
+     {
+      "clients": [
+       471
+      ],
+      "length_m": 7475.1,
+      "load_kg": 1.98,
+      "battery_pct": 46.7
+     },
+     {
+      "clients": [
+       472
+      ],
+      "length_m": 7215.6,
+      "load_kg": 0.88,
+      "battery_pct": 45.1
+     },
+     {
+      "clients": [
+       473
+      ],
+      "length_m": 7600.6,
+      "load_kg": 2.02,
+      "battery_pct": 47.5
+     },
+     {
+      "clients": [
+       474
+      ],
+      "length_m": 7336.2,
+      "load_kg": 0.76,
+      "battery_pct": 45.9
+     },
+     {
+      "clients": [
+       475
+      ],
+      "length_m": 7218.5,
+      "load_kg": 2.08,
+      "battery_pct": 45.1
+     },
+     {
+      "clients": [
+       476
+      ],
+      "length_m": 6519.8,
+      "load_kg": 2.23,
+      "battery_pct": 40.7
+     },
+     {
+      "clients": [
+       477
+      ],
+      "length_m": 7094.6,
+      "load_kg": 1.51,
+      "battery_pct": 44.3
+     },
+     {
+      "clients": [
+       478
+      ],
+      "length_m": 6464.2,
+      "load_kg": 2.23,
+      "battery_pct": 40.4
+     },
+     {
+      "clients": [
+       479
+      ],
+      "length_m": 6518.5,
+      "load_kg": 2.02,
+      "battery_pct": 40.7
+     },
+     {
+      "clients": [
+       480
+      ],
+      "length_m": 6333.7,
+      "load_kg": 1.76,
+      "battery_pct": 39.6
+     },
+     {
+      "clients": [
+       481
+      ],
+      "length_m": 6900.0,
+      "load_kg": 0.81,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       482
+      ],
+      "length_m": 6699.3,
+      "load_kg": 1.27,
+      "battery_pct": 41.9
+     }
+    ],
+    "schedule": [
+     [
+      369,
+      459,
+      368,
+      464,
+      360,
+      386,
+      384,
+      370,
+      461,
+      333,
+      348,
+      447,
+      181,
+      382,
+      358,
+      324,
+      176,
+      385,
+      456,
+      472,
+      362,
+      199,
+      350,
+      164,
+      54
+     ],
+     [
+      160,
+      156,
+      467,
+      470,
+      198,
+      466,
+      184,
+      202,
+      469,
+      473,
+      187,
+      210,
+      440,
+      453,
+      207,
+      448,
+      47,
+      474,
+      165,
+      471,
+      166,
+      175,
+      247,
+      438,
+      260,
+      376
+     ],
+     [
+      295,
+      194,
+      476,
+      248,
+      256,
+      262,
+      455,
+      185,
+      238,
+      174,
+      296,
+      206,
+      392,
+      391,
+      463,
+      480,
+      468,
+      197,
+      219,
+      217,
+      462,
+      445,
+      188,
+      183,
+      454,
+      481
+     ],
+     [
+      265,
+      146,
+      451,
+      222,
+      244,
+      367,
+      136,
+      22,
+      465,
+      318,
+      319,
+      266,
+      389,
+      252,
+      314,
+      235,
+      475,
+      478,
+      259,
+      163,
+      275,
+      387,
+      477,
+      128,
+      60,
+      342,
+      126
+     ],
+     [
+      322,
+      236,
+      237,
+      303,
+      285,
+      374,
+      39,
+      313,
+      446,
+      479,
+      6,
+      192,
+      352,
+      356,
+      10,
+      227,
+      330,
+      276,
+      4,
+      304,
+      3,
+      147,
+      121,
+      162,
+      288,
+      12,
+      17
+     ],
+     [
+      287,
+      120,
+      130,
+      280,
+      331,
+      200,
+      263,
+      213,
+      281,
+      255,
+      68,
+      123,
+      144,
+      28,
+      277,
+      307,
+      311,
+      149,
+      170,
+      214,
+      298,
+      351,
+      291,
+      82,
+      261,
+      284,
+      301,
+      76
+     ],
+     [
+      195,
+      343,
+      240,
+      379,
+      171,
+      92,
+      377,
+      371,
+      441,
+      178,
+      289,
+      215,
+      218,
+      290,
+      122,
+      93,
+      177,
+      297,
+      365,
+      8,
+      49,
+      305,
+      85,
+      309,
+      249,
+      345,
+      77,
+      15
+     ],
+     [
+      341,
+      89,
+      167,
+      359,
+      334,
+      250,
+      383,
+      40,
+      75,
+      96,
+      361,
+      86,
+      209,
+      396,
+      320,
+      366,
+      363,
+      46,
+      443,
+      24,
+      442,
+      317,
+      336,
+      2,
+      310,
+      243,
+      62,
+      50,
+      64
+     ],
+     [
+      37,
+      332,
+      347,
+      378,
+      242,
+      70,
+      51,
+      36,
+      390,
+      159,
+      158,
+      139,
+      444,
+      373,
+      449,
+      127,
+      71,
+      132,
+      157,
+      31,
+      44,
+      231,
+      364,
+      11,
+      168,
+      57,
+      394,
+      398,
+      135,
+      137
+     ],
+     [
+      293,
+      78,
+      101,
+      99,
+      106,
+      253,
+      321,
+      81,
+      133,
+      395,
+      172,
+      328,
+      84,
+      294,
+      283,
+      224,
+      271,
+      397,
+      21,
+      145,
+      119,
+      32,
+      52,
+      400,
+      152,
+      201,
+      124,
+      233,
+      251,
+      439,
+      140
+     ],
+     [
+      63,
+      118,
+      205,
+      23,
+      138,
+      18,
+      264,
+      230,
+      450,
+      102,
+      100,
+      87,
+      457,
+      59,
+      232,
+      258,
+      5,
+      228,
+      193,
+      131,
+      223,
+      58,
+      357,
+      404,
+      129,
+      182,
+      116,
+      274,
+      13,
+      225,
+      437,
+      155
+     ],
+     [
+      435,
+      20,
+      16,
+      410,
+      148,
+      7,
+      73,
+      103,
+      433,
+      452,
+      436,
+      254,
+      134,
+      66,
+      403,
+      388,
+      113,
+      112,
+      337,
+      19,
+      354,
+      45,
+      460,
+      25,
+      353,
+      88,
+      221,
+      154,
+      458,
+      245,
+      327,
+      38,
+      273
+     ],
+     [
+      432,
+      401,
+      434,
+      380,
+      355,
+      191,
+      326,
+      346,
+      272,
+      114,
+      35,
+      246,
+      153,
+      279,
+      125,
+      0,
+      415,
+      286,
+      108,
+      419,
+      14,
+      180,
+      270,
+      349,
+      186,
+      234,
+      302,
+      426,
+      418,
+      431,
+      9,
+      430,
+      196,
+      424
+     ],
+     [
+      381,
+      97,
+      420,
+      1,
+      27,
+      421,
+      212,
+      428,
+      416,
+      69,
+      278,
+      189,
+      316,
+      344,
+      80,
+      107,
+      67,
+      402,
+      292,
+      220,
+      48,
+      109,
+      216,
+      30,
+      299,
+      429,
+      411,
+      117,
+      406,
+      26,
+      105,
+      169,
+      110,
+      425,
+      203
+     ],
+     [
+      29,
+      34,
+      91,
+      427,
+      315,
+      423,
+      268,
+      90,
+      111,
+      417,
+      115,
+      56,
+      33,
+      143,
+      55,
+      211,
+      94,
+      98,
+      83,
+      241,
+      282,
+      239,
+      340,
+      151,
+      257,
+      308,
+      335,
+      74,
+      339,
+      190,
+      43,
+      65,
+      79,
+      312,
+      61,
+      300
+     ],
+     [
+      53,
+      161,
+      413,
+      104,
+      393,
+      226,
+      150,
+      142,
+      95,
+      338,
+      408,
+      306,
+      407,
+      375,
+      141,
+      267,
+      399,
+      269,
+      173,
+      323,
+      72,
+      409,
+      372,
+      41,
+      42,
+      208,
+      325,
+      329,
+      405,
+      179,
+      412,
+      229,
+      414,
+      204,
+      422
+     ]
+    ]
+   },
+   "best": {
+    "trips": 117,
+    "km": 610.17,
+    "drones": 6,
+    "drones_lb": 6,
+    "fleet_minutes": 2632.2,
+    "utilisation": 0.914,
+    "max_clients_per_trip": 7,
+    "routes": [
+     {
+      "clients": [
+       1,
+       2
+      ],
+      "length_m": 3684.0,
+      "load_kg": 3.2,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       4,
+       18,
+       29,
+       38
+      ],
+      "length_m": 6682.7,
+      "load_kg": 5.81,
+      "battery_pct": 41.8
+     },
+     {
+      "clients": [
+       5,
+       7,
+       11,
+       13,
+       22
+      ],
+      "length_m": 6423.8,
+      "load_kg": 5.75,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       6,
+       3,
+       12,
+       14
+      ],
+      "length_m": 5596.2,
+      "load_kg": 5.35,
+      "battery_pct": 35.0
+     },
+     {
+      "clients": [
+       8,
+       17,
+       20
+      ],
+      "length_m": 4152.7,
+      "load_kg": 5.4,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       9,
+       16,
+       25,
+       37
+      ],
+      "length_m": 6008.5,
+      "load_kg": 5.53,
+      "battery_pct": 37.6
+     },
+     {
+      "clients": [
+       10,
+       15,
+       28
+      ],
+      "length_m": 3558.5,
+      "load_kg": 5.75,
+      "battery_pct": 22.2
+     },
+     {
+      "clients": [
+       21,
+       19,
+       24
+      ],
+      "length_m": 4415.9,
+      "load_kg": 4.7,
+      "battery_pct": 27.6
+     },
+     {
+      "clients": [
+       23,
+       40,
+       48,
+       61
+      ],
+      "length_m": 7800.7,
+      "load_kg": 5.53,
+      "battery_pct": 48.8
+     },
+     {
+      "clients": [
+       27,
+       31,
+       30
+      ],
+      "length_m": 3103.2,
+      "load_kg": 5.38,
+      "battery_pct": 19.4
+     },
+     {
+      "clients": [
+       33,
+       32,
+       45,
+       53
+      ],
+      "length_m": 5199.8,
+      "load_kg": 5.84,
+      "battery_pct": 32.5
+     },
+     {
+      "clients": [
+       26,
+       39,
+       36
+      ],
+      "length_m": 3914.1,
+      "load_kg": 5.52,
+      "battery_pct": 24.5
+     },
+     {
+      "clients": [
+       51,
+       47,
+       50,
+       41
+      ],
+      "length_m": 5823.3,
+      "load_kg": 5.92,
+      "battery_pct": 36.4
+     },
+     {
+      "clients": [
+       34,
+       35,
+       44,
+       42
+      ],
+      "length_m": 2980.0,
+      "load_kg": 5.47,
+      "battery_pct": 18.6
+     },
+     {
+      "clients": [
+       43,
+       73,
+       377,
+       406
+      ],
+      "length_m": 2308.7,
+      "load_kg": 5.76,
+      "battery_pct": 14.4
+     },
+     {
+      "clients": [
+       49,
+       46,
+       59,
+       60,
+       64
+      ],
+      "length_m": 4507.0,
+      "load_kg": 5.78,
+      "battery_pct": 28.2
+     },
+     {
+      "clients": [
+       58,
+       52,
+       63,
+       65,
+       72,
+       88
+      ],
+      "length_m": 5731.9,
+      "load_kg": 5.97,
+      "battery_pct": 35.8
+     },
+     {
+      "clients": [
+       54,
+       62,
+       80,
+       96
+      ],
+      "length_m": 2482.2,
+      "load_kg": 5.37,
+      "battery_pct": 15.5
+     },
+     {
+      "clients": [
+       56,
+       57,
+       75
+      ],
+      "length_m": 2808.1,
+      "load_kg": 5.11,
+      "battery_pct": 17.6
+     },
+     {
+      "clients": [
+       55,
+       67,
+       70,
+       66
+      ],
+      "length_m": 4035.0,
+      "load_kg": 5.95,
+      "battery_pct": 25.2
+     },
+     {
+      "clients": [
+       74,
+       71,
+       76,
+       69,
+       78
+      ],
+      "length_m": 6120.4,
+      "load_kg": 6.0,
+      "battery_pct": 38.3
+     },
+     {
+      "clients": [
+       77,
+       79,
+       82,
+       85,
+       89
+      ],
+      "length_m": 4935.5,
+      "load_kg": 6.0,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       83,
+       93,
+       94
+      ],
+      "length_m": 6118.6,
+      "load_kg": 5.49,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       68,
+       81,
+       98,
+       84
+      ],
+      "length_m": 3669.3,
+      "load_kg": 5.86,
+      "battery_pct": 22.9
+     },
+     {
+      "clients": [
+       87,
+       86,
+       90,
+       97,
+       100
+      ],
+      "length_m": 5902.0,
+      "load_kg": 5.26,
+      "battery_pct": 36.9
+     },
+     {
+      "clients": [
+       91,
+       92,
+       95
+      ],
+      "length_m": 2978.8,
+      "load_kg": 5.6,
+      "battery_pct": 18.6
+     },
+     {
+      "clients": [
+       103,
+       107,
+       102,
+       101
+      ],
+      "length_m": 4899.8,
+      "load_kg": 5.45,
+      "battery_pct": 30.6
+     },
+     {
+      "clients": [
+       109,
+       104,
+       113,
+       115
+      ],
+      "length_m": 4096.1,
+      "load_kg": 5.63,
+      "battery_pct": 25.6
+     },
+     {
+      "clients": [
+       105,
+       106,
+       108,
+       110
+      ],
+      "length_m": 3235.0,
+      "load_kg": 5.45,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       112,
+       111,
+       118,
+       162
+      ],
+      "length_m": 3279.6,
+      "load_kg": 5.98,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       126,
+       114,
+       117,
+       130,
+       135
+      ],
+      "length_m": 4480.1,
+      "load_kg": 5.84,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       121,
+       122,
+       124,
+       127
+      ],
+      "length_m": 6223.1,
+      "load_kg": 5.64,
+      "battery_pct": 38.9
+     },
+     {
+      "clients": [
+       128,
+       129,
+       137,
+       147,
+       150
+      ],
+      "length_m": 6967.4,
+      "load_kg": 5.93,
+      "battery_pct": 43.5
+     },
+     {
+      "clients": [
+       145,
+       148,
+       131
+      ],
+      "length_m": 6488.3,
+      "load_kg": 5.47,
+      "battery_pct": 40.6
+     },
+     {
+      "clients": [
+       119,
+       120,
+       125,
+       139,
+       132
+      ],
+      "length_m": 4948.3,
+      "load_kg": 5.44,
+      "battery_pct": 30.9
+     },
+     {
+      "clients": [
+       134,
+       146,
+       153,
+       154
+      ],
+      "length_m": 4876.8,
+      "load_kg": 5.81,
+      "battery_pct": 30.5
+     },
+     {
+      "clients": [
+       133,
+       123,
+       140,
+       136
+      ],
+      "length_m": 6061.4,
+      "load_kg": 5.48,
+      "battery_pct": 37.9
+     },
+     {
+      "clients": [
+       99,
+       116,
+       144,
+       141,
+       138
+      ],
+      "length_m": 3276.2,
+      "load_kg": 5.92,
+      "battery_pct": 20.5
+     },
+     {
+      "clients": [
+       142,
+       191,
+       240,
+       258
+      ],
+      "length_m": 3010.2,
+      "load_kg": 5.54,
+      "battery_pct": 18.8
+     },
+     {
+      "clients": [
+       143,
+       151,
+       156
+      ],
+      "length_m": 2037.2,
+      "load_kg": 5.27,
+      "battery_pct": 12.7
+     },
+     {
+      "clients": [
+       170,
+       149,
+       155,
+       190
+      ],
+      "length_m": 4241.9,
+      "load_kg": 5.78,
+      "battery_pct": 26.5
+     },
+     {
+      "clients": [
+       152,
+       158,
+       159,
+       160
+      ],
+      "length_m": 5212.6,
+      "load_kg": 5.5,
+      "battery_pct": 32.6
+     },
+     {
+      "clients": [
+       163,
+       175,
+       176,
+       184,
+       194
+      ],
+      "length_m": 7320.9,
+      "load_kg": 5.99,
+      "battery_pct": 45.8
+     },
+     {
+      "clients": [
+       157,
+       161,
+       165,
+       166,
+       167,
+       164
+      ],
+      "length_m": 7635.4,
+      "load_kg": 5.99,
+      "battery_pct": 47.7
+     },
+     {
+      "clients": [
+       169,
+       168,
+       193,
+       196
+      ],
+      "length_m": 6554.9,
+      "load_kg": 5.96,
+      "battery_pct": 41.0
+     },
+     {
+      "clients": [
+       178,
+       179,
+       171,
+       172,
+       173
+      ],
+      "length_m": 6109.7,
+      "load_kg": 5.97,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       177,
+       182,
+       185,
+       186
+      ],
+      "length_m": 7827.1,
+      "load_kg": 5.97,
+      "battery_pct": 48.9
+     },
+     {
+      "clients": [
+       181,
+       187,
+       197
+      ],
+      "length_m": 3552.6,
+      "load_kg": 5.54,
+      "battery_pct": 22.2
+     },
+     {
+      "clients": [
+       188,
+       199,
+       200,
+       203,
+       213
+      ],
+      "length_m": 7731.8,
+      "load_kg": 5.82,
+      "battery_pct": 48.3
+     },
+     {
+      "clients": [
+       183,
+       202,
+       206,
+       192
+      ],
+      "length_m": 4627.3,
+      "load_kg": 5.77,
+      "battery_pct": 28.9
+     },
+     {
+      "clients": [
+       201,
+       207,
+       211,
+       208,
+       195,
+       198,
+       189
+      ],
+      "length_m": 7642.0,
+      "load_kg": 5.98,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       180,
+       174,
+       209,
+       204
+      ],
+      "length_m": 1651.8,
+      "load_kg": 5.86,
+      "battery_pct": 10.3
+     },
+     {
+      "clients": [
+       205,
+       212,
+       217,
+       221,
+       242
+      ],
+      "length_m": 3170.0,
+      "load_kg": 5.91,
+      "battery_pct": 19.8
+     },
+     {
+      "clients": [
+       216,
+       215,
+       214,
+       210
+      ],
+      "length_m": 6109.4,
+      "load_kg": 5.78,
+      "battery_pct": 38.2
+     },
+     {
+      "clients": [
+       235,
+       246,
+       247,
+       268
+      ],
+      "length_m": 3768.7,
+      "load_kg": 5.97,
+      "battery_pct": 23.6
+     },
+     {
+      "clients": [
+       218,
+       220,
+       223
+      ],
+      "length_m": 6904.8,
+      "load_kg": 5.98,
+      "battery_pct": 43.2
+     },
+     {
+      "clients": [
+       219,
+       241,
+       250,
+       251
+      ],
+      "length_m": 6168.4,
+      "load_kg": 5.41,
+      "battery_pct": 38.6
+     },
+     {
+      "clients": [
+       222,
+       226,
+       224,
+       255
+      ],
+      "length_m": 4365.5,
+      "load_kg": 5.66,
+      "battery_pct": 27.3
+     },
+     {
+      "clients": [
+       238,
+       236,
+       237,
+       225
+      ],
+      "length_m": 6533.3,
+      "load_kg": 5.94,
+      "battery_pct": 40.8
+     },
+     {
+      "clients": [
+       227,
+       313,
+       336,
+       340
+      ],
+      "length_m": 3059.6,
+      "load_kg": 5.59,
+      "battery_pct": 19.1
+     },
+     {
+      "clients": [
+       228,
+       245,
+       253,
+       256
+      ],
+      "length_m": 6889.5,
+      "load_kg": 5.39,
+      "battery_pct": 43.1
+     },
+     {
+      "clients": [
+       229,
+       231,
+       234,
+       233
+      ],
+      "length_m": 4474.8,
+      "load_kg": 5.92,
+      "battery_pct": 28.0
+     },
+     {
+      "clients": [
+       230,
+       270,
+       274
+      ],
+      "length_m": 1620.1,
+      "load_kg": 4.58,
+      "battery_pct": 10.1
+     },
+     {
+      "clients": [
+       254,
+       243,
+       244,
+       232
+      ],
+      "length_m": 5466.2,
+      "load_kg": 5.61,
+      "battery_pct": 34.2
+     },
+     {
+      "clients": [
+       275,
+       265,
+       272,
+       252,
+       259
+      ],
+      "length_m": 4757.5,
+      "load_kg": 5.96,
+      "battery_pct": 29.7
+     },
+     {
+      "clients": [
+       239,
+       248,
+       249,
+       257,
+       261,
+       263,
+       260
+      ],
+      "length_m": 7640.3,
+      "load_kg": 5.99,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       281,
+       276,
+       266,
+       267,
+       262
+      ],
+      "length_m": 6777.4,
+      "load_kg": 5.7,
+      "battery_pct": 42.4
+     },
+     {
+      "clients": [
+       264,
+       277,
+       282,
+       284
+      ],
+      "length_m": 6359.1,
+      "load_kg": 5.91,
+      "battery_pct": 39.7
+     },
+     {
+      "clients": [
+       269,
+       279,
+       283
+      ],
+      "length_m": 3236.4,
+      "load_kg": 5.92,
+      "battery_pct": 20.2
+     },
+     {
+      "clients": [
+       271,
+       280,
+       287,
+       301
+      ],
+      "length_m": 3685.2,
+      "load_kg": 5.7,
+      "battery_pct": 23.0
+     },
+     {
+      "clients": [
+       273,
+       295,
+       311,
+       329
+      ],
+      "length_m": 5664.1,
+      "load_kg": 5.85,
+      "battery_pct": 35.4
+     },
+     {
+      "clients": [
+       294,
+       291,
+       290,
+       292,
+       278
+      ],
+      "length_m": 6265.2,
+      "load_kg": 5.87,
+      "battery_pct": 39.2
+     },
+     {
+      "clients": [
+       285,
+       288,
+       286,
+       289
+      ],
+      "length_m": 6435.5,
+      "load_kg": 5.54,
+      "battery_pct": 40.2
+     },
+     {
+      "clients": [
+       293,
+       305,
+       314,
+       323
+      ],
+      "length_m": 6633.5,
+      "load_kg": 5.98,
+      "battery_pct": 41.5
+     },
+     {
+      "clients": [
+       304,
+       297,
+       296,
+       325,
+       334,
+       343
+      ],
+      "length_m": 8653.2,
+      "load_kg": 5.89,
+      "battery_pct": 54.1
+     },
+     {
+      "clients": [
+       300,
+       333,
+       337,
+       342
+      ],
+      "length_m": 5708.0,
+      "load_kg": 5.88,
+      "battery_pct": 35.7
+     },
+     {
+      "clients": [
+       303,
+       331,
+       332,
+       335
+      ],
+      "length_m": 6305.5,
+      "load_kg": 5.77,
+      "battery_pct": 39.4
+     },
+     {
+      "clients": [
+       298,
+       299,
+       302,
+       308,
+       306
+      ],
+      "length_m": 6137.0,
+      "load_kg": 5.62,
+      "battery_pct": 38.4
+     },
+     {
+      "clients": [
+       309,
+       316,
+       345,
+       341
+      ],
+      "length_m": 3353.0,
+      "load_kg": 5.53,
+      "battery_pct": 21.0
+     },
+     {
+      "clients": [
+       312,
+       315,
+       319,
+       320
+      ],
+      "length_m": 6634.8,
+      "load_kg": 5.89,
+      "battery_pct": 41.5
+     },
+     {
+      "clients": [
+       350,
+       356,
+       347,
+       317
+      ],
+      "length_m": 3897.4,
+      "load_kg": 5.78,
+      "battery_pct": 24.4
+     },
+     {
+      "clients": [
+       310,
+       321,
+       318,
+       322
+      ],
+      "length_m": 5715.8,
+      "load_kg": 5.45,
+      "battery_pct": 35.7
+     },
+     {
+      "clients": [
+       324,
+       354,
+       355,
+       358
+      ],
+      "length_m": 4166.1,
+      "load_kg": 5.58,
+      "battery_pct": 26.0
+     },
+     {
+      "clients": [
+       307,
+       339,
+       326,
+       330
+      ],
+      "length_m": 1990.4,
+      "load_kg": 5.96,
+      "battery_pct": 12.4
+     },
+     {
+      "clients": [
+       327,
+       328,
+       338
+      ],
+      "length_m": 3929.6,
+      "load_kg": 5.66,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       346,
+       352,
+       357,
+       353,
+       344
+      ],
+      "length_m": 6409.6,
+      "load_kg": 5.69,
+      "battery_pct": 40.1
+     },
+     {
+      "clients": [
+       348,
+       365,
+       374,
+       391
+      ],
+      "length_m": 5872.6,
+      "load_kg": 5.5,
+      "battery_pct": 36.7
+     },
+     {
+      "clients": [
+       351,
+       349,
+       359,
+       363
+      ],
+      "length_m": 8018.1,
+      "load_kg": 5.8,
+      "battery_pct": 50.1
+     },
+     {
+      "clients": [
+       360,
+       362,
+       364
+      ],
+      "length_m": 5573.9,
+      "load_kg": 5.73,
+      "battery_pct": 34.8
+     },
+     {
+      "clients": [
+       366,
+       372,
+       378
+      ],
+      "length_m": 5963.4,
+      "load_kg": 5.51,
+      "battery_pct": 37.3
+     },
+     {
+      "clients": [
+       367,
+       371,
+       369,
+       370,
+       361
+      ],
+      "length_m": 8422.9,
+      "load_kg": 6.0,
+      "battery_pct": 52.6
+     },
+     {
+      "clients": [
+       368,
+       383,
+       385,
+       387
+      ],
+      "length_m": 7989.2,
+      "load_kg": 5.97,
+      "battery_pct": 49.9
+     },
+     {
+      "clients": [
+       373,
+       410,
+       413
+      ],
+      "length_m": 1844.9,
+      "load_kg": 5.51,
+      "battery_pct": 11.5
+     },
+     {
+      "clients": [
+       380,
+       375,
+       390,
+       395
+      ],
+      "length_m": 6744.5,
+      "load_kg": 5.76,
+      "battery_pct": 42.2
+     },
+     {
+      "clients": [
+       376,
+       394,
+       400,
+       415
+      ],
+      "length_m": 2202.2,
+      "load_kg": 5.8,
+      "battery_pct": 13.8
+     },
+     {
+      "clients": [
+       379,
+       384,
+       397
+      ],
+      "length_m": 5749.0,
+      "load_kg": 5.58,
+      "battery_pct": 35.9
+     },
+     {
+      "clients": [
+       382,
+       381,
+       389,
+       402,
+       403
+      ],
+      "length_m": 4028.8,
+      "load_kg": 5.64,
+      "battery_pct": 25.2
+     },
+     {
+      "clients": [
+       392,
+       393,
+       386,
+       388
+      ],
+      "length_m": 7646.9,
+      "load_kg": 5.93,
+      "battery_pct": 47.8
+     },
+     {
+      "clients": [
+       398,
+       396,
+       399,
+       401,
+       405,
+       404
+      ],
+      "length_m": 4923.2,
+      "load_kg": 5.87,
+      "battery_pct": 30.8
+     },
+     {
+      "clients": [
+       407,
+       412,
+       418
+      ],
+      "length_m": 3422.5,
+      "load_kg": 5.72,
+      "battery_pct": 21.4
+     },
+     {
+      "clients": [
+       408,
+       409,
+       414,
+       424
+      ],
+      "length_m": 3147.3,
+      "load_kg": 5.71,
+      "battery_pct": 19.7
+     },
+     {
+      "clients": [
+       420,
+       411,
+       416
+      ],
+      "length_m": 4091.9,
+      "load_kg": 5.58,
+      "battery_pct": 25.6
+     },
+     {
+      "clients": [
+       417,
+       419,
+       421,
+       422,
+       427
+      ],
+      "length_m": 3861.1,
+      "load_kg": 5.49,
+      "battery_pct": 24.1
+     },
+     {
+      "clients": [
+       423,
+       459,
+       461
+      ],
+      "length_m": 3932.3,
+      "load_kg": 5.16,
+      "battery_pct": 24.6
+     },
+     {
+      "clients": [
+       425,
+       426,
+       428,
+       430
+      ],
+      "length_m": 3269.7,
+      "load_kg": 5.96,
+      "battery_pct": 20.4
+     },
+     {
+      "clients": [
+       432,
+       433,
+       431,
+       429
+      ],
+      "length_m": 3799.7,
+      "load_kg": 5.67,
+      "battery_pct": 23.7
+     },
+     {
+      "clients": [
+       435,
+       434,
+       436,
+       437
+      ],
+      "length_m": 4143.9,
+      "load_kg": 5.59,
+      "battery_pct": 25.9
+     },
+     {
+      "clients": [
+       454,
+       457,
+       449,
+       438
+      ],
+      "length_m": 7837.5,
+      "load_kg": 6.0,
+      "battery_pct": 49.0
+     },
+     {
+      "clients": [
+       452,
+       439,
+       446,
+       442
+      ],
+      "length_m": 7238.3,
+      "load_kg": 5.83,
+      "battery_pct": 45.2
+     },
+     {
+      "clients": [
+       443,
+       444,
+       466,
+       480
+      ],
+      "length_m": 7062.3,
+      "load_kg": 5.63,
+      "battery_pct": 44.1
+     },
+     {
+      "clients": [
+       445,
+       450,
+       479,
+       478
+      ],
+      "length_m": 6872.9,
+      "load_kg": 5.83,
+      "battery_pct": 43.0
+     },
+     {
+      "clients": [
+       463,
+       464,
+       455,
+       447
+      ],
+      "length_m": 7004.8,
+      "load_kg": 5.88,
+      "battery_pct": 43.8
+     },
+     {
+      "clients": [
+       440,
+       451,
+       458,
+       453
+      ],
+      "length_m": 4571.4,
+      "load_kg": 5.73,
+      "battery_pct": 28.6
+     },
+     {
+      "clients": [
+       456,
+       462,
+       465,
+       460,
+       448,
+       441
+      ],
+      "length_m": 8473.1,
+      "load_kg": 5.97,
+      "battery_pct": 53.0
+     },
+     {
+      "clients": [
+       475,
+       474,
+       473,
+       469
+      ],
+      "length_m": 7660.2,
+      "load_kg": 5.78,
+      "battery_pct": 47.9
+     },
+     {
+      "clients": [
+       467,
+       468,
+       471,
+       470,
+       472
+      ],
+      "length_m": 7595.0,
+      "load_kg": 5.73,
+      "battery_pct": 47.5
+     },
+     {
+      "clients": [
+       476,
+       477,
+       481,
+       482
+      ],
+      "length_m": 7390.7,
+      "load_kg": 5.82,
+      "battery_pct": 46.2
+     }
+    ],
+    "schedule": [
+     [
+      50,
+      65,
+      74,
+      113,
+      43,
+      90,
+      48,
+      115,
+      16,
+      42,
+      32,
+      66,
+      98,
+      2,
+      85,
+      87,
+      91
+     ],
+     [
+      71,
+      107,
+      46,
+      77,
+      8,
+      20,
+      45,
+      114,
+      97,
+      24,
+      116,
+      108,
+      109,
+      111,
+      60,
+      110,
+      93,
+      1,
+      79
+     ],
+     [
+      73,
+      34,
+      21,
+      44,
+      58,
+      72,
+      64,
+      67,
+      76,
+      31,
+      15,
+      56,
+      30,
+      53,
+      36,
+      5,
+      86,
+      12,
+      81,
+      75
+     ],
+     [
+      96,
+      70,
+      3,
+      102,
+      63,
+      55,
+      41,
+      10,
+      37,
+      26,
+      35,
+      52,
+      33,
+      49,
+      112,
+      61,
+      22,
+      57,
+      89,
+      40,
+      82,
+      78
+     ],
+     [
+      106,
+      27,
+      95,
+      19,
+      88,
+      80,
+      105,
+      54,
+      69,
+      23,
+      29,
+      104,
+      28,
+      100,
+      59,
+      38,
+      13,
+      7,
+      4,
+      17,
+      101,
+      14,
+      103,
+      84
+     ],
+     [
+      11,
+      94,
+      83,
+      6,
+      47,
+      99,
+      51,
+      68,
+      9,
+      25,
+      18,
+      39,
+      0,
+      92,
+      62
+     ]
+    ]
+   },
+   "sweep_trials": [
+    [
+     119,
+     703.87
+    ],
+    [
+     119,
+     703.87
+    ],
+    [
+     120,
+     704.86
+    ],
+    [
+     120,
+     712.47
+    ],
+    [
+     119,
+     698.59
+    ],
+    [
+     119,
+     703.87
+    ],
+    [
+     119,
+     706.31
+    ],
+    [
+     118,
+     698.91
+    ],
+    [
+     119,
+     703.87
+    ],
+    [
+     119,
+     710.61
+    ],
+    [
+     119,
+     703.87
+    ],
+    [
+     119,
+     702.56
+    ]
+   ]
+  }
+ ],
+ "totals": {
+  "naive": {
+   "trips": 1000,
+   "km": 4892.27,
+   "drones": 34
+  },
+  "best": {
+   "trips": 241,
+   "km": 1284.58,
+   "drones": 12
+  }
+ },
+ "timings_s": {
+  "map_s": 0.58,
+  "clients_sites_s": 0.7,
+  "graph_s": 2.41,
+  "depots_s": 1.32,
+  "zones_s": 0.03,
+  "routing_s": 72.62
+ }
+}

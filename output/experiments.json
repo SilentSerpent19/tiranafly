@@ -1,0 +1,299 @@
+{
+ "A_range": [
+  {
+   "d_max_km": 12.0,
+   "depots": 2,
+   "greedy": 3,
+   "zones": [
+    488,
+    512
+   ],
+   "trips": 241,
+   "km": 1338.48,
+   "drones": 12,
+   "trips_lb": 229,
+   "km_lb": 1163.7,
+   "seconds": 41.6
+  },
+  {
+   "d_max_km": 16.0,
+   "depots": 2,
+   "greedy": 2,
+   "zones": [
+    518,
+    482
+   ],
+   "trips": 241,
+   "km": 1284.58,
+   "drones": 12,
+   "trips_lb": 229,
+   "km_lb": 1110.0,
+   "seconds": 39.6
+  },
+  {
+   "d_max_km": 20.0,
+   "depots": 1,
+   "greedy": 1,
+   "zones": [
+    1000
+   ],
+   "trips": 239,
+   "km": 2189.01,
+   "drones": 14,
+   "trips_lb": 229,
+   "km_lb": 1670.4,
+   "seconds": 122.0
+  }
+ ],
+ "B_payload": [
+  {
+   "w_max_kg": 4.0,
+   "trips": 371,
+   "km": 2016.06,
+   "drones": 16,
+   "trips_lb": 344,
+   "km_lb": 1664.9,
+   "max_clients_per_trip": 5,
+   "method_per_zone": [
+    "savings",
+    "sweep"
+   ],
+   "sweep_vs_savings": [
+    [
+     {
+      "trips": 193,
+      "km": 1130.22
+     },
+     {
+      "trips": 191,
+      "km": 1008.89
+     }
+    ],
+    [
+     {
+      "trips": 180,
+      "km": 1007.18
+     },
+     {
+      "trips": 181,
+      "km": 910.79
+     }
+    ]
+   ]
+  },
+  {
+   "w_max_kg": 6.0,
+   "trips": 241,
+   "km": 1284.58,
+   "drones": 12,
+   "trips_lb": 229,
+   "km_lb": 1110.0,
+   "max_clients_per_trip": 7,
+   "method_per_zone": [
+    "savings",
+    "savings"
+   ],
+   "sweep_vs_savings": [
+    [
+     {
+      "trips": 124,
+      "km": 784.35
+     },
+     {
+      "trips": 124,
+      "km": 674.42
+     }
+    ],
+    [
+     {
+      "trips": 119,
+      "km": 698.59
+     },
+     {
+      "trips": 117,
+      "km": 610.17
+     }
+    ]
+   ]
+  },
+  {
+   "w_max_kg": 10.0,
+   "trips": 142,
+   "km": 801.75,
+   "drones": 10,
+   "trips_lb": 138,
+   "km_lb": 666.0,
+   "max_clients_per_trip": 10,
+   "method_per_zone": [
+    "savings",
+    "savings"
+   ],
+   "sweep_vs_savings": [
+    [
+     {
+      "trips": 73,
+      "km": 521.79
+     },
+     {
+      "trips": 73,
+      "km": 419.82
+     }
+    ],
+    [
+     {
+      "trips": 70,
+      "km": 448.04
+     },
+     {
+      "trips": 69,
+      "km": 381.93
+     }
+    ]
+   ]
+  }
+ ],
+ "C_scaling": [
+  {
+   "n_clients": 250,
+   "V": 516,
+   "E": 31554,
+   "graph_s": 0.73,
+   "depots_s": 0.23,
+   "routing_s": 3.54,
+   "dijkstra_runs": 231,
+   "blocked_pairs": 13922,
+   "direct_pairs": 17453,
+   "depots": 1
+  },
+  {
+   "n_clients": 500,
+   "V": 766,
+   "E": 55286,
+   "graph_s": 1.25,
+   "depots_s": 0.6,
+   "routing_s": 6.68,
+   "dijkstra_runs": 463,
+   "blocked_pairs": 18594,
+   "direct_pairs": 44597,
+   "depots": 2
+  },
+  {
+   "n_clients": 1000,
+   "V": 1266,
+   "E": 103976,
+   "graph_s": 2.25,
+   "depots_s": 1.3,
+   "routing_s": 36.18,
+   "dijkstra_runs": 908,
+   "blocked_pairs": 69891,
+   "direct_pairs": 180933,
+   "depots": 2
+  }
+ ],
+ "D_ablation": {
+  "zone": 0,
+  "n_clients": 518,
+  "sweep raw (cheapest insertion)": {
+   "trips": 135,
+   "km": 911.13
+  },
+  "sweep + NN reorder": {
+   "trips": 135,
+   "km": 911.92
+  },
+  "sweep + NN + 2-opt": {
+   "trips": 135,
+   "km": 910.98
+  },
+  "sweep + NN + 2-opt + Or-opt": {
+   "trips": 135,
+   "km": 910.98
+  },
+  "rotating sweep + local search + relocate": {
+   "trips": 124,
+   "km": 781.13,
+   "seconds": 27.0,
+   "trials": [
+    [
+     126,
+     803.2
+    ],
+    [
+     126,
+     781.7
+    ],
+    [
+     125,
+     780.7
+    ],
+    [
+     124,
+     781.1
+    ],
+    [
+     125,
+     780.7
+    ],
+    [
+     125,
+     780.7
+    ],
+    [
+     125,
+     789.8
+    ],
+    [
+     125,
+     789.9
+    ],
+    [
+     125,
+     780.7
+    ],
+    [
+     125,
+     785.3
+    ],
+    [
+     124,
+     784.3
+    ],
+    [
+     125,
+     787.2
+    ]
+   ]
+  },
+  "savings + local search + relocate": {
+   "trips": 124,
+   "km": 674.42,
+   "seconds": 0.2
+  },
+  "lower bound": {
+   "trips": 118,
+   "km": 582.19
+  }
+ },
+ "E_depots": {
+  "kmeans": {
+   "depots": 4,
+   "mean_client_depot_m": 1555,
+   "depots_inside_builtup": 3,
+   "note": "Euclidean, ignores restricted airspace"
+  },
+  "set_cover": {
+   "depots": 2,
+   "mean_client_depot_m": 2446,
+   "depots_inside_builtup": 0,
+   "note": "shortest flight path, outskirts only"
+  }
+ },
+ "F_astar": {
+  "blocked_pairs_tested": 60,
+  "dijkstra_settled_avg": 737.2,
+  "astar_expanded_avg": 12.5,
+  "dijkstra_ms_avg": 14.78,
+  "astar_ms_avg": 1.12,
+  "same_distances": true
+ }
+}
