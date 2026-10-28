@@ -29,7 +29,7 @@ Result for 1,000 clients and a 16 km / 6 kg drone: 2 depots (certified optimal),
 ## Run
 ```bash
 uv venv --python 3.12 .venv            # or: python3.12 -m venv .venv
-uv pip install --python .venv/bin/python osmnx geopandas shapely scikit-learn contextily rasterio scipy matplotlib networkx pyogrio reportlab python-docx
+uv pip install --python .venv/bin/python -r requirements.txt
 .venv/bin/python main.py               # pipeline + figures + interactive viewer   (~2 min)
 .venv/bin/python main.py --no-show     # headless: output/results.json, output/*.png, output/routes.gpkg
 .venv/bin/python experiments.py        # sensitivity, ablation, scaling, depot strategy, A* (~10 min)
